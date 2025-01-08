@@ -1,0 +1,245 @@
+
+QUIZ
+
+
+1 - 1
+As the number of features or dimensions grows the model becomes-
+2 Marks
+slow and inefficient
+less accurate
+more complex
+x All of the above
+
+Correct Answer: All of the above
+Here's why:
+
+Slow and inefficient:
+
+More features increase computational complexity, slowing down training and prediction times.
+Algorithms like k-NN, SVM, or even linear regression take longer to process high-dimensional data.
+Less accurate:
+
+High-dimensional data can lead to the curse of dimensionality, where models struggle to generalize because the data becomes sparse.
+Overfitting can occur if the model learns noise or irrelevant features instead of useful patterns.
+More complex:
+
+As the number of features increases, the model requires more parameters and becomes harder to interpret and maintain.
+Complexity also increases the risk of overfitting.
+
+
+2 - 2
+Dimensionality Reduction is used while solving machine learning problems to obtain-
+2 Marks
+Better features for classification
+Better features for regression
+x Both option 1 and 2
+None of the above
+
+Correct Answer: Both option 1 and 2
+Explanation:
+Dimensionality Reduction is used to improve the performance of machine learning models for both classification and regression tasks:
+
+Better Features for Classification:
+
+Reducing dimensions can remove redundant and irrelevant features, helping classification models focus on the most discriminative features.
+Example: Principal Component Analysis (PCA) is often used to project data into a lower-dimensional space where classes are more separable.
+Better Features for Regression:
+
+Dimensionality reduction can reduce multicollinearity among features and improve model interpretability.
+It simplifies regression models by removing noise and retaining essential information.
+Thus, dimensionality reduction is beneficial for both classification and regression tasks, making "Both option 1 and 2" the correct answer.
+
+Dimensionality reduction is highly beneficial for clustering as it:
+
+Simplifies the data space,
+Enhances performance and cluster separation,
+Reduces computational costs,
+Facilitates visualization of clusters.
+Thus, clustering algorithms can produce more meaningful and efficient results after dimensionality reduction.
+
+3 - 3
+Dimensionality Reduction gives-
+2 Marks
+faster and more efficient model
+better generality
+better visualization for detecting patterns
+x All of the above
+
+Correct Answer: All of the above
+Explanation:
+Dimensionality reduction offers multiple benefits in machine learning, which include:
+
+Faster and More Efficient Model:
+
+By reducing the number of features, models require fewer computations, leading to faster training and predictions.
+It simplifies the dataset, making algorithms like K-Means, SVM, and neural networks more efficient.
+Better Generality:
+
+Reducing dimensions helps combat overfitting by removing noise and redundant features.
+This improves the model's ability to generalize to unseen data.
+Better Visualization for Detecting Patterns:
+
+Dimensionality reduction techniques like PCA, t-SNE, or UMAP project high-dimensional data into 2D or 3D, making it easier to visualize patterns and clusters.
+This is particularly useful for exploratory data analysis.
+
+Summary
+Dimensionality reduction improves:
+
+Speed (efficiency),
+Generalization (less overfitting), and
+Visualization (clearer pattern detection).
+Therefore, "All of the above" is the correct answer.
+
+4 - 4
+Cons of Dimensionality Reduction are
+2 Marks
+loss of information
+loss of accuracy of the model
+slow and inefficient model
+Both option 1 and 2'
+
+
+Correct Answer: Both option 1 and 2
+Explanation:
+While dimensionality reduction offers many benefits, it does come with some drawbacks:
+
+Loss of Information:
+
+Reducing the number of features can lead to loss of important information because some variance in the data may be discarded.
+For example, in PCA, only the principal components with the highest variance are retained, which may exclude subtle but important features.
+Loss of Accuracy of the Model:
+
+If dimensionality reduction removes too much relevant information, the model may suffer from reduced accuracy.
+This is especially true if the reduction is done blindly or aggressively, impacting the performance of machine learning tasks.
+Slow and Inefficient Model:
+
+This is not a con of dimensionality reduction. In fact, dimensionality reduction usually improves efficiency by reducing the number of computations.
+The main cons of dimensionality reduction are:
+
+Loss of information
+Loss of model accuracy
+Therefore, the correct answer is "Both option 1 and 2".
+
+5 - 5
+What are the techniques of Dimensionality Reduction?
+2 Marks
+Feature Selection
+Feature Extraction
+Both option 1 and 2
+All of the above
+
+Correct Answer: Both option 1 and 2
+Explanation:
+Dimensionality reduction techniques are primarily divided into two categories:
+
+Feature Selection:
+
+Involves selecting a subset of the original features based on their importance or relevance to the task.
+Methods include:
+Filter Methods (e.g., correlation analysis)
+Wrapper Methods (e.g., Recursive Feature Elimination)
+Embedded Methods (e.g., Lasso Regression).
+Feature Extraction:
+
+Involves transforming the original features into a new set of features (lower dimensions) while preserving important information.
+Techniques include:
+Principal Component Analysis (PCA)
+Linear Discriminant Analysis (LDA)
+t-SNE, UMAP, and Autoencoders.
+
+
+
+6 - 6
+________is a tool which is used to reduce the dimension of the data.
+2 Marks
+x Principal Component Analysis
+Product Components Analysis
+Principle Components Analysis
+All of the above
+
+Correct Answer: Principal Component Analysis
+Explanation:
+Principal Component Analysis (PCA) is a widely used tool for dimensionality reduction.
+It transforms high-dimensional data into a smaller set of new features, called principal components, which capture the most variance in the data.
+
+
+
+7 - 7
+PCA reduces the dimension by finding a few________.
+2 Marks
+hexagonal linear combination
+x orthogonal linear combinations
+octagonal linear combination
+pentagonal linear combination
+
+
+Correct Answer: Orthogonal Linear Combinations
+Explanation:
+Principal Component Analysis (PCA) reduces the dimensionality of data by finding a few orthogonal linear combinations of the original features.
+These orthogonal combinations are called Principal Components.
+Orthogonal means they are uncorrelated (perpendicular to each other in vector space).
+Each component captures the maximum variance in the data sequentially.
+
+
+
+8 - 8
+The first principal component (PC1) defines the direction of _______.
+2 Marks
+minimum varaiance
+x maximum variance
+mean variance
+All of the above
+
+Correct Answer: Maximum Variance
+Explanation:
+The first principal component (PC1) in Principal Component Analysis (PCA) defines the direction of maximum variance in the data.
+It is the linear combination of features that captures the largest possible variance.
+By maximizing variance, PC1 retains as much information as possible from the original dataset.
+
+
+9 - 9
+PCA is a method that rotates the dataset in such a way that the rotated features are
+2 Marks
+highly correlated
+highly uncorrelated
+statistically uncorrelated
+None of the above
+
+Correct Answer: Statistically Uncorrelated
+
+Explanation:
+Principal Component Analysis (PCA) transforms the original features into a new set of features called principal components.
+These components are statistically uncorrelated because they are orthogonal to each other.
+Orthogonality ensures that there is no correlation between the components.
+Each principal component captures a unique direction of variance in the data.
+
+Why Other Options are Incorrect:
+Highly Correlated:
+
+PCA explicitly removes correlation by constructing uncorrelated principal components.
+Highly Uncorrelated:
+
+This is partially correct, but "statistically uncorrelated" is the precise technical term.
+None of the Above:
+
+This is incorrect as PCA creates statistically uncorrelated components.
+
+
+
+10 - New set of axes formed are
+2 Marks
+parallel to each other
+x orthagonal to each other
+hexagonal to each other
+None of the above
+
+Correct Answer: Orthogonal to Each Other
+Explanation:
+In Principal Component Analysis (PCA), the new set of axes (principal components) are orthogonal (perpendicular) to each other.
+Orthogonal axes mean that there is no correlation between the principal components, and they are statistically independent.
+
+
+
+
+
+

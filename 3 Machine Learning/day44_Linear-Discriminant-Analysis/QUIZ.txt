@@ -1,0 +1,134 @@
+
+
+QUIZ
+
+1 - 1
+Discriminant Analysis differs from other predictive statistical methods because the dependent variable is
+2 Marks
+continuous
+random
+stochastic
+x discrete
+
+The correct answer is:
+discrete
+
+Discriminant Analysis is used when the dependent variable is discrete or categorical, such as group membership (e.g., classifying observations into predefined categories).
+
+2 - 2
+LDA is like PCA, but it focuses on maximizing the separability among known categories.
+2 Marks
+x TRUE
+FALSE
+
+TRUE
+
+Linear Discriminant Analysis (LDA) is similar to Principal Component Analysis (PCA) in that both are dimensionality reduction techniques. However, while PCA focuses on maximizing variance within the dataset, LDA focuses on maximizing the separability among known categories by taking class labels into account.
+
+3 - 3
+Linear Discriminant analysis is used as a dimensionality reduction technique in machine learning, using which we can easily transform a 2-D and 3-D graph into a ________.
+2 Marks
+2 - Dimensional plane
+5 - Dimensional plane
+x 1 - Dimensional plane
+None of the above
+
+1 - Dimensional plane
+
+Linear Discriminant Analysis (LDA) reduces the dimensions of the data while preserving the class discriminatory information. It can transform a 2-D or 3-D graph into a 1-Dimensional plane when the number of classes is 2 (since LDA can produce at most k−1 linear discriminants for k classes).
+
+4 - 4
+In which of the following cases LDA will fail?
+2 Marks
+x If the discriminatory information is not in the mean but in the variance of the data
+If the discriminatory information is in the mean but not in the variance of the data
+If the discriminatory information is in the mean of the data
+None of the above
+
+
+If the discriminatory information is not in the mean but in the variance of the data
+
+Linear Discriminant Analysis (LDA) assumes that the classes are linearly separable and that the discriminatory information lies in the means of the classes. If the discriminatory information is in the variance rather than the mean, LDA will fail because it does not take variance differences into account in its primary objective.
+
+5 - 5
+Which of the following comparison(s) are true about PCA and LDA?
+2 Marks
+Both LDA and PCA are linear transformation techniques
+LDA is supervised whereas PCA is unsupervised
+PCA maximize the variance of the data, whereas LDA maximize the separation between different classes
+x All of the above
+
+All of the above
+
+Both LDA and PCA are linear transformation techniques: This is true because both methods use linear algebra to transform the dataset into a new space.
+LDA is supervised whereas PCA is unsupervised: This is true because LDA requires class labels for the transformation, while PCA does not.
+PCA maximizes the variance of the data, whereas LDA maximizes the separation between different classes: This is true as PCA focuses on capturing the most variance in the data, while LDA focuses on maximizing the separation between class means.
+Thus, the correct answer is All of the above.
+
+
+6 - 6
+Missing Value Ratio, Low Variance Filter, Random Forest, High Correlation Filter are-
+2 Marks
+Information retrieval techniques
+Exploratory Analysis techniques
+x Dimensionality Reduction Techniques
+None of the above
+
+Dimensionality Reduction Techniques
+
+Missing Value Ratio: Used to reduce dimensions by removing features with many missing values.
+Low Variance Filter: Removes features with very low variance, as they contribute little to distinguishing data points.
+Random Forest: Can be used for feature importance ranking to select the most important features.
+High Correlation Filter: Removes highly correlated features to avoid redundancy.
+All these methods aim to reduce the number of features in a dataset, making them Dimensionality Reduction Techniques.
+
+7 - 7
+A threshold value is made and if the percentage of missing values in any variable is more than that threshold, the variable is dropped this is called ______
+2 Marks
+x Missing Value Ratio
+Low variance filter
+Random forest
+None of the above
+
+Missing Value Ratio
+
+The described process, where variables with a percentage of missing values exceeding a set threshold are dropped, is called the Missing Value Ratio. It is a common dimensionality reduction technique used to clean datasets by removing features with excessive missing data.
+
+8 - 8
+Variables with low variance-
+2 Marks
+Have an impact on the target variable
+x Do not affect the target variable much
+Are good predictors
+All of the above
+
+Do not affect the target variable much
+
+Variables with low variance contribute very little to the variability or prediction of the target variable because they do not change much across observations. As a result, they are often considered less informative and are typically removed during dimensionality reduction.
+
+9 - 9
+Random forest is one of the most widely used algorithms for feature selection. It helps to select a smaller subset of features.
+2 Marks
+x TRUE
+FALSE
+
+TRUE
+
+Random Forest is widely used for feature selection because it computes feature importance based on how much each feature contributes to reducing the impurity in decision trees. This helps identify a smaller subset of the most important features, making it an effective method for dimensionality reduction.
+
+10 - 10
+High correlation between two variables means-
+2 Marks
+x They have similar trends and are likely to carry similar information
+They are strong predictors
+both 1 and 2
+None of the above
+
+
+They have similar trends and are likely to carry similar information
+
+High correlation between two variables indicates that they exhibit similar trends and likely carry redundant information. However, it does not necessarily mean that they are strong predictors of the target variable.
+
+
+
+

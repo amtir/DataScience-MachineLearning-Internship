@@ -1,0 +1,206 @@
+
+QUIZ
+
+1 - 1
+Machine Learning algorithm that works on unlabelled data is called -
+2 Marks
+Supervised Learning
+x Unsupervised Learning
+Decision Tree
+None of the above
+
+2 - 2
+Which of the following is an example of Unsupervised algorithm?
+2 Marks
+Linear Regression
+x Clustering
+PCA
+Ridge Regression
+
+
+The correct answers are:
+
+Clustering
+PCA (Principal Component Analysis)
+Explanation:
+Clustering is an unsupervised learning algorithm used to group similar data points together based on certain features.
+PCA is also an unsupervised technique used for dimensionality reduction by identifying the directions (principal components) that maximize the variance in the data.
+Linear Regression and Ridge Regression are examples of supervised learning algorithms because they require labeled data for training.
+
+
+3 - 3
+Inventory categorization is an example of -
+2 Marks
+Reinforcement Learning
+Classification
+Regression
+Clustering
+
+
+The correct answer is:
+
+Clustering
+Explanation:
+Inventory categorization typically involves grouping similar items together based on features like demand, cost, or frequency of use. This process is best described by clustering, an unsupervised learning technique, as it involves discovering inherent groupings in the data without predefined labels.
+
+Other options:
+
+Reinforcement Learning is unrelated to inventory categorization as it involves learning through rewards and penalties.
+Classification requires labeled data and predefined categories, which isn't the case here.
+Regression predicts continuous values and is not relevant to categorizing inventory.
+
+4 - 4
+What is the minimum number of variables/ features required to perform clustering?
+2 Marks
+0
+x 1
+2
+3
+
+The correct answer is:
+
+1
+Explanation:
+Clustering requires at least one variable/feature to group data points based on similarities or differences. With one feature, clustering can partition data into groups along that single dimension. However, having more features generally provides a richer basis for clustering.
+
+0 features would mean no data to analyze, so clustering cannot be performed.
+2 or 3 features are not the minimum, but they allow for clustering in higher-dimensional spaces.
+
+
+5 - 5
+Which of the following are the applications of clustering?
+2 Marks
+Looking at social media behaviour to find out the types of online communities that exist
+Identifying patterns of crime in different regions of a city and managing police enforcement based on frequency and type of crime
+Identifying consumer segments and their properties to position products appropriately
+x All of the above
+
+The correct answer is:
+
+All of the above
+Explanation:
+Clustering is widely used in various fields to group data points with similar characteristics. Each of the options is a valid application of clustering:
+
+Looking at social media behavior to find types of online communities: Clustering can group users based on shared interests or interactions.
+Identifying patterns of crime in different regions of a city: Clustering can analyze crime data to uncover spatial or temporal patterns and inform enforcement strategies.
+Identifying consumer segments: Clustering helps businesses group customers based on behavior, preferences, or demographics to tailor products or marketing strategies.
+Thus, clustering is applicable to all the scenarios mentioned.
+
+6 - 6
+K-Means clustering is an example of which type of clustering?
+2 Marks
+x Exclusive Clustering
+Overlapping Clustering
+Hierarchical clustering
+All of the above
+
+The correct answer is:
+
+Exclusive Clustering
+Explanation:
+K-Means clustering is an example of exclusive clustering because each data point is assigned to exactly one cluster. In K-Means, the clusters are mutually exclusive, meaning a single data point cannot belong to more than one cluster.
+
+Other options:
+
+Overlapping Clustering allows data points to belong to multiple clusters, which is not the case with K-Means.
+Hierarchical Clustering builds a hierarchy of clusters, either through a bottom-up (agglomerative) or top-down (divisive) approach, which is different from the flat structure of K-Means.
+
+
+7 - 7
+Which is conclusively produced by Hierarchical Clustering?
+2 Marks
+final estimation of cluster centroids
+x tree showing how nearby things are to each other
+assignment of each point to clusters
+all of these
+
+The correct answer is:
+
+tree showing how nearby things are to each other
+Explanation:
+Hierarchical clustering produces a dendrogram, which is a tree-like structure showing the relationships between data points and how clusters are merged or split at various levels. This tree represents the hierarchical structure of the data and how nearby or similar things are to each other.
+
+Other options:
+
+Final estimation of cluster centroids is relevant to centroid-based methods like K-Means, not hierarchical clustering.
+Assignment of each point to clusters can be derived at a specific level of the hierarchy, but it is not the primary output of hierarchical clustering. Instead, it is a step you can perform based on the dendrogram.
+All of these is incorrect because hierarchical clustering does not inherently produce centroids.
+
+8 - 8
+To get the optimal number of clusters for hierarchical clustering, we make use of a ______ which is a tree-like chart that shows the sequences of merges or splits of clusters.
+2 Marks
+Random forest
+Pentagram
+N gram
+x Dendogram
+
+The correct answer is:
+
+Dendrogram
+Explanation:
+A dendrogram is a tree-like diagram used in hierarchical clustering to illustrate the sequences of merges or splits of clusters. It helps visualize how clusters are formed and allows users to determine the optimal number of clusters by cutting the tree at an appropriate level.
+
+Other options:
+
+Random forest is a machine learning algorithm for classification and regression, unrelated to hierarchical clustering.
+Pentagram is unrelated to data science or clustering.
+N-gram is a concept in natural language processing, used for analyzing sequences of text.
+
+
+9 - 9
+Which of the following clustering requires merging approach?
+2 Marks
+K-Means Clustering
+x Hierarchical Clustering
+Datagram
+None of the above
+
+The correct answer is:
+
+Hierarchical Clustering
+Explanation:
+Hierarchical Clustering requires a merging approach, particularly in the agglomerative method, where clusters start as individual points and are merged step by step to form larger clusters.
+
+Other options:
+
+K-Means Clustering is a centroid-based method and does not involve merging; it assigns points to the nearest cluster centroid iteratively.
+Datagram is unrelated to clustering; it refers to data packets in networking.
+None of the above is incorrect because hierarchical clustering does indeed use a merging approach.
+
+
+
+10 - 10
+Which of the following distancing measure finds the maximum possible distance between points belonging to two different clusters.
+2 Marks
+Mean linkage clustering
+Centroid linkage clustering
+Single linkage clustering
+x Complete linkage clustering
+
+The correct answer is:
+
+Complete linkage clustering
+Explanation:
+Complete linkage clustering calculates the maximum distance between points in two different clusters. It focuses on the farthest pair of points, making it more sensitive to outliers and ensuring that clusters are as compact as possible.
+
+Other options:
+
+Mean linkage clustering computes the distance based on the average distance between all pairs of points in the two clusters.
+Centroid linkage clustering uses the distance between the centroids (means) of the two clusters.
+Single linkage clustering considers the minimum distance between points belonging to two clusters.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

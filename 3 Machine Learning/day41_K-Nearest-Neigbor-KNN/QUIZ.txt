@@ -1,0 +1,201 @@
+
+QUIZ
+
+1 - 1
+Consider the following option, which is true about the k-NN algorithm?
+2 Marks
+It can be used for classification
+It can be used for regression
+x It can be used in both classification and regression
+None of the above
+
+Correct Answer:
+It can be used in both classification and regression
+
+Explanation:
+Classification: In k-NN, the algorithm predicts the class of a new data point based on majority voting among the 
+𝐾
+K-nearest neighbors.
+Regression: For regression tasks, k-NN predicts the value for a new data point by averaging (or using weighted averaging) the values of the 
+𝐾
+K-nearest neighbors.
+So, the k-NN algorithm is versatile and can be applied to both types of tasks.
+
+
+2 - 2
+__________calculate the relative distance between training data points and new data point
+2 Marks
+Hamming Distance
+x Euclidean Distance
+KNN
+All of the above
+
+Correct Answer:
+Euclidean Distance
+
+Explanation:
+Euclidean Distance: This is the most common method used in k-NN to calculate the relative distance between training data points and a new data point. It measures the straight-line distance in multi-dimensional space.
+
+Hamming Distance: Used for categorical data to measure dissimilarity, but not a standard for general distance calculations in k-NN.
+
+KNN: It is the algorithm itself, not the method of calculating distances.
+
+Hence, the correct choice is Euclidean Distance.
+
+3 - 3
+KNN prefers___________  but Euclidean distance is most common choice
+2 Marks
+Minkowski
+Euclidean
+Manhattan
+None of the above
+
+Correct Answer:
+Minkowski
+
+Explanation:
+Minkowski Distance: KNN prefers Minkowski distance because it is a generalized distance metric. By adjusting the parameter p, it can represent both Euclidean distance (p=2) and Manhattan distance (p=1).
+Euclidean Distance: While commonly used, it is a specific case of Minkowski Distance.
+Manhattan Distance: Another special case of Minkowski Distance used when p=1.
+Therefore, the correct answer is Minkowski, as it is the generalized form that encompasses other distance metrics like Euclidean and Manhattan.
+
+4 - 4
+Minkowski is used to calculate distance between two ______
+2 Marks
+x vectors
+matrix points
+makarov points
+All of the above
+
+Correct Answer:
+Vectors
+
+Explanation:
+Minkowski Distance is a mathematical formula used to calculate the distance between two points in a multi-dimensional space, which are represented as vectors.
+The formula involves summing the differences of corresponding elements (coordinates) raised to a power p, making it applicable to vectors.
+Other options like "matrix points" or "makarov points" are incorrect as they don't apply to this context. Hence, the correct answer is Vectors.
+
+
+5 - 5
+In Distance Metric, if the order p = 2 then it becomes:
+2 Marks
+Manhattan distance
+x Euclidean distance
+Minkowski distance
+None of the above
+
+Correct Answer:
+Euclidean distance
+
+Explanation:
+In the Minkowski distance formula, the parameter p determines the type of distance:
+If p=1, it becomes Manhattan distance.
+If p=2, it becomes Euclidean distance.
+If p takes other values, it remains as the generalized Minkowski distance.
+Thus, when p=2, Minkowski distance simplifies to Euclidean distance.
+
+6 - 6
+Value of K plays a major role in KNN which affects the performance_______
+2 Marks
+Directly
+parallelly
+Indirectly
+None of the above
+
+Correct Answer:
+Directly
+
+Explanation:
+The value of K in KNN directly affects the performance of the algorithm:
+Small K: Can lead to overfitting, as the model may become sensitive to noise in the data.
+Large K: Can lead to underfitting, as the model may oversimplify and ignore local patterns.
+Since the choice of K has an immediate and clear impact on the algorithm's accuracy and behavior, the correct answer is Directly.
+
+7 - 7
+If K=1, then it is known as
+2 Marks
+x 1-nearest neighbor classifier
+nearest neighbor classifier
+1st classifier
+None of the above
+
+Correct Answer:
+1-nearest neighbor classifier
+
+Explanation:
+When K=1 in the k-NN algorithm, the prediction for a new data point is based solely on the single closest neighbor.
+This specific case of k-NN is known as the 1-nearest neighbor classifier, as it considers only one nearest neighbor for classification or regression.
+Hence, the correct answer is 1-nearest neighbor classifier.
+
+8 - Which of the following is true about the k-NN algorithm?
+1) k-NN performs much better if all of the data have the same scale
+2) k-NN works well with a small number of input variables (p), but struggles when the number of inputs is very large
+3) k-NN makes no assumptions about the functional form of the problem is solved
+2 Marks
+1 and 2
+1 and 3
+only1
+x 1,2 and 3
+
+Correct Answer:
+1, 2, and 3
+
+Explanation:
+k-NN performs much better if all of the data have the same scale:
+
+True. k-NN relies on distance metrics like Euclidean or Manhattan distance, which are sensitive to the scale of the features. Normalizing or standardizing data improves performance.
+k-NN works well with a small number of input variables (p), but struggles when the number of inputs is very large:
+
+True. k-NN is susceptible to the "curse of dimensionality," where the sparsity of data in high-dimensional spaces reduces its effectiveness.
+k-NN makes no assumptions about the functional form of the problem is solved:
+
+True. k-NN is a non-parametric algorithm, meaning it does not assume any specific distribution or functional form of the data.
+Thus, all statements are correct, and the answer is 1, 2, and 3.
+
+
+
+9 - 9
+If k is too low the model is prone to?
+2 Marks
+x Overfitting
+Underfitting
+Oversampling
+Undersampling
+
+Correct Answer:
+Overfitting
+
+Explanation:
+When K is too low (e.g., K=1):
+The model focuses excessively on individual data points.
+It becomes sensitive to noise and anomalies in the training data.
+This leads to overfitting, where the model performs well on the training data but poorly on unseen data.
+Thus, the correct answer is Overfitting.
+
+
+10 - 10
+Identify the advantages of KNN
+2 Marks
+Simple and intuitive
+Easy to implement for multiclass data
+Model evolves and adapts to new training data
+x All of the above
+
+Correct Answer:
+All of the above
+
+Explanation:
+Simple and intuitive:
+
+True. KNN is straightforward to understand and implement, making it a beginner-friendly algorithm.
+Easy to implement for multiclass data:
+
+True. KNN can handle multiclass classification naturally by considering the majority vote among the K-nearest neighbors, regardless of the number of classes.
+Model evolves and adapts to new training data:
+
+True. Since KNN is instance-based (lazy learning), it doesn't train a fixed model. It directly uses the updated dataset for predictions, making it flexible and adaptive.
+Therefore, the correct answer is All of the above.
+
+
+
+

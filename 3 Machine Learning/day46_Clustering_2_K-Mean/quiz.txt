@@ -1,0 +1,191 @@
+
+Quiz
+
+1 - 1
+The elbow method looks at the total WSS as a function of the number of clusters.
+2 Marks
+x TRUE
+FALSE
+
+TRUE
+
+The elbow method analyzes the total WSS (Within-Cluster Sum of Squares) as a function of the number of clusters (K). The method involves plotting K against the total WSS to identify the "elbow point," where the decrease in WSS slows down significantly. This point suggests the optimal number of clusters, balancing compactness and simplicity.
+
+
+2 - 2
+K-means algorithm is an iterative algorithm that tries to partition the dataset into k predefined distinct non-overlapping clusters.
+2 Marks
+x TRUE
+FALSE
+TRUE
+
+The k-means algorithm is an iterative method that partitions a dataset into k predefined distinct, non-overlapping clusters. It assigns each data point to one of k clusters based on proximity to the nearest cluster centroid, and updates the centroids iteratively until the algorithm converges or meets a stopping criterion.
+
+
+3 - 3
+What does the K in K-means specifies?
+2 Marks
+Cosine distance
+Manhattan distance
+x Number of clusters
+All of the above
+
+Number of clusters
+
+The K in K-means specifies the number of clusters into which the dataset should be partitioned. The algorithm aims to group the data into K distinct clusters based on minimizing the within-cluster sum of squares (WSS).
+
+4 - 4
+Which of the following is required by k-means clustering?
+2 Marks
+no distance metric
+no number of clusters
+x Initial guess to cluster centroids
+None of the above
+
+Initial guess to cluster centroids
+
+The k-means clustering algorithm requires an initial guess for the cluster centroids, as it iteratively refines these centroids to minimize the Within-Cluster Sum of Squares (WSS). The initial centroids can influence the final clustering results, so methods like k-means++ are often used to improve centroid initialization.
+
+5 - 5
+How are centroids selected in each iteration?
+2 Marks
+Randomly
+x Sequentially
+Parallelly
+All of the above
+
+Sequentially
+
+In each iteration of the k-means algorithm, centroids are updated sequentially by calculating the mean of all data points assigned to each cluster. This ensures that the new centroid represents the center of the points in the cluster after reassignment. The initialization of centroids, however, can be random or based on techniques like k-means++.
+
+
+6 - 6
+It is easy to implement K-means and identify unknown groups of data from complex data sets.
+2 Marks
+x TRUE
+FALSE
+
+TRUE
+
+K-means is relatively easy to implement and widely used to identify unknown groups (clusters) in complex datasets. Its simplicity, efficiency, and straightforward approach make it a popular choice for clustering tasks. However, its performance can be influenced by factors like the choice of K, centroid initialization, and the data structure.
+
+
+7 - 7
+What is true about K-Means Clustering?
+2 Marks
+K-Means is extremely sensitive to cluster center initializations
+Bad initialization can lead to poor convergence speed
+Bad initialization can lead to bad overall clustering
+x All of the above
+
+All of the above
+
+All the statements are true about K-Means Clustering:
+
+K-Means is extremely sensitive to cluster center initializations:
+
+The choice of initial centroids significantly impacts the clustering results.
+Bad initialization can lead to poor convergence speed:
+
+If the initial centroids are poorly chosen, the algorithm may take longer to converge.
+Bad initialization can lead to bad overall clustering:
+
+Poorly initialized centroids can cause the algorithm to converge to suboptimal clusters, leading to poor results.
+This is why techniques like k-means++ are often used to improve centroid initialization.
+
+8 - 8
+Identify the pros of K-Means clustering-
+2 Marks
+It is easy to implement K-Means and identify unknown groups of data from complex data sets
+K-Means is suitable for many datasets, and it is computed much faster than the smaller dataset
+K-Means produces tighter clusters
+x All of the above
+
+All of the above
+
+All the statements are valid pros of K-Means clustering:
+
+Easy to implement and identify unknown groups:
+
+K-Means is simple to understand and apply, making it effective for discovering hidden patterns in complex datasets.
+Suitable for many datasets and computationally efficient:
+
+K-Means is computationally faster and scales well to large datasets compared to many other clustering algorithms.
+Produces tighter clusters:
+
+K-Means minimizes the within-cluster sum of squares (WSS), resulting in compact, well-separated clusters for data with spherical distributions.
+These advantages make K-Means a popular choice for many clustering applications.
+
+
+How K-Means Works with Different Dataset Sizes
+Small Datasets:
+
+Processing small datasets is naturally faster because there are fewer data points to cluster.
+However, for small datasets, the speed difference between K-Means and other algorithms (like hierarchical clustering) may not be very noticeable since the dataset size is already small.
+Large Datasets:
+
+K-Means is designed to be efficient, even for large datasets.
+Unlike some other clustering methods, K-Means doesn’t require heavy computations for all possible pairs of points (like hierarchical clustering does).
+This efficiency makes K-Means much faster when clustering large datasets compared to other, more complex algorithms.
+
+9 - 9
+Identify the cons of k-means clustering-
+2 Marks
+This algorithm is sensitive towards outliers.
+Outliers can skew the clusters in K-Means to a very large extent
+It requires one to specify the number of clusters priorly
+x All of the above
+
+All of the above
+
+All the statements are valid cons of K-Means clustering:
+
+Sensitive towards outliers:
+
+K-Means is heavily influenced by outliers because it minimizes the squared distances. Outliers can pull centroids away from the true cluster centers.
+Outliers can skew the clusters:
+
+Even a single outlier can significantly distort the results by affecting centroid positions and cluster boundaries.
+Requires specifying the number of clusters:
+
+You must predefine the number of clusters (K), which may not be intuitive or feasible in real-world scenarios without prior knowledge of the data.
+These limitations highlight when K-Means may not be the best choice and the importance of preprocessing data (e.g., removing outliers) or using alternative clustering methods when necessary.
+
+
+
+10 - 10
+What are some cases where k-means clustering fails to give a good result?
+2 Marks
+When the dataset contains outliers
+When the density spread of data points across the data space is different.
+When the data points follow a non-convex shape.
+x All of the above
+
+All of the above
+
+K-Means clustering can fail to give good results in the following cases:
+
+When the dataset contains outliers:
+
+Outliers can significantly skew the cluster centroids, leading to poor clustering results.
+When the density spread of data points across the data space is different:
+
+K-Means assumes equal variance and similar density for all clusters. If the density varies, the algorithm may incorrectly assign points to clusters.
+When the data points follow a non-convex shape:
+
+K-Means assumes clusters are convex and roughly spherical. It struggles with non-convex shapes (e.g., concentric circles or crescent-shaped clusters).
+These limitations suggest that K-Means may not be suitable for all datasets and that preprocessing or alternative clustering methods (e.g., DBSCAN, hierarchical clustering) may be necessary.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
