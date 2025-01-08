@@ -1,0 +1,67 @@
+Quiz
+
+1 - What are the file handling actions in python?
+2 Marks
+Opening and closing files.
+Writing and reading files.
+Renaming files.
+x All of the above
+
+
+2 - What does r+ represent in file access modes?
+2 Marks
+Opens a file for reading only.
+x Opens a file for reading and writing.
+opens a file for appending.
+Opens a file for both appending and reading.
+
+3 - Which statement will read 5 characters from a file "test.txt"
+2 Marks
+f = open("test.txt", 'r')
+x variable = f.read(5)
+print(variable)
+f = open("test.txt", 'r')
+variable = f.readline(5)
+print(variable)
+f = open("test.txt", 'r')
+variable = f.reads(5)
+print(variable)
+None of the above
+
+4 - A _____ is a template for objects, and it contains the code for all the object's methods.
+2 Marks
+x class
+function
+method
+scope
+
+5 - What is the output of the following code?
+a=50
+def number():
+    b=30
+    print(b)
+
+print(a)
+number()
+2 Marks
+x 50
+30
+
+30
+50
+
+30
+30
+
+50
+50
+
+6 -
+
+7 - 
+
+8 - 
+
+9 - 
+
+10 - 

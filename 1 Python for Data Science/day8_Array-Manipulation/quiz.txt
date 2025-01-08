@@ -1,0 +1,117 @@
+
+Module8: NumPy Array Manipulation
+
+Quiz
+
+1 - _________ helps us to create an array using an already created array.
+2 Marks
+Array Manipulation
+Array Indexing
+Array Operation
+x Array Slicing
+
+The correct answer is Array Slicing.
+
+Array slicing helps to create a new array using an already created array by extracting specific portions or sub-arrays from it.
+
+2 - Identify the array manipulation routines among the following:
+2 Marks
+Changing Array Shape.
+Joining Arrays.
+Spiltting Arrays.
+x All of the above
+
+The correct answer is All of the above.
+
+All the mentioned options—Changing Array Shape, Joining Arrays, and Splitting Arrays—are part of NumPy's array manipulation routines. These operations allow you to modify arrays in various ways.
+
+3 - __________  gives a new shape to an array without changing its data.
+2 Marks
+x reshape()
+ravel()
+transpose()
+None of the above
+
+The correct answer is reshape().
+
+The reshape() function in NumPy gives a new shape to an array without changing its data. It reorganizes the array into the desired shape while maintaining the original data.
+
+4 - What is the correct syntax of reshape()?
+2 Marks
+np.reshape(newshape)
+x np.reshape(a,newshape)
+np.reshapes(a,newshape)
+None of the above.
+
+The correct answer is np.reshape(a, newshape).
+
+The correct syntax for the reshape() function in NumPy is np.reshape(a, newshape), where a is the array you want to reshape and newshape is the desired shape.
+
+5 - Which of the following function is used to convert a two-dimensional array into an one-dimensional array?
+2 Marks
+x ravel()
+reshape()
+transpose()
+None of the above
+
+The correct answer is ravel().
+
+The ravel() function in NumPy is used to convert a multi-dimensional array (such as a two-dimensional array) into a one-dimensional array.
+
+
+6 - _________  joins a sequence of arrays along an existing axis.
+2 Marks
+x concatenate()
+joint()
+column_stack()
+None of the above.
+
+The correct answer is concatenate().
+
+The concatenate() function in NumPy joins a sequence of arrays along an existing axis.
+
+7 - Which of these are the functions for joining arrays?
+2 Marks
+hstack()
+vstack()
+stack()
+x All of the above
+
+The correct answer is All of the above.
+
+Functions like hstack(), vstack(), and stack() in NumPy are used for joining arrays. Each of these functions joins arrays in different ways:
+
+hstack() joins arrays horizontally (column-wise).
+vstack() joins arrays vertically (row-wise).
+stack() joins arrays along a new axis.
+
+
+
+8 - Which of these are the functions for splitting arrays?
+2 Marks
+split()
+hsplit()
+vsplit()
+All of the above.
+
+The correct answer is All of the above.
+
+Functions like split(), hsplit(), and vsplit() in NumPy are used for splitting arrays:
+
+split() splits an array into multiple sub-arrays along a specified axis.
+hsplit() splits an array horizontally (column-wise).
+vsplit() splits an array vertically (row-wise).
+
+9 - If there are two arrays, A and B, what is the syntax to horizontally stack A and B?
+2 Marks
+x np.hstack((A,B))
+np.hstack[A,B]
+np.hstack[(A,B)]
+np.hstack(A,B)
+
+The correct answer is np.hstack((A, B)).
+
+In NumPy, the correct syntax to horizontally stack arrays A and B is np.hstack((A, B)). The arrays need to be passed as a tuple within the parentheses.
+
+
+10 - 

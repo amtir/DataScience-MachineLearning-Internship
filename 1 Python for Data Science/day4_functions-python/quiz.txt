@@ -1,0 +1,124 @@
+
+Quiz
+
+1 - What is the keyword used to declare a function?
+2 Marks
+func
+function
+define
+x def
+
+2 - What is the output of the following?
+def printMax(a, b):
+    if a > b:
+        print(a, 'is maximum')
+    elif a == b:
+        print(a, 'is equal to', b)
+    else:
+        print(b, 'is maximum')
+printMax(3, 7)
+2 Marks
+3 is minimum
+SyntaxError
+x 7 is maximum
+False
+
+3 - Which of the following is true for functions in Python?
+2 Marks
+Functions are reusable pieces of programs.
+Functions provide better modularity for your application.
+You can also create your own functions.
+x All of the above
+
+4 - range() function generates a sequence of numbers in the form of a __________.
+2 Marks
+set
+tuple
+dictionary
+x list
+
+The correct answer is list.
+
+In Python 3, the range() function generates a sequence of numbers, and when you convert it to a list using list(range()), it returns a list. Although range() itself doesn't directly return a list, it produces an iterable that can be transformed into a list.
+
+Example:
+
+print(list(range(5)))  # Output: [0, 1, 2, 3, 4]
+
+5 - What is the output of the following?
+def fun1(num):
+    return 25%num
+fun1(3)
+2 Marks
+x 1
+2
+3
+4
+
+25 divided by 3 gives a quotient of 8 and a remainder of 1.
+
+5 - In Python, number of arguments in a function call should not match with the function definition.
+2 Marks
+TRUE
+x FALSE
+
+The correct answer is FALSE.
+
+In Python, the number of arguments in a function call must match the number of parameters defined in the function (unless you're using default arguments, *args, or **kwargs for flexible argument handling). If they don't match, Python will raise a TypeError.
+
+6 - What is the output of the following?
+def function1(var1=5, var2=7):
+    var2=9
+    var1=3
+    print (var1, " ", var2)
+function1(10,12)
+2 Marks
+5 7
+10 12
+Error
+x 3 9
+
+7 - What is the output of the following?
+def function1(var1=5, var2=7):
+    var2=9
+    var1=3
+    print (var1, " ", var2)
+function1(10,12)
+2 Marks
+5 7
+10 12
+Error
+x 3 9
+
+8 - What is the output of the following?
+(lambda x: (x + 3) * 5 / 2)(3)
+2 Marks
+15
+30
+NameError
+x 15
+
+9 - What is the output of the following?
+x = lambda a, b : a * b
+print(x(5, 6))
+2 Marks
+x
+SyntaxError
+x 30
+1 
+
+10 - What are the common functional programming methods that do not use lambdas?
+2 Marks
+map()
+reduce()
+filter()
+x lookup()
+
+The correct answer is lookup().
+
+In Python, the map(), reduce(), and filter() functions are common functional programming methods that can be used with or without lambdas. They take a function (which could be a named function or a lambda) and apply it to a sequence.
+
+map(): Applies a function to all items in an input list.
+reduce(): Applies a function cumulatively to the items of a sequence, reducing it to a single value (from functools).
+filter(): Filters items in a list based on a function that returns True or False.
+lookup() is not a common functional programming method in Python.

@@ -1,0 +1,179 @@
+Module 10: Pandas
+
+
+1 - 
+1
+_______ returns the first ‘n’ rows and ______ returns last the last ‘n’ rows.
+2 Marks
+x head(n) , tail(n)
+first(n), last(n)
+front(n), rear(n)
+All of the above.
+
+he correct answer is:
+
+head(n) , tail(n)
+
+Explanation:
+
+head(n) returns the first n rows of a DataFrame.
+tail(n) returns the last n rows of a DataFrame.
+So, the answer is: head(n) , tail(n).
+
+
+2  - ________ displays the smallest value of a column.
+2 Marks
+x min()
+index()
+mean()
+None of the above
+
+The correct answer is:
+
+min()
+
+Explanation:
+
+The min() function in Pandas returns the smallest value of a column (or row if used with axis=1).
+So, the answer is: min().
+
+
+3 - 3
+Rows can be selected using _________.
+2 Marks
+Row label
+Row Index
+x Either a or b.
+None of the above.
+
+The correct answer is:
+
+Either a or b.
+
+Explanation:
+
+Rows can be selected using the row label (using .loc[] in Pandas).
+Rows can also be selected using the row index (using .iloc[] in Pandas).
+So, the answer is: Either a or b.
+
+4 - 4
+________ function does not remove Columns/ Rows from original DataFrame, thus it must be saved into another DataFrame.
+2 Marks
+x drop()
+delete()
+clear()
+All of the above.
+
+The correct answer is:
+
+drop()
+
+Explanation:
+
+The drop() function in Pandas does not modify the original DataFrame by default. To permanently remove columns or rows, you must either assign the result to a new DataFrame or use the inplace=True argument.
+Thus, the answer is: drop().
+
+5 - 5
+What is the output of the following?
+import pandas as pd
+import numpy as np
+s=pd.Series(np.random.randn(4))
+print("Axes are:",s.axes)
+2 Marks
+axes are:[RangeIndex(start=0,stop=4,step=1)]
+The axes are:[RangeIndex(start=0,stop=4,step=1)]
+Axes are:[rangeindex(start=0,stop=4,step=1)]
+x Axes are: [RangeIndex(start=0, stop=4, step=1)]
+
+The correct answer is:
+
+Axes are: [RangeIndex(start=0, stop=4, step=1)]
+
+Explanation:
+
+The axes attribute of a Pandas Series returns a list containing the axis labels, which in this case is a RangeIndex object.
+The output will be formatted exactly as: Axes are: [RangeIndex(start=0, stop=4, step=1)].
+So, the correct option is: Axes are: [RangeIndex(start=0, stop=4, step=1)].
+
+6 - Which among the following helps to update a cell with a scalar value ?
+2 Marks
+Set_value()
+x set_value()
+set.value
+set_values()
+
+The correct answer is:
+
+set_value()
+
+Explanation:
+
+The set_value() function in Pandas is used to update a cell with a scalar value by specifying the row label and column label.
+So, the correct answer is: set_value().
+
+(Note: As of newer versions of Pandas, the set_value() method is deprecated, and it's recommended to use .at[] or .iat[] for setting scalar values.)
+
+7 - ________ allows improving the speed and accuracy of results in the data.
+2 Marks
+Filtering
+Sorting
+x Indexing
+None of the above
+
+The correct answer is:
+
+Indexing
+
+Explanation:
+
+Indexing allows for faster lookups and access to rows and columns, improving both the speed and accuracy of data retrieval and manipulation in a DataFrame.
+Thus, the correct answer is: Indexing.
+
+8 - 8
+Does the following two statements provide the same output?
+A.L1 * 2 #L1 is a list
+B.S1 * 2 #S1 is a list
+2 Marks
+Yes
+No
+
+
+
+9 - 9
+Which among the following function is used to update a cell's value in the DataFrame?
+2 Marks
+x update()
+modify()
+upgrade()
+All of the above
+
+he correct answer is:
+
+update()
+
+Explanation:
+
+The update() function in Pandas is used to update the values in a DataFrame with values from another DataFrame or dictionary. It can be used to modify specific values based on matching labels.
+Thus, the correct answer is: update().
+
+10 - Which among the following code snippet will be used in the following python program to filter out name of the student "Pranav" from the DataFrame?
+import pandas as pd
+dict = {"Student": ["Pranav", "Nameet","Nadeem", "Sahil"],"Marks": [85, 92, 78, 83]}
+df = pd.DataFrame(dict, index=['I', 'II', 'III', 'IV'])
+print(df)
+2 Marks
+x df[df['Student']=='Pranav']
+df[df['Pranav']=='Marks']
+df[df['Marks']=='Student']
+All of the above.
+
+The correct answer is:
+
+df[df['Student']=='Pranav']
+
+Explanation:
+
+To filter out the row where the student's name is "Pranav," you can use this code snippet: df[df['Student']=='Pranav']. This expression checks the "Student" column for the value "Pranav" and returns the matching row(s).
+Thus, the correct answer is: df[df['Student']=='Pranav'].
+
+

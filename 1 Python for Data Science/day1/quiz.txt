@@ -1,0 +1,116 @@
+
+
+
+1 - Which phase of the Data Science process deals with filtering and sorting data?
+2 Marks
+Data Acquisition and collection phase.
+x Data pre-processing phase.
+Exploratory Data Analysis phase.
+Statistical Analysis and Transformation phase.
+
+The correct phase of the Data Science process that deals with filtering and sorting data is the Data pre-processing phase.
+
+This phase involves cleaning, transforming, and preparing raw data by handling missing values, filtering, sorting, normalizing, and other necessary adjustments before analysis.
+
+
+2 - Which phase of Data Science process deals with missing value treatment?
+2 Marks
+Data Acquisition and collection phase.
+x Data pre-processing phase.
+Exploratory Data Analysis phase.
+Statistical Analysis and Transformation phase.
+
+The correct phase of the Data Science process that deals with missing value treatment is the Data pre-processing phase.
+
+This phase involves handling missing values, data cleaning, and other steps necessary to prepare the data for analysis.
+
+3 - Which phase of Data Science process deals with parameter optimization?
+2 Marks
+Data pre-processing phase.
+Exploratory Data Analysis phase.
+Statistical Analysis and Transformation phase.
+x Model Building, Validation and Selection phase.
+
+The correct phase of the Data Science process that deals with parameter optimization is the Model Building, Validation, and Selection phase.
+
+In this phase, machine learning models are trained, and parameters (hyperparameters) are optimized to improve the model's performance. This process involves techniques like cross-validation and grid search to select the best model configuration.
+
+4 - Which phase of Data Science process deals with graphs/charts to find patterns in data?
+2 Marks
+Data pre-processing phase.
+x Exploratory Data Analysis phase.
+Statistical Analysis and Transformation phase.
+Model Building, Validation and Selection.
+
+
+The correct phase of the Data Science process that deals with using graphs and charts to find patterns in data is the Exploratory Data Analysis (EDA) phase.
+
+In this phase, visualizations like graphs, charts, and plots are used to explore and uncover patterns, trends, and relationships in the data before proceeding to modeling or deeper statistical analysis.
+
+5 - Which phase of Data Science process deals with feature engineering?
+2 Marks
+Data pre-processing phase.
+Exploratory Data Analysis phase.
+x Statistical Analysis and Transformation phase.
+Model Building, Validation and Selection.
+
+
+The correct phase of the Data Science process that deals with feature engineering is the Statistical Analysis and Transformation phase.
+
+Feature engineering involves creating new features or modifying existing ones to improve model performance, which typically happens during the statistical analysis and transformation process to prepare data for model building.
+
+
+6 - Which of the following is not a keyword?
+2 Marks
+TRUE
+and
+for
+x to
+
+7 - What is the output of the following?
+num = 4
+Num = "Four"
+print(Num, num)
+2 Marks
+x Four 4
+Four, 4
+x Four 4
+Four, 4
+
+8 - What is the output of the following?
+keyword = 'aeioubcdfgh
+print(keyword [:3] + keyword [3:])
+2 Marks
+x aeioubcdfgh
+IndexError
+aeiobcdfgh
+aeiubcdfgh
+
+Because keyword[:3] would return 'aei' and keyword[3:] would return 'oubcdfgh', and concatenating them would simply result in the original string.
+
+9 - What is the output of the following?
+print("Veranda" + 100)
+2 Marks
+Veranda 100
+Veranda + 100
+x TypeError
+SyntaxError
+
+The correct answer is TypeError.
+
+In Python, you cannot directly concatenate a string ("Veranda") with an integer (100) using the + operator. This will result in a TypeError because Python does not know how to add a string and an integer together without explicitly converting the integer to a string first.
+
+10 - Which of the following is not true about Python?
+2 Marks
+Python is case-sensitive.
+x Python has a command terminator.
+Python supports multiline statements.
+You cannot use spaces in between the variable name.
+
+The correct answer is: Python has a command terminator.
+
+In Python, there is no need for a command terminator like a semicolon (;) at the end of each statement, unlike some other programming languages. Statements are typically terminated by a newline. However, semicolons can be used optionally to separate multiple statements on a single line, but they are not mandatory.
+
+
+
+

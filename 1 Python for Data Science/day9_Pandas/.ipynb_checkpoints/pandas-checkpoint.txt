@@ -1,0 +1,124 @@
+
+
+Pandas (PANel DAta)
+
+Data-Structure   
+Series (1-D labeled array)  name = ""
+DataFrame (2D labeled structure of rows & columns)  columns=[]
+import / export 
+functions
+
+QUIZ
+
+1 - quiz time: _________ is the process of performing various operation on data.
+2 Marks
+Data Manipulation
+Data Preparation
+Data Cleaning
+Data Transformation 
+
+The correct answer is: Data Manipulation.
+
+Data manipulation refers to the process of performing various operations on data, such as sorting, filtering, or aggregating to make it more useful for analysis.
+
+2 - ________ is an open-source library which provides high performance data structures to perform manipulation and analysis in Python.
+2 Marks
+NumPy
+Matplotlib
+TensorFlow
+x Pandas
+
+The correct answer is: Pandas.
+
+Pandas is an open-source library in Python that provides high-performance data structures like DataFrames and Series to perform data manipulation and analysis.
+
+3 - Which command is used to install Pandas on Python shell?
+2 Marks
+x pip install pandas
+install pandas
+PIP install panda
+None of the above
+
+4 - Which of the following is a functionality in Pandas?
+2 Marks
+Easy handling of null values.
+Ability to handle different types of data using data structures.
+Time-series specific functionality.
+x All of the above
+
+The correct answer is: All of the above.
+
+Pandas provides all these functionalities:
+
+Easy handling of null values with methods like fillna(), dropna(), etc.
+Ability to handle different types of data (e.g., integers, floats, strings) in its data structures like Series and DataFrames.
+Time-series specific functionality, such as resampling and date range generation.
+
+
+
+5 - ________ removes  inconsistencies from data.
+2 Marks
+x Data Cleaning
+Data Transformation
+Data Preparation
+All of the Above
+
+The correct answer is: Data Cleaning.
+
+Data cleaning is the process of removing inconsistencies, correcting errors, and ensuring that the data is accurate and usable for analysis.
+
+6 - What are the different data structures used in Pandas?
+2 Marks
+Series.
+DataFrame.
+Either 1 or 2.
+x Both 1 and 2.
+
+The correct answer is: Both 1 and 2.
+
+Pandas provides two primary data structures:
+
+Series: A one-dimensional labeled array.
+DataFrame: A two-dimensional, tabular data structure.
+
+7 - Which among the following codes is used to create a pandas series?
+2 Marks
+x import pandas as pd
+r = [1, 2]
+ser = pd.Series(r)
+ser
+
+S =pandas.Series ()
+ser = pd.Series(n)
+ser
+
+import pandas as pd        
+s =pd.series (data , index=index)
+
+8 - _____________  is a two-dimensional labelled  data structure.
+2 Marks
+x DataFrame
+Sets
+Series
+None of the above
+
+9 - Which among the following is the correct syntax of creating a list in a pandas DataFrame?
+2 Marks
+x listx = [ x , y , z ]
+pandas.DataFrame (listx)
+
+listx = [ x , y , z ]
+pandas.dataFrame (listx)
+
+listx = [ x , y , z ]
+Pandas.DataFrame(listx)
+
+Listx = [ x , y , z ]
+pandas.DataFrame (listx)
+
+10 - What is the correct syntax for creating series from scalar value?
+2 Marks
+series = Pandas.Series(1. , index =[ ‘ a ’ ,  ‘ b ’ , ‘ c ’ ] )
+Series = pandas.Series(1. , index =[ ‘ a ’ ,  ‘ b ’ , ‘ c ’ ] )
+x series = pandas.Series(1. , index =[ ‘ a ’ ,  ‘ b ’ , ‘ c ’ ] )
+None of the above

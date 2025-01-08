@@ -1,0 +1,113 @@
+
+Quiz
+
+1- Identify the universal functions:
+2 Marks
+sin()
+isinfinite()
+bitwise_and()
+x All of the above.
+
+The correct answer is:
+
+All of the above
+
+Explanation:
+In NumPy, universal functions (ufuncs) are functions that operate element-wise on arrays, supporting broadcasting, type casting, and several other standard features. All of the mentioned functions are ufuncs:
+
+sin(): A trigonometric universal function that computes the sine element-wise on an array.
+
+isinfinite(): A universal function that checks whether each element is infinite in an array.
+
+bitwise_and(): A universal function that performs a bitwise AND operation element-wise on arrays.
+
+Since all three are universal functions, the correct answer is "All of the above."
+
+2-What is the output of the following code?
+base = 3
+height = 4
+hypotenuse = np.hypot(base,height)
+print(hypotenuse)
+2 Marks
+x 5.0
+5
+2
+1
+
+
+
+3- What is the output of the following?
+a = np.array([1,2,3,4,5])
+print(a.sum())
+2 Marks
+12
+13
+14
+x 15
+
+The correct output of the given code is:
+
+15
+
+Explanation:
+The code creates a NumPy array a with elements [1, 2, 3, 4, 5].
+The a.sum() function computes the sum of all elements in the array:
+1
++
+2
++
+3
++
+4
++
+5
+=
+15
+1+2+3+4+5=15
+So, the correct output is 15.
+
+4- Which of the following functions calculate the sum of the elements of a NumPy array?
+2 Marks
+count()
+return()
+shape()
+x sum()
+
+5- Which of the following finds the maximum number in a NumPy array?
+2 Marks
+max(array)
+x array.max()
+array(max)
+None of the above.
+
+6- Given this list: my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]. Which element will be printed with the following command: print(my_list[-1])?
+2 Marks
+0
+1
+x 9
+8
+
+7- print(my_list[2:9]) gives:
+2 Marks
+[2, 3, 4, 5, 6, 7, 8, 9]
+[1, 2, 3, 4, 5, 6, 7, 8]
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+[2, 3, 4, 5, 6, 7, 8]
+
+8- print(my_list[:-2]) gives:
+2 Marks
+[0,1,2,3,4,5,6]
+x [0,1,2,3,4,5,6,7]
+[0,1,2,3,4,5,6,7,8]
+[8,9]
+
+
+
+9-Extracting  a specific portion or a subset of an array  to generate a new array is called:
+2 Marks
+x Slicing.
+Indexing.
+Iteration.
+All of the above
+
+10-

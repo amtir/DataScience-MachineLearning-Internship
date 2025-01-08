@@ -1,0 +1,60 @@
+# QUIZ 
+
+1. What will be the output of the following code?
+import numpy as np
+a = np.array([1, 2, 3,4,5], ndmin = 2)
+print(a)
+2 Marks
+[1 2 3 4 5]
+x [[1 2 3 4 5]]
+Null
+Error
+
+The correct output of the given code is:
+
+[[1 2 3 4 5]]
+
+Explanation:
+
+ndmin=2 specifies that the array should have at least two dimensions.
+Therefore, the array is created as a 2D array with one row and five columns, which is why it prints with an extra pair of brackets indicating it's a 2D array.
+
+2. What is the correct code to install NumPy in the Linux system containing python3?
+2 Marks
+x pip numpy install python3
+pip3 install numpy
+x pip install numpy
+python3 pip3 numpy install
+
+The correct code to install NumPy in a Linux system containing Python 3 is:
+
+pip3 install numpy
+
+Explanation:
+
+pip3 is used to install Python packages for Python 3 specifically.
+
+3. 
+
+
+4. 
+
+
+5. 
+
+
+6. 
+
+
+7. 
+
+
+8. 
+
+
+9. 
+
+
+10. 
+
+

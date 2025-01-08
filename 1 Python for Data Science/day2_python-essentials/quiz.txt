@@ -1,0 +1,107 @@
+
+
+1 - What is the output of the following?
+a = 4
+b = 11
+print(a | b)
+print(a >> 2)
+
+
+2 - Which of the following is correct syntactically?
+2 Marks
+Var$ = 10
+$Var = 10
+for = 10
+x true = 10
+
+
+
+3 - What is the output of the following?
+  a = 10
+  b = 20
+  print(a>b)
+2 Marks
+10 > 20
+TypeError
+SyntaxError
+x FALSE
+
+4 - What is the output of the following?
+  a = 10
+  b = 20
+  print(a,b)
+  a = a*b
+  b = b^a
+  print(a,b)
+
+
+
+
+5 - What is the output of the following?
+  a, b, c = input().split()
+  print(a,c)
+  print(b)
+
+You entered: 21 22 23
+
+21 23 22
+
+x21 23
+22
+
+SyntaxError
+
+21, 23
+22
+
+6 - Which of the following is not an example of string?
+2 Marks
+edureka
+x 10
+'10'
+Data Science
+
+
+
+7 - input() function considers all values as ______ unless specified.
+2 Marks
+integer
+x string
+float
+Boolean
+
+The correct answer is string.
+
+The input() function in Python takes all input from the user as a string, regardless of what the user types, unless the input is explicitly converted to another data type (e.g., using int(), float(), etc.).
+
+
+8 - What is the output of the following?
+list=[1, 2, 'Three', 4, 'five']
+print(list)
+2 Marks
+1 2 Three 4 five
+x [1, 2, 'Three', 4, 'five']
+Error
+1 2 Three 4 five
+
+9 - What is the output of the following?
+a=[1, 6, 2, 3, 7, 4, 5]
+a.sort()
+print(a)
+2 Marks
+x [1, 2, 3, 4, 5, 6, 7]
+[1, 6, 2, 3, 7, 4, 5]
+[7, 6, 5, 4, 3, 2, 1]
+Error
+
+10 - What is the output of the following?
+list=[1, 2, 3]
+tuple = (1, 2, 3)
+print(list, tuple)
+2 Marks
+[1, 2, 3]
+[1, 2, 3] (1 2 3)
+[1, 2, 3] (1, 2, 3)
+1 2 3 1 2 3
+
+

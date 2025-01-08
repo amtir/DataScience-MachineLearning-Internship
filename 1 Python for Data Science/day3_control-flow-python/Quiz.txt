@@ -1,0 +1,118 @@
+Quiz
+
+1 - The order of execution of the statements in a program is known as ______.
+2 Marks
+x Flow of control.
+Central flow.
+Selection.
+Iteration.
+
+The correct answer is Flow of control.
+
+The flow of control refers to the order in which individual statements, instructions, or function calls are executed or evaluated in a programming language.
+
+2 - In programming, the concept of decision making or selection is implemented with the help of ___________ statement.
+2 Marks
+While
+For
+x If-else
+None of the above
+
+The correct answer is If-else.
+
+In programming, decision-making or selection is implemented using the if-else statement, which allows the program to choose between different actions based on conditions.
+
+3 - Number of elif in a program is dependent on the ___________.
+2 Marks
+x number of conditions to be checked
+number of variables in a program
+number of loops in a program
+None of the above
+
+The correct answer is number of conditions to be checked.
+
+The elif statements are used when there are multiple conditions to be checked, and the number of elif statements in a program depends on how many conditions you want to evaluate.
+
+
+4 - An ‘if’ condition inside another ‘if’ is called ___
+2 Marks
+Second if
+x Nested if
+Another If
+All of the above
+
+
+5 - Proper indentation must be followed in Python.
+2 Marks
+x TRUE.
+FALSE.
+
+
+6 - In Python, for loop is:
+2 Marks
+x Entry control loop
+Exit control loop
+Simple loop
+None of the above
+
+
+7 - What are the two different types of loop in Python?
+2 Marks
+Counting loop
+Event-controlled loop
+x Both option 1 and 2.
+None of the above
+
+The correct answer is Both option 1 and 2.
+
+In Python, there are two different types of loops:
+
+Counting loop: This loop runs a specific number of times, often controlled by a counter. For example, the for loop is typically used for counting iterations.
+
+Event-controlled loop: This loop runs until a certain condition or event occurs, such as a while loop that continues until a condition becomes false.
+
+So, both counting and event-controlled loops are types of loops in Python.
+
+
+
+8 - The ____ statement terminates the execution of the whole loop.
+if True:
+    print(2020)
+else:
+    print(2022)
+2 Marks
+continue
+exit
+else
+x break
+
+The correct answer is break.
+
+The break statement is used to terminate the execution of the whole loop immediately, regardless of the loop's condition.
+
+9 - What will be the final value of i after the below code executes?
+for i in range(3):
+     pass
+2 Marks
+3
+1,2,3
+x 2
+None of the above
+
+The correct answer is 2.
+
+In the given code, for i in range(3) will iterate over the values 0, 1, and 2. After the loop finishes, the final value of i will be the last value assigned, which is 2.
+
+The pass statement means that nothing is done during the loop, but the value of i will still be updated on each iteration.
+
+
+
+10 - Which of the following is considered an infinite loop?
+if (1, 2):
+    print('foo')
+2 Marks
+x while(1)
+while(infinite)
+for(1)
+None of the above
+
