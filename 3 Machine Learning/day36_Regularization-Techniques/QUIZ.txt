@@ -1,0 +1,175 @@
+
+QUIZ
+
+1 - Which of this programming languages is not commonly used for AI?
+2 Marks
+x Perl
+Java
+Python
+None of the above
+
+
+
+
+2
+_______ fits the linear relationship between response variable (y) and Independent variable (x)
+2 Marks
+x Linear Regression
+Logistic Regression
+Linear Model
+None of the above
+
+Correct Answer:
+Linear Regression
+
+Explanation:
+Linear Regression explicitly models the linear relationship between a dependent variable 
+y (response variable) and one or more independent variables x.
+Logistic Regression is used for classification tasks and models the probability of categorical outcomes, not direct linear relationships.
+Linear Model is a generic term and not the specific technique used to fit the data.
+None of the above is incorrect because Linear Regression indeed fits the linear relationship.
+
+
+3
+Which of the following methods do we use to find the best fit line for data in Linear Regression?
+2 Marks
+Logarithmic Loss
+x Least Squared Error
+Maximum Likelihood
+None of the above
+
+Correct Answer:
+Least Squared Error
+
+Explanation:
+Least Squared Error (LSE) is the method used in Linear Regression to minimize the sum of the squared differences between the observed values and the predicted values (residuals). This determines the best fit line.
+Logarithmic Loss is used in classification problems, not regression.
+Maximum Likelihood is a statistical method often used in Logistic Regression and other probabilistic models, not Linear Regression.
+None of the above is incorrect as Least Squared Error is the correct method.
+
+
+
+4 Which of these is the correct equation for simple linear regression
+2 Marks
+x y=mx+c
+y=mc+x
+y=mx-c
+y=mx.c
+
+Correct Answer:
+y = mx + c
+
+Explanation:
+y = mx + c represents the equation for a straight line, where 
+m is the slope, and 
+c is the y-intercept. This is the foundation of simple linear regression.
+The other options do not correctly represent the form of the linear equation.
+
+
+5
+Identify the assumptions of Linear Regression:
+2 Marks
+Response variable (Y) should be linear combination of Independent variable (X)
+Model has zero mean for the error and is distributed normally
+Variance of the residuals is the same for any given value of X
+x All of the above
+
+Correct Answer:
+All of the above
+
+Explanation:
+Linear relationship: Linear Regression assumes a linear relationship between X and Y.
+Zero mean error: The residuals (errors) should have a mean of zero and follow a normal distribution.
+Homoscedasticity: Variance of residuals should remain constant for all values of X.
+Thus, all of the above are core assumptions of Linear Regression.
+
+
+6
+Linear Regression is a system mastering algorithm based totally on _____.
+2 Marks
+Unsupervised Learning
+Reinforcement Learning
+x Supervised Learning
+None of these
+
+
+Correct Answer:
+Supervised Learning
+
+Explanation:
+Linear Regression is a Supervised Learning algorithm because it involves learning a mapping from input features (independent variables) to the output (dependent variable) using labeled data.
+Unsupervised Learning does not use labeled data and is typically used for clustering or dimensionality reduction.
+Reinforcement Learning is about learning through rewards and punishments in dynamic environments, not applicable to regression tasks.
+None of these is incorrect as Linear Regression clearly falls under Supervised Learning.
+
+
+7
+In Equation of Linear Regression Y = β1 + β2X + ϵ, (β1, β2) refers to __________
+2 Marks
+(X-intercept, Slope)
+(Slope, X-Intercept)
+x (Y-Intercept, Slope)
+(slope, Y-Intercept)
+
+
+Correct Answer:
+(Y-Intercept, Slope)
+
+Explanation:
+In the equation 
+𝑌=𝛽1+𝛽2𝑋+𝜖
+
+𝛽1 : Represents the Y-intercept, where the line crosses the Y-axis.
+𝛽2 : Represents the slope of the line, indicating the rate of change of 
+𝑌 with respect to X.
+Other options are incorrect as they either reverse the definitions or incorrectly name the terms.
+
+
+
+8
+The Linear regression model corresponds to the _______
+2 Marks
+x Continuos Variables
+Non-Continuos Values
+Slope
+Continuos Slope
+
+Correct Answer:
+Continuous Variables
+
+Explanation:
+Linear Regression is used to model relationships between continuous dependent variables and one or more independent variables.
+It predicts a continuous outcome, such as house prices, temperature, or sales.
+Options like Non-Continuous Values and Slope do not correctly describe the target output of a Linear Regression model.
+Continuous Slope is incorrect, as the slope is a characteristic of the relationship, not the outcome variable itself.
+
+
+9
+Which of the following methods is used to find the best fit line for data in Linear Regression ?
+2 Marks
+Logarithmic Loss
+Maximum Likelihood
+Both A and B
+x Least Square Error
+
+
+Correct Answer:
+Least Square Error
+
+Explanation:
+Least Square Error is the method used in Linear Regression to minimize the sum of the squared differences between the observed values and the predicted values (residuals).
+Logarithmic Loss is used for classification problems like Logistic Regression.
+Maximum Likelihood is a statistical method for parameter estimation in probabilistic models, not specifically for finding the best fit line in Linear Regression.
+Both A and B is incorrect because neither is relevant to Linear Regression in this context.
+
+
+10
+Considering the following equation : z = b0+b₁ x  ,  the variable z is
+2 Marks
+Independent Variable
+x Dependent Variable
+Intercept
+None of these
+
+
+

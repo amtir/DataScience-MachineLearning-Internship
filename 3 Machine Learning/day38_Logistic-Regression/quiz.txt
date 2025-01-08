@@ -1,0 +1,136 @@
+
+QUIZ
+
+1 - 1
+In logistic regression we need to standardize features before training
+2 Marks
+TRUE
+FALSE
+
+TRUE
+
+Standardizing features in logistic regression is often recommended, especially when features have different scales. While it's not strictly required for logistic regression itself to work, standardization helps improve the model's performance and convergence during optimization, particularly when using gradient descent. It ensures all features contribute equally to the model.
+
+
+2 - 2
+Which of the following best fits the data in Logistic Regression
+2 Marks
+Least Square Error
+x Maximum Likelihood
+Jaccard distance
+None of the above
+
+Maximum Likelihood
+
+In logistic regression, the best fit is determined by Maximum Likelihood Estimation (MLE), which aims to find the parameter values that maximize the likelihood of the observed data.
+
+3 - 3
+The cost function is the technique of evaluating the performance of algorithm/model
+2 Marks
+x TRUE
+FALSE
+
+TRUE
+
+The cost function is indeed a technique used to evaluate the performance of a model or algorithm. In the context of logistic regression, it measures the error or difference between the predicted values and the actual values, guiding the optimization process.
+
+4 - 4
+How can we predict a dog is obese based on his weight
+2 Marks
+Linear Regression
+Multiple Linear Regression
+x Logistic Regression
+None of the above
+
+Logistic Regression
+
+Logistic regression is used for binary classification problems, such as predicting whether a dog is obese (Yes/No) based on its weight. It predicts probabilities and classifies data into categories, making it suitable for this problem.
+
+5 - 5
+Logistic function is also known as________
+2 Marks
+Cost function
+Tanh function
+Linear function
+x Sigmoid function
+
+Sigmoid function
+
+The logistic function is also known as the Sigmoid function. It maps any real-valued number into a range between 0 and 1, which is crucial for probability estimation in logistic regression.
+
+Probability Density Function (PDF)
+Fonction de Densité de Probabilité (FDP)
+This term is used in statistics and probability to describe functions that represent the likelihood of a random variable taking on a particular value.
+
+
+6 - 6
+What is the inverse function of the logit, used to convert its output into a probability?
+2 Marks
+Linear function
+x Sigmoid function
+Hyperbolic tangent
+Softmax function
+
+Sigmoid function
+
+The inverse of the logit function is the Sigmoid function, which is used to convert the logit output into a probability value ranging between 0 and 1.
+
+7 - 7
+What does a cost function measure in fitting model parameters?
+2 Marks
+Variability of predictions
+Accuracy on new data
+x Difference between predictions and actual data
+Neural network layers
+
+Difference between predictions and actual data
+
+The cost function measures the error or difference between the model's predictions and the actual data. It quantifies how well the model's parameters fit the data and guides the optimization process to minimize this difference.
+
+
+
+8 - 8
+Why is r2 unsuitable as a cost function for parameter fitting?
+2 Marks
+Leads to overfitting
+Measures correlation, not difference
+X Positive and negative distances cancel out
+Too expensive to calculate
+
+Measures correlation, not difference
+
+R² (coefficient of determination) is unsuitable as a cost function for parameter fitting because it measures the proportion of variance explained by the model, rather than the actual difference between predictions and actual data. It is a goodness-of-fit measure, not a direct error metric.
+
+
+9 - 9
+What is the purpose of the activation function in a machine learning model?
+2 Marks
+To combine sample data and weights for input computation
+x To transform net input into a probability using a sigmoid function
+To measure the model's estimation ability between variables
+To calculate the derivative of the cost function for updates
+
+
+To transform net input into a probability using a sigmoid function
+
+The purpose of the activation function in a machine learning model is to transform the net input of a neuron into an output, often a probability (e.g., using the sigmoid function). It introduces non-linearity to the model, enabling it to learn complex patterns in the data.
+
+
+
+10 - 10
+What role does the update function play in optimizing a machine learning model?
+2 Marks
+It combines samples and weights to compute the net input
+It activates neurons using a sigmoid function
+It measures the fit between independent and dependent variables
+x It adjusts weights based on the derivative of the cost function
+
+It adjusts weights based on the derivative of the cost function
+
+The update function's role is to optimize a machine learning model by adjusting the weights. This adjustment is typically based on the derivative of the cost function (gradient), guiding the model towards minimizing the error. This process is central to optimization algorithms like gradient descent.
+
+
+
+
+
+

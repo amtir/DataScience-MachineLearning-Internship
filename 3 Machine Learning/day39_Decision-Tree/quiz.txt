@@ -1,0 +1,142 @@
+
+QUIZ
+
+1 - 1
+______ uses ensemble learning method in which the predictions are based on the average results of various individual methods
+2 Marks
+Decision Tree
+Random Forest
+Nae Bayes
+None of the above
+
+
+The correct answer is:
+
+Random Forest
+
+Random Forest uses ensemble learning by combining the predictions of multiple decision trees and averaging their results for classification or regression tasks.
+
+2 - 2
+Bootstrapping the data and using its aggregate to make a decision is known as?
+2 Marks
+Bagging
+Boosting
+Pruning
+Splitting
+
+The correct answer is:
+
+Bagging
+
+Bagging (Bootstrap Aggregating) involves bootstrapping the data (sampling with replacement) and using aggregated predictions (e.g., majority vote for classification or averaging for regression) from multiple models to make a decision.
+
+3 - 3
+Training a bunch of individual models sequentially is called _____
+2 Marks
+Bagging
+Boosting
+Spliting
+Pruning
+
+The correct answer is:
+
+Boosting
+
+Boosting trains a series of models sequentially, where each subsequent model focuses on correcting the errors of the previous one to improve overall performance.
+
+4 - 4
+In bagging, models are trained in
+2 Marks
+parallel manner
+sequential manner
+non-ordered manner
+None of the above
+
+The correct answer is:
+
+parallel manner
+
+In bagging, models are trained independently in parallel, and their predictions are aggregated (e.g., by averaging or voting) to produce the final output.
+
+5 - 5
+In boosting, models are trained in
+2 Marks
+parallel manner
+sequential manner
+non-ordered manner
+None of the above
+
+The correct answer is:
+
+sequential manner
+
+In boosting, models are trained sequentially, where each model attempts to correct the errors made by the previous models.
+
+6 - 6
+__________is used to measure how often a random chosen element would be incorrectly identified
+2 Marks
+Information Gain
+Gini Index
+Entropy
+None of these
+
+Gini Index
+
+The Gini Index measures the probability of a randomly chosen element being incorrectly classified if it were randomly labeled based on the distribution of class labels. It is often used in decision tree algorithms like CART.
+
+7 - 7
+Decision tree consists of :
+2 Marks
+Root Nodes
+Internal Nodes
+Leaf Nodes
+x All of the above
+
+8 - 8
+Decision tree is also known as CART. What is CART?
+2 Marks
+x Classification and Regression Trees
+Customer Analysis and Research tool
+Communication Access Real-time Translation
+Computerized Automatic Rating Technique
+
+9 - What are the advantages of CART algorithm?
+2 Marks
+Decision trees implicitly perform variable screening or feature selection
+Can handle both numerical and categorical data
+Can handle multi-output problems.
+x All of the above
+
+
+The correct answer is:
+
+All of the above
+
+The CART (Classification and Regression Trees) algorithm has the following advantages:
+
+Implicit feature selection: Decision trees automatically select the most relevant features by splitting based on information gain or Gini index.
+Handles numerical and categorical data: CART can process both types of data seamlessly.
+Supports multi-output problems: CART can be used for tasks with multiple outputs, such as multi-label classification.
+
+10 - 10
+What's the maximum depth in a decision tree?
+2 Marks
+x The length of the longest path from a root to a leaf
+The length of the shortest path from a root to a leaf
+The length of the longest path from a root to a sub-node
+None of these
+
+
+The correct answer is:
+
+The length of the longest path from a root to a leaf
+
+The maximum depth of a decision tree is defined as the longest path from the root node to any leaf node in the tree. It determines how many splits the data undergoes at most.
+
+
+
+
+
+
+
+

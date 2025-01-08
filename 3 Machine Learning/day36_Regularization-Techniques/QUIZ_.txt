@@ -1,0 +1,186 @@
+
+QUIZ
+
+1
+________ is a technique by which we add a penalty term (λ) to control the complex model, to avoid the risk of over-fitting
+2 Marks
+x Regularization
+Normalization
+Scaling
+All of the above
+
+
+Correct Answer:
+Regularization
+
+Explanation:
+Regularization is a technique used to prevent overfitting by adding a penalty term (like 
+𝜆
+λ) to the loss function. This discourages overly complex models by penalizing large coefficients. Examples include L1 (Lasso) and L2 (Ridge) regularization.
+Normalization and Scaling are preprocessing techniques to standardize data but do not directly address model complexity or overfitting.
+All of the above is incorrect because only Regularization is directly relevant.
+
+
+2
+Which of these is true about Ridge Regression?
+2 Marks
+It is a technique used to analyze multi-linear regression
+it is also known as L2 regularization
+Applied when predicted values are greater than observed values
+x All of the above
+
+
+Correct Answer:
+It is a technique used to analyze multi-linear regression
+It is also known as L2 regularization
+
+Explanation:
+Ridge Regression is used to analyze and address multi-collinearity in multiple linear regression models. It adds an 
+L2 penalty (the square of the magnitude of coefficients) to the loss function, helping to shrink coefficients and reduce overfitting.
+Ridge Regression is also known as L2 regularization.
+The statement applied when predicted values are greater than observed values is incorrect, as Ridge Regression does not specifically target this situation.
+All of the above is not correct due to the above clarification.
+Correct Answer:
+Both the first and second options are true about Ridge Regression.
+
+
+
+3
+Which of the following does not have a closed form solution for its coefficients?
+2 Marks
+Ridge regression
+x Lasso regression
+Both Ridge and Lasso
+None of the above
+
+Correct Answer:
+Lasso Regression
+
+Explanation:
+Ridge Regression has a closed-form solution for its coefficients, which can be calculated using matrix algebra with the regularization term included.
+Lasso Regression does not have a closed-form solution because it uses the 
+L1-norm penalty, which introduces non-differentiability at zero. As a result, iterative optimization techniques such as coordinate descent or gradient descent are required to solve it.
+Both Ridge and Lasso is incorrect because Ridge Regression has a closed-form solution.
+None of the above is incorrect because Lasso Regression lacks a closed-form solution.
+
+
+
+4
+When do we use Ridge Regression?
+2 Marks
+When there is no outlier
+When we have a lot of outliers
+When our data doesn’t have multicollinearilty
+x When our data have multicollinearity
+
+Correct Answer:
+When our data have multicollinearity
+
+Explanation:
+Ridge Regression is specifically used to handle datasets with multicollinearity, where independent variables are highly correlated. This causes ordinary least squares (OLS) regression to produce unstable and overfitted models. Ridge Regression stabilizes the coefficients by adding an 
+L2-norm penalty term.
+It is not directly related to outliers, as Ridge Regression does not perform well when significant outliers are present (Lasso is better suited for handling outliers due to its 
+L1-norm penalty).
+It is unnecessary if the data does not have multicollinearity, as OLS would perform sufficiently well in that case.
+
+
+5
+______ is a technique that linearly combines ridge regression (L2) and lasso regression (L1) 
+2 Marks
+Lasso Regression
+Ridge Regression
+x Elastic-Net Regression
+None of the above
+
+Correct Answer:
+Elastic-Net Regression
+
+Explanation:
+Elastic-Net Regression is a regularization technique that linearly combines the penalties of L1 (Lasso) and L2 (Ridge) regularization. It is particularly useful when there are multiple features correlated with each other.
+Lasso Regression only uses L1 regularization, and Ridge Regression only uses L2 regularization, so they are not correct here.
+None of the above is incorrect because Elastic-Net is the correct technique.
+
+
+6
+Lasso Regression is also known as
+2 Marks
+L2 Regularization
+x L1 Regularization
+Elastic-Net Regression
+None of the above
+
+Correct Answer:
+L1 Regularization
+
+Explanation:
+Lasso Regression stands for Least Absolute Shrinkage and Selection Operator, and it uses the 
+L1-norm penalty. This penalty encourages sparsity by shrinking some coefficients to exactly zero, effectively selecting a subset of features.
+L2 Regularization is used in Ridge Regression, not Lasso.
+Elastic-Net Regression is a combination of L1 and L2 regularization, not purely Lasso.
+None of the above is incorrect because Lasso is correctly associated with L1 Regularization.
+
+7 When do we use Lasso Regression?
+2 Marks
+When the model is overfitted
+When the model is underfitted
+When we have a lot of outliers
+When there is no outlier
+
+Correct Answer:
+When the model is overfitted
+
+Explanation:
+Lasso Regression applies 
+L1-regularization, which can reduce model complexity by shrinking some coefficients to zero. This helps in feature selection and addresses overfitting by penalizing the magnitude of coefficients in a complex model.
+It is not typically used for underfitted models because the regularization term could further reduce the model's capacity to fit the data.
+Lasso is not specifically designed to handle outliers, though it can handle some cases better than Ridge due to its sparsity-inducing property.
+The presence or absence of outliers is not the primary criterion for choosing Lasso.
+Thus, the main use of Lasso is when the model is overfitting.
+
+
+
+8 Ridge Regression is also known as
+2 Marks
+L2 Regularization
+L1 Regularization
+Elastic-Net Regression
+None of the above
+
+Correct Answer:
+L2 Regularization
+
+Explanation:
+Ridge Regression uses the 
+L2-norm penalty, which adds the square of the magnitude of coefficients to the loss function. This regularization method helps shrink coefficients and stabilize the model in the presence of multicollinearity.
+L1 Regularization is used in Lasso Regression, not Ridge.
+Elastic-Net Regression combines both L1 and L2 regularization, so it is not specific to Ridge.
+None of the above is incorrect because Ridge is correctly associated with L2 Regularization.
+
+
+9
+Which Regression cannot zero out the coefficient?
+2 Marks
+x Ridge regression
+Lasso regression
+Both Ridge and Lasso
+None of the above
+
+Correct Answer:
+Ridge Regression
+
+Explanation:
+Ridge Regression uses 
+L2-regularization, which shrinks coefficients but does not reduce them to exactly zero. As a result, all features remain in the model, even if their influence is very small.
+Lasso Regression uses 
+L1-regularization, which can shrink some coefficients to exactly zero, effectively performing feature selection.
+Both Ridge and Lasso is incorrect because Lasso can zero out coefficients.
+None of the above is incorrect as Ridge Regression cannot zero out coefficients.
+
+
+10
+What is Elastic-Net Regression?
+2 Marks
+x It is a technique which combines Ridge and Lasso
+It is a technique which involves only Ridge
+It is a technique which involves only Lasso
+None of the above
