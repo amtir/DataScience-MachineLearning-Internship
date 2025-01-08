@@ -1,0 +1,53 @@
+Day 18               06-11-2024
+
+"Drawing a card" would be "tirage d'une carte."
+dice roll "Lancer des dés."
+
+Q1. Problem statement (Probability of an event) 
+
+11 12 13 14 15 16
+21 22 23 24 25 26
+31 32 33 34 35 36
+41 42 43 44 45 46
+51 52 53 54 55 56
+61 62 63 64 65 66
+
+Event sum of both dice > 9 
+46 55 56 64 65 66
+6/16=1/6=0.167
+
+3 Heads in a row 
+P=1/2 x 1/2 x 1/2 = 1/8 = 0.125
+
+
+1 Head + 5 on a dice roll at the same time 
+1/2 x 1/6 = 1/12 = 0.083
+
+
+Probability of Drawing an Honor Card  
+In a standard deck of 52 playing cards, honor cards are the face cards: the Jack, Queen, King, and Ace of each suit. There are four suits (hearts, diamonds, clubs, and spades), and each suit has these four honor cards.
+
+4 cards × 4 suits = 16 honor cards
+
+Probability= Total Number of Cards / Number of Honor Cards
+​
+ = 16/52  = 4/13 = 0.30769230769230769230769230769231
+
+
+It is a face card of a diamond house.
+P=3/52 = 0.05769230769230769230769230769231
+
+
+
+Q2. Problem statement (Union and intersection of events) 
+
+1. Students love Science subject. 
+P=40/100=0.4
+
+2. Girls love Maths subject or English subject. 
+P = 15/100 + 12/100 = 27/100 = 0.27
+
+3. If  she is a girl, she loves English, or if he is a boy, then he loves Maths. 
+P = 12/50 + 23/50 
+P = 35/50 = 0.7
+

@@ -1,0 +1,116 @@
+
+Quiz Module 16 
+
+1 - Which among the following is a technique used in EDA?
+2 Marks
+Maximize insight into a data set.
+Uncover underlying structures.
+Extract important variables.
+x All of the above
+
+All of the above
+
+In Exploratory Data Analysis (EDA), the goal is to maximize insights into the dataset, uncover underlying structures, and identify important variables, among other objectives.
+
+2 - EDA is a fundamental step after data collection.
+2 Marks
+x TRUE
+False
+
+EDA is indeed a fundamental step after data collection, as it helps in understanding the dataset’s structure, patterns, and key variables before further analysis or modeling.
+
+
+3 - Which among the following are the data analysis techniques?
+2 Marks
+Graphical.
+Quantitaive
+Qualitative
+x Both option 1 and 2.
+
+Both option 1 and 2
+
+Data analysis techniques include graphical methods (like plotting data for visual insights) and quantitative methods (like statistical measures and calculations). Qualitative analysis is generally used for non-numeric data and is less common in traditional data analysis techniques.
+
+
+4 - Which among the following mechanisms does preliminary data analysis focuses for numerical data?
+2 Marks
+Interval estimation.
+Measures of position
+Existence of outliers.
+x Option 2 and 3.
+
+Option 2 and 3
+
+Preliminary data analysis for numerical data often focuses on measures of position (such as mean, median, and percentiles) and the existence of outliers to understand data distribution and identify any anomalies.
+
+5 - _______ is an observation that appears to deviate markedly from other observations in the sample.
+2 Marks
+x Outliers
+Mean
+Median
+Mode
+
+Outliers
+
+An outlier is an observation that significantly deviates from other observations in a dataset, potentially indicating variability in the data, measurement errors, or a different underlying distribution.
+
+6 - Which of the following chart is divided into slices to illustrate numerical proportions?
+2 Marks
+x Pie Chart.
+Histogram.
+Bar Chart.
+Dot Plots.
+
+Pie Chart
+
+A pie chart is divided into slices to represent numerical proportions, where each slice corresponds to a category's contribution to the whole.
+
+7 - What types of graphs is used to summarize and organize data?
+2 Marks
+Pie Chart
+Histogram
+Line Chart
+x All of the above
+
+All of the above
+
+Pie charts, histograms, and line charts are all used to summarize and organize data, each serving different purposes depending on the data type and the insights desired.
+
+8 - A line graph is usually used to show the __________.
+2 Marks
+x change of information over a period of time.
+summary of data.
+frequency of cases over a range of values.
+time
+
+change of information over a period of time
+
+A line graph is commonly used to display how information or data changes over a period, making it ideal for showing trends.
+
+9 - Which of the following graph consists of horizontal or vertical bars that are separated from each other?
+2 Marks
+Pie Chart.
+x Bar Graphs.
+Line Graphs.
+Box Plot.
+
+Bar Graphs
+
+A bar graph consists of horizontal or vertical bars that are separated from each other, representing categorical data and comparing quantities across categories.
+
+10 - Discrete data is plotted on a _______.
+2 Marks
+pie chart
+histogram
+line chart
+x bar chart
+
+bar chart
+
+Discrete data is typically plotted on a bar chart because it represents distinct, separate values, allowing each category or value to be clearly distinguished with separated bars.
+
+
+
+
+
+

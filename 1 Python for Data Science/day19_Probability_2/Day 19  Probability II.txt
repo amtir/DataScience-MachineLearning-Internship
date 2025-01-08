@@ -1,0 +1,40 @@
+Day 19  Probability II
+
+
+
+1 Probability of a single Event
+Marginal probability
+P(A) = number of outcomes belonging to A / size of sample space
+
+EX: Drawing any hearts card from a deck of cards  P(hearts) = 13/52 = 1/4 
+
+2 Probability of Two Independent Events: Union 
+P(A or B) = P(A U B) = P(A) + P(B) - P(A and B)
+
+EX: A Drawing an ace in the first draw or B drawing a heart in the second draw
+
+P(A) = 4/52   P(B) = 13/52  P(A and B) = 1/52
+P(A or B) = 4/52 + 13/52 - 1/52 = 16/52
+
+3 Probability of Two Independent Events: Intersection
+P(A and B) = P(A joint B) = P(A intersect B) = 
+           = P(A) x P(B)
+	   = 4/13 x 13/52 = 1/52 
+
+4 Conditional Probability: Two Dependent Events
+P(B¦A) = P(B joint A)/P(A)
+Probability of second event given that first event has occurred. 
+
+EX: Drawing two aces sequentially (without replacement): 
+P(B and A) = P(B¦A) x P(A) = 3/51 x 4/52 = 1/221
+
+The conditional probability P(B ¦ A) 
+Usually calculated know and calculated from the data. ==> used to calculate the joint probability, the probability of intersection P(B intersect A)
+
+General multiplication rule
+P(A and B) = P(A) x P(B¦A)
+
+Multiplication rule for independent events 
+P(A and B) = P(A) x P(B) 
+EX: Getting a six in two subsequent rolls of dice
+P(6 on the 1st throw) x P(6 on the 2nd throw) = 1/6 x 1/6 = 1/36

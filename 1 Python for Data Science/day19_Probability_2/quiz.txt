@@ -1,0 +1,121 @@
+Quiz Probability II
+
+1 - Marginal probability is known as _________.
+2 Marks
+X Simplest form of probability
+Complex form of probability
+Both a and b
+None of the above
+
+
+Simplest form of probability
+
+Marginal probability is often referred to as the simplest form of probability because it is the probability of a single event occurring without any consideration of other events.
+
+2 - Probability that both the events occur simultaneously is also known as ________.
+2 Marks
+union probability
+x joint probability
+intersection probability
+None of the above
+
+joint probability
+
+The probability that both events occur simultaneously is known as joint probability.
+
+Joint Probability is the standard term used in probability for the likelihood of simultaneous events.
+Intersection is a more mathematical term referring specifically to the overlapping outcomes of events.
+Union is broader and does not strictly mean that both events occur together.
+
+3 - Formula of Conditional Probability is ______.
+2 Marks
+P(B.A) = P(B ∩ A)/P(A)
+P(B|A) = P(A ∩ B)/P(A)
+P(B.A) = P(B | A)/P(A)
+x P(B|A) = P(B ∩ A)/P(A)
+
+This is the formula for conditional probability, which represents the probability of event 
+B occurring given that event A has already occurred.
+
+4 - What is the probability of getting a 6 in two subsequent rolls of dice?
+2 Marks
+x 0.027
+0.055
+0.083
+0.111
+
+The probability of rolling a 6 on a single die is 1/6
+
+For two independent rolls, the probability of getting a 6 on both rolls is:
+
+1/6 × 1/6 = 1/36 ≈0.027
+
+So, the correct answer is: 0.027
+
+5 - General Multiplication Rule is given as:
+2 Marks
+x P(A ∩ B) = P(A) * P(B|A)
+P(A ∩ B) = P(A) + P(B|A)
+P(A ∩ B) = P(A) U P(B|A)
+P(A ∩ B) = P(A) | P(B|A)
+
+This is the general multiplication rule, which gives the probability that both events 
+A and B occur by multiplying the probability of A by the conditional probability of B given A.
+
+6 - Bayes' theorem allows us to calculate conditional probabilities using already known  _________________.
+2 Marks
+independent probabilities
+x inverse probabilities
+interior probabilities
+dependent probabilities
+
+inverse probabilities
+
+Bayes' theorem allows us to calculate conditional probabilities by using known probabilities in the reverse (or inverse) direction, often referred to as "inverse probabilities." It allows us to find 
+𝑃(𝐴∣𝐵)   P(A∣B) when we know 
+𝑃(𝐵∣𝐴) P(B∣A) and other relevant probabilities.
+
+7 - Bayes' theorem allows us to calculate _________ based on evidence from the past incidents.
+2 Marks
+x posterior probability
+conditional probability
+disjoint probability
+independent probability
+
+posterior probability
+
+Bayes' theorem allows us to calculate the posterior probability, which is the updated probability of an event occurring based on new evidence or information from past incidents. This posterior probability is a refined probability after taking into account observed data.
+
+8 - Which of these are applications of the Bayes' Theorem?
+2 Marks
+Testing Hypotheses.
+Classification.
+Model Optimization.
+x All of the above.
+
+All of the above.
+
+Bayes' theorem has applications in testing hypotheses (updating the likelihood of hypotheses based on evidence), classification (such as in Naive Bayes classifiers in machine learning), and model optimization (particularly in Bayesian inference and Bayesian optimization techniques).
+
+9 - _______ is a technique used to improve the performance of a machine learning model.
+2 Marks
+Bayes' Theorem
+x Bayesian optimization
+Bayesian Network
+Bayesian Thorem
+
+Bayesian optimization
+
+Bayesian optimization is a technique used to improve the performance of a machine learning model, especially in tuning hyperparameters by finding optimal settings through a probabilistic model.
+
+10 - An extension of the conditional probability that allows to calculate probability based on past incidents is called:
+2 Marks
+Bayesian Network
+x Bayes' Theorem
+Frequentist Theorem
+None of the above
+
+Bayes' Theorem
+
+Bayes' theorem is an extension of conditional probability that allows us to calculate updated probabilities based on past incidents or new evidence.
+

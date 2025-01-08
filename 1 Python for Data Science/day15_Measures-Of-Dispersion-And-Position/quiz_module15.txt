@@ -1,0 +1,126 @@
+
+Quiz Module 15
+
+1 - __________  is the measure of variability, based on dividing a data set into quartiles.
+2 Marks
+Deviation
+Standard Deviation
+Range
+x Interquartile Range
+
+Interquartile Range
+
+The Interquartile Range (IQR) is a measure of variability that divides a dataset into quartiles and focuses on the middle 50% of the data, calculated as the difference between the third quartile (Q3) and the first quartile (Q1).
+
+2 - Which measure of dispersion is the interval between the highest and the lowest value?
+2 Marks
+x Range
+Variance
+Interquartile Range
+Standard Deviation
+
+Range
+
+The range is the measure of dispersion that represents the interval between the highest and the lowest values in a dataset.
+
+3 - ________ is the measure of "lack of symmetry".
+2 Marks
+Variance
+Kurtosis
+Range
+x Skewness
+
+Skewness
+
+Skewness is the measure of the lack of symmetry in a distribution, indicating whether the data is skewed to the left or right.
+
+4 - The standard deviation of a set of 90 observations is 105. If the value of each observation is decreased by 9, then the new standard deviation of these observations would be ________.
+2 Marks
+95
+100
+x 105
+None of the Above
+
+105
+
+When a constant value (like 9) is added to or subtracted from every observation in a dataset, the standard deviation remains unchanged because standard deviation measures the spread of the data, not its absolute position. Therefore, the new standard deviation would still be 105.
+
+5 - The square of a standard deviation is ________.
+2 Marks
+Square Deviation
+Mean Square Deviation
+x Variance
+None of the above
+
+Variance
+
+The variance is the square of the standard deviation and represents the average squared deviation of each observation from the mean.
+
+Variance:
+Variance measures the average of the squared differences from the mean.
+It gives a sense of how much data points vary or spread out from the mean, but it does so in squared units of the original data, making it less interpretable in terms of the original data values.
+
+The difference between variance and standard deviation lies in how they express data variability:
+Standard Deviation (Std):
+Standard deviation is the square root of variance. By taking the square root, standard deviation brings the variability measure back to the original units of the data, making it easier to interpret.
+It tells us, on average, how much each data point deviates from the mean in the same units as the data.
+
+In summary:
+
+Variance is in squared units and emphasizes larger deviations, while standard deviation is in the original units and provides an average distance from the mean that is more interpretable.
+
+6 - ________ is a method by which the position that a data value has within a given data set can be identified.
+2 Marks
+x Measures of Position
+Measures of Deviation
+Measures  of Central Tendency
+All of the Above
+
+Measures of Position
+
+Measures of Position are methods used to identify the relative position of a data value within a dataset. Examples include percentiles, quartiles, and z-scores, which help understand where a particular value falls compared to others in the data set.
+
+7 - _______ divides a set of data into 100 equal parts.
+2 Marks
+x Percentiles
+Quartiles
+Tentiles
+Deciles
+
+Percentiles
+
+Percentiles divide a dataset into 100 equal parts, allowing you to determine the relative standing of a data point within the distribution.
+
+8 - ________ divides a rank-ordered data set into four equal parts.
+2 Marks
+Percentiles
+x Quartiles
+Deciles
+None of the Above
+
+Quartiles
+
+Quartiles divide a rank-ordered dataset into four equal parts, with each quartile representing 25% of the data.
+
+9 - Standard Scores are also known as ________
+2 Marks
+x z-score
+Z-scores
+Z-Score
+None of the above
+
+z-score
+
+Standard scores are commonly known as z-scores. They indicate how many standard deviations a data point is from the mean.
+
+10 - A standard score indicates how many standard deviation an element is from the ______.
+2 Marks
+x Mean
+Median
+Mode
+Range
+
+Mean
+
+A standard score (z-score) indicates how many standard deviations an element is from the mean of the dataset.
+

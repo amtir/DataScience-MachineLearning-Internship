@@ -1,0 +1,150 @@
+
+
+
+
+1 - 1
+What are the major types of data?
+2 Marks
+Categorical
+Numerical
+Ordinal
+x Both option 1 and 2.
+
+The correct answer is:
+
+Both option 1 and 2.
+The two major types of data are Categorical and Numerical. Here's a quick breakdown:
+
+Categorical data: Represents categories or labels (e.g., gender, colors).
+Numerical data: Represents numbers and can be discrete or continuous (e.g., age, salary).
+
+
+2 - _______  data represents discrete values.
+2 Marks
+x Catergorical
+Numerical
+Quantitative
+Nominal
+
+Categorical Data represents distinct categories or groups. These categories are inherently discrete because they represent separate, defined classes or labels (e.g., "red", "blue", or "male", "female"). Each category is a distinct and separate value, which makes them discrete in nature.
+For example:
+
+Gender: male, female, non-binary (distinct categories).
+Types of animals: dog, cat, bird (again, discrete and separate categories).
+Categorical data is discrete because:
+
+It represents separate, non-overlapping categories or groups.
+The values are distinct and not continuous.
+
+
+
+3 - 3
+________statistics uses the data to provide descriptions of the population.
+2 Marks
+x Descriptive
+Quantitative
+Inferential
+Qualitative
+
+The correct answer is:
+
+Descriptive
+Descriptive statistics use data to provide summaries or descriptions of the population, such as calculating means, medians, or standard deviations. It helps in summarizing and organizing data to describe the characteristics of the dataset.
+
+
+4 - 4
+Which of these data can be measured on the continuous scale?
+2 Marks
+Nominal
+Discrete
+x Continuous
+Ordinal
+
+The correct answer is:
+
+Continuous
+Continuous data can be measured on a continuous scale, meaning it can take any value within a given range (e.g., height, weight, temperature). It is not restricted to specific, separate values like discrete data.
+
+5 - 5
+_______ makes predictions about population based on a sample.
+2 Marks
+Descriptive statistics
+Predictive statistics
+x Inferential statistics
+Qualitative statistics
+
+The correct answer is:
+
+Inferential statistics
+Inferential statistics involves making predictions or inferences about a population based on data collected from a sample. It uses techniques such as hypothesis testing, confidence intervals, and regression analysis to draw conclusions about the broader population.
+
+6 - Which of the following are the measures of central tendency?
+2 Marks
+Mean
+Mode
+Median
+x All above 4
+
+The correct answer is:
+
+Mean
+Mode
+Median
+These three (mean, mode, and median) are all measures of central tendency. They describe the center point or typical value of a dataset.
+
+
+7 - The most frequently occuring value in a data set is known as ________.
+2 Marks
+Median
+Mean
+x Mode
+Standard Deviation
+
+The correct answer is:
+
+Mode
+The mode is the value that occurs most frequently in a dataset.
+
+8 - 8
+To calculate the median, all the items of a data set have to be arranged in a/an ________.
+2 Marks
+Descending Order
+Ascending Order
+x Descending or Ascending
+None of the Above
+
+The correct answer is:
+
+Descending or Ascending
+To calculate the median, the data must be arranged in either ascending or descending order. Once ordered, the middle value (or the average of the two middle values for an even-sized dataset) is identified as the median.
+
+9 - 9
+Mode refers to the value within a series that occurs ________ number of times.
+2 Marks
+x Maximum
+Minimum
+Zero
+Infinite
+
+The correct answer is:
+
+Maximum
+The mode refers to the value that occurs the maximum number of times within a data set.
+
+10 - _________ is not a measure of central tendency.
+2 Marks
+Mean
+Median
+Mode
+x Range
+
+The correct answer is:
+
+Range
+The range is not a measure of central tendency; it is a measure of dispersion that indicates the difference between the highest and lowest values in a dataset.
+
+
+
+
+
+

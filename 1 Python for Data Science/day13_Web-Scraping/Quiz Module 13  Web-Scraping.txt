@@ -1,0 +1,129 @@
+Quiz Module 13:  Web-Scraping 
+
+1 - 1
+Extracting data from websites without any human intervention is called:
+2 Marks
+Web Crawling
+Information Retrieval
+x Web Scraping
+Data Extraction
+
+The correct answer is:
+
+Web Scraping
+Web scraping involves automated methods to extract large amounts of data from websites, typically using a program or script without manual intervention.
+
+2 - 2
+Web Scraping is a part of:
+2 Marks
+x Data collection and acquisition.
+Exploratory Data Analysis.
+Model Deployment.
+Statistical Analysis.
+
+The correct answer is:
+
+Data collection and acquisition.
+Web scraping is a technique used to collect and acquire data from websites, which can then be used in various stages of data analysis or machine learning workflows.
+
+3 - 3
+What tools are used for Web Scraping In Python?
+2 Marks
+Requests.
+Scrapy.
+Beautiful Soup.
+x All of the above.
+
+The correct answer is:
+
+All of the above.
+In Python, all three tools—Requests, Scrapy, and Beautiful Soup—are commonly used for web scraping:
+
+Requests: A library used to send HTTP requests to a website.
+Scrapy: A web crawling framework designed specifically for large-scale scraping tasks.
+Beautiful Soup: A library used to parse HTML and XML documents for easier data extraction.
+
+4 - 4
+Which stage in the Web Scraping process flow deals with eliminating unnecessary, repetitive, or missing data?
+2 Marks
+x Cleaning and Transformation.
+Parsing the content.
+Organising the data.
+Storing the data.
+
+
+
+5 - _____ is a python library that is used to send and receive information over HTTP.
+2 Marks
+Beautiful Soup
+Scrapy
+x Requests
+Response
+
+The correct answer is:
+
+Requests
+The Requests library in Python is used to send HTTP requests and receive responses. It is widely used for web scraping, APIs, and any tasks involving HTTP communication.
+
+6 - __________ cannot fetch pages on its own, it needs external library like requests.
+2 Marks
+x Beautiful Soup
+Scrapy
+Parse
+Spider
+
+The correct answer is:
+
+Beautiful Soup
+Beautiful Soup is a library used to parse and navigate HTML or XML documents, but it cannot fetch web pages on its own. It requires an external library like Requests to fetch the pages, and then Beautiful Soup processes the content.
+
+7 - Which of the following can be used to extract data from HTML and XML?
+2 Marks
+http.
+x Beautiful Soup.
+port.
+header.
+
+The correct answer is:
+
+Beautiful Soup
+Beautiful Soup is a Python library used to extract data from HTML and XML documents, making it useful for web scraping and parsing tasks.
+
+8 - Which line of code correctly gets the first item in items and makes the most sense following the below code snippet?
+soup = BeautifulSoup(response.content, 'html.parser')
+items = soup.find_all(class_='items')
+2 Marks
+x first_item = items[0]
+first_item = items.get(0)
+first_item = items.find[0]
+first_item = soup.items[0]
+
+The correct answer is:
+
+first_item = items[0]
+In Python, find_all() returns a list of elements, and you can access the first item in the list using items[0].
+
+9 - prettify() is used to convert a beautiful soup tree in formatted unicode string.
+2 Marks
+x TRUE.
+FALSE.
+
+The correct answer is:
+
+TRUE
+The prettify() method in Beautiful Soup is used to convert a Beautiful Soup parse tree into a nicely formatted Unicode string, which makes it easier to read and visualize the HTML structure.
+
+10 -10
+Beautiful Soup converts a complex  ________ document into a complex tree of python objects.
+2 Marks
+x HTML
+XML
+Text
+
+
+The correct answer is:
+
+HTML and XML (both are correct, depending on the context).
+Beautiful Soup can parse both HTML and XML documents, converting them into a tree of Python objects, allowing you to navigate and manipulate the structure.
+
+In this question, if there's a single-choice format, the most common answer would be HTML, but Beautiful Soup works for both formats.

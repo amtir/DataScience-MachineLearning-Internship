@@ -1,0 +1,113 @@
+
+Quiz Day 17
+
+1 - Which among the following pandas function is used to compute a simple cross-tabulation of two (or more) factors.
+2 Marks
+pandas.CrossTab
+pandas.CT()
+pandas.crosstab()
+pandas.pivot()
+
+The correct answer is:
+
+pandas.crosstab()
+
+This function is used to compute a simple cross-tabulation of two (or more) factors, summarizing the frequency distribution between categorical variables.
+
+2 - Which among the following pandas function is used to compute a simple cross-tabulation of two (or more) factors.
+2 Marks
+0 to 1
+x -1 to +1
+1 to 1
+None of the above
+
+3 - Which among the following pandas function is used to compute a simple cross-tabulation of two (or more) factors.
+2 Marks
+Cross-tabulation
+Calculating Correlation and Covariance
+Both a and b
+None of the above
+
+The correct answer is:
+
+None of the above
+
+In pandas, the function used to compute a simple cross-tabulation of two (or more) factors is pandas.crosstab(). The options listed do not directly refer to the correct function name or operation.
+
+4 - Which among the following pandas function is used to compute a simple cross-tabulation of two (or more) factors.
+2 Marks
+x DataFrame.corr()
+DataFrame.cor()
+DataFrame.correlation()
+DataFrame.Correlation()
+
+The correct answer is:
+
+DataFrame.corr()
+
+This function computes pairwise correlation of columns in a DataFrame, which is a different operation from cross-tabulation but is related to measuring relationships between numerical data.
+
+5 - Which among the following pandas function is used to compute a simple cross-tabulation of two (or more) factors.
+2 Marks
+Association
+Correlation
+Causation
+None of the above.
+
+6 - Scatter plots often reveal relationships or association between two ___________.
+2 Marks
+x Numerical Variables
+Categorical Variables.
+Both a and b
+None of the above
+
+The correct answer is:
+
+Numerical Variables
+
+Scatter plots are typically used to display relationships or associations between two numerical variables.
+
+7 - The perfect negative correlation value is______.
+2 Marks
+0
+1
+x -1
+All of the above.
+
+8 - If there is absolutely no correlation present the value given is ________.
+2 Marks
+1
+x 0
+-1
+2
+
+9 - Which of the following plots is an appropriate technique to get an idea about the distribution of the variable?
+2 Marks
+Boxplot.
+Line Graph
+Heatmap.
+x Histogram
+
+The correct answer is:
+
+Histogram
+
+A histogram is an appropriate technique to get an idea about the distribution of a variable, as it shows the frequency of data within specified intervals, providing a clear view of the data's distribution shape.
+
+
+10 - Heat maps are simply a _____ grid built from a  ______ array.
+2 Marks
+1D , 1D
+2D, 2D
+3D,3D
+1D, 2D
+
+
+The correct answer is:
+
+2D, 2D
+
+Heat maps are typically built from a 2D grid using a 2D array, where each cell in the grid represents a value in the array with color coding to represent data intensity or value.
+
+
+

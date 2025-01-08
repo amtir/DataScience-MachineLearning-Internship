@@ -1,0 +1,147 @@
+
+QUIZ Day 20 
+Probability distribution, Skewness and Kurtosis
+
+1 -  Which of the following is true in the case of distribution?
+2 Marks
+Mean+Median=Mode.
+Mean>Median>Mode.
+Mean=Mode=Median.
+Mode<Mean<Median.
+
+In the context of a distribution, typically, the following statements could be true depending on the type of skewness:
+
+Mean = Median = Mode: This is true for a perfectly symmetric distribution (like a normal distribution).
+
+Mean > Median > Mode: This is true for a positively skewed distribution (right-skewed), where the tail extends more to the right side.
+
+Mode > Median > Mean: This is true for a negatively skewed distribution (left-skewed), where the tail extends more to the left side.
+
+Mean + Median = Mode: This is generally not a standard property of distributions and does not hold true in most cases.
+
+The correct answer would depend on the skewness of the distribution being described.
+
+2 -Skewness and Kurtosis is equal to 0 in case of normal distribution.
+2 Marks
+x TRUE
+FALSE
+
+TRUE
+
+In a normal distribution, skewness is 0, indicating perfect symmetry, and kurtosis is also often measured as 0 (or sometimes 3 in excess kurtosis terms) because it represents a standard "bell-shaped" distribution with no extreme outliers or unusual peak height.
+
+3 - 
+______ determines the spread of distribution.
+2 Marks
+Variance
+Mean
+Standard deviation
+All of the above
+
+The correct answer is:
+
+Variance and Standard deviation
+
+Both variance and standard deviation determine the spread of a distribution, as they measure how much the values in a data set deviate from the mean.
+
+Variance quantifies the average of the squared deviations from the mean.
+Standard deviation is the square root of variance and also represents the spread around the mean in the same units as the data.
+The mean does not determine the spread; it indicates the central tendency.
+
+
+4 - The standard normal distribution is the Normal distribution for which the mean is ___ and the variance is 1.
+2 Marks
+x Zero
+One
+Constant
+Random Variable
+
+The correct answer is:
+
+Zero
+
+The standard normal distribution is the normal distribution for which the mean is 0 and the variance (or standard deviation squared) is 1.
+
+5 - 
+Converting observations of normally distributed data into a standard scale using the Z-score is called:
+2 Marks
+Normalization.
+Vectorization.
+x Standardization.
+None of the above
+
+The correct answer is:
+
+Standardization
+
+Converting observations of normally distributed data into a standard scale using the Z-score is called standardization. This process rescales the data so that it has a mean of 0 and a standard deviation of 1.
+
+6 -
+________ is a measure of symmetry, precisely lack of symmetry.
+2 Marks
+x Skewness
+Kurtosis
+Variation
+Standard Deviation
+
+The correct answer is:
+
+Skewness
+
+Skewness is a measure of symmetry, or more precisely, the lack of symmetry in a distribution. It indicates whether the data is skewed to the left or right of the mean.
+
+7 -
+Determine the distribution of data set with mean=2.5,median=3.5,mode=5.
+2 Marks
+Symmetrical
+Uniform
+Skewed right
+Skewed left
+
+The correct answer is:
+
+Skewed left
+
+In this dataset, the mean (2.5) is less than the median (3.5), which is less than the mode (5). This pattern (Mean < Median < Mode) indicates a left-skewed (or negatively skewed) distribution, where the tail is longer on the left side.
+
+8 - Determine the skewness of the data set below:
+5,6,7,8,8,9,9,10,10,10,10,10,10,10
+2 Marks
+Skewed right
+x Skewed left
+Symmetrical
+Uniform
+
+The correct answer is:
+
+Skewed left
+
+In this dataset, the values are more concentrated on the higher end, with a longer tail on the left (lower) end. This distribution shows a left skew (negatively skewed), as the data is clustered toward the higher values with fewer lower values on the left side.
+
+9 -
+________ is a measure of whether data are heavy-tailed or light-tailed with respect to normal distribution.
+2 Marks
+Skewness
+Kurtosis
+Both a and b
+None of the above
+
+The correct answer is:
+
+Kurtosis
+
+Kurtosis is a measure of whether data have heavy tails (more extreme values) or light tails (fewer extreme values) relative to a normal distribution.
+
+10 - Distribution is symmetric when it looks the same to the left and right of the center.
+2 Marks
+x TRUE
+FALSE
+
+TRUE
+
+A distribution is symmetric when it appears the same on both the left and right sides of its center. In a symmetric distribution, the mean, median, and mode are typically aligned at the center.
+
+
+
+
+

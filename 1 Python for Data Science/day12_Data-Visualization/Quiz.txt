@@ -1,0 +1,125 @@
+Quiz - Module 12:  Data Visualization 
+
+1 - _______  is a pictorial or graphical representation of data.
+2 Marks
+x Data Visualization.
+Data Analysis.
+Data Plotting.
+Data Handling.
+
+2 - 2
+Which of the following are the libraries and tools used for data visualization?
+2 Marks
+orange
+matplotlib
+Facets
+x All of the above.
+
+The correct answer is All of the above.
+
+Orange is a data visualization and analysis tool.
+Matplotlib is a popular Python library used for creating static, animated, and interactive visualizations.
+Facets is a tool developed by Google for visualizing machine learning datasets.
+All of these can be used for data visualization in different contexts.
+
+3 - 3
+Matplotlib is inspired from:
+2 Marks
+Seaborn
+NumPy
+Java
+x Matlab
+
+The correct answer is Matlab.
+
+Matplotlib is inspired by Matlab, a proprietary programming language and environment used for mathematical computations and visualizations. Matplotlib was created to provide a similar interface for creating plots and charts in Python.
+
+4 - 4
+Which function is used to plot horizontal bar graphs?
+2 Marks
+distplot()
+bar(x,y)
+x barh()
+All of the above
+
+The correct answer is barh().
+
+The barh() function in Matplotlib is specifically used to plot horizontal bar graphs.
+
+5 - 5
+Data visualization enables decision makers to see patterns, trends, and correlations that might go undetected in text-based data.
+2 Marks
+x TRUE
+FALSE
+
+The correct answer is TRUE.
+
+Data visualization helps decision makers identify patterns, trends, and correlations in data that may not be as obvious in text-based formats, making it a powerful tool for analysis and decision-making.
+
+6 - 6
+Matplotlib is a _______ plotting library.
+2 Marks
+1D
+3D
+x 2D
+All of the Above
+
+The correct answer is 2D.
+
+Matplotlib is primarily a 2D plotting library, though it also supports some basic 3D plotting through its mplot3d toolkit. However, it is widely known for its robust 2D plotting capabilities.
+
+7 - 7
+Which plot shows the relationship between a numerical variable and a categorical variable?
+2 Marks
+Histogram
+x Bar Plot
+Pie Chart
+Line Chart
+
+The correct answer is Bar Plot.
+
+A bar plot is commonly used to show the relationship between a numerical variable (such as frequency or count) and a categorical variable (such as categories or groups).
+
+8 - 8
+Which plot can be used to visualize the correlation between all the features of a dataset?
+2 Marks
+Bar
+Line
+Histogram
+x Heatmap
+
+The correct answer is Heatmap.
+
+A heatmap is commonly used to visualize the correlation between all features of a dataset. It shows the strength and direction of the correlation between different variables using color gradients, making it an effective tool for understanding relationships across multiple features.
+
+9 - 9
+Which of the following functions is used to display the distribution of data based on a five-number summary ("minimum," first quartile (Q1), median, third quartile (Q3), and "maximum")?
+2 Marks
+seaborn.line()
+x seaborn.boxplot()
+seaborn.pie()
+seaborn.scatter()
+
+The correct answer is seaborn.boxplot().
+
+A boxplot (also known as a box-and-whisker plot) displays the distribution of data based on a five-number summary: minimum, first quartile (Q1), median, third quartile (Q3), and maximum. It is useful for identifying outliers and understanding the spread and skewness of the data.
+
+
+10 - If you install python IDLE, matplotlib is installed automatically:
+2 Marks
+TRUE
+x FALSE
+
+The correct answer is FALSE.
+
+When you install Python IDLE, Matplotlib is not installed automatically. You need to install Matplotlib separately using a package manager like pip by running the command pip install matplotlib.
+
+IDLE stands for Integrated Development and Learning Environment. It is the default editor and development environment that comes with Python installations.
+
+Key Features of IDLE:
+Interactive Shell: IDLE provides a Python shell where you can type and run Python commands interactively. It’s great for experimenting with code and learning Python.
+Simple Text Editor: It includes a basic text editor with features like syntax highlighting, auto-completion, and indentation support.
+Debugger: IDLE includes a simple debugger that supports stepping through code, setting breakpoints, and inspecting variables.
+Cross-platform: IDLE works on all major operating systems (Windows, macOS, and Linux) where Python is installed.
+It is especially helpful for beginners because it provides an easy-to-use interface to write and test Python code without needing to install additional tools. However, more advanced users often prefer other IDEs like PyCharm, Visual Studio Code, or Jupyter Notebook for larger projects.
+
