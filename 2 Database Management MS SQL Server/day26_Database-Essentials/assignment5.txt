@@ -1,0 +1,49 @@
+
+
+-- Step 1: Create the Assignment_5 database
+CREATE DATABASE Assignment_5;
+
+-- Step 2: Use the Assignment_5 database
+USE Assignment_5;
+
+-- Step 3: Create the Movies table
+CREATE TABLE Movies (
+    Code INT PRIMARY KEY NOT NULL,       -- Primary Key, not null
+    Title VARCHAR(255) NOT NULL,         -- Not null
+    Rating VARCHAR(10)                   -- Optional
+);
+
+-- Step 4: Create the MovieTheaters table
+CREATE TABLE MovieTheaters (
+    Code INT PRIMARY KEY NOT NULL,       -- Primary Key, not null
+    Name VARCHAR(255) NOT NULL,          -- Not null
+    Movie INT,                           -- Foreign key referencing Movies (Code)
+    FOREIGN KEY (Movie) REFERENCES Movies(Code)
+);
+
+
+
+
+INSERT INTO Movies (Code, Title, Rating) VALUES (1, 'Inception', 'PG-13');
+INSERT INTO Movies (Code, Title, Rating) VALUES (2, 'Interstellar', 'PG-13');
+
+INSERT INTO MovieTheaters (Code, Name, Movie) VALUES (1, 'AMC Theater', 1);
+INSERT INTO MovieTheaters (Code, Name, Movie) VALUES (2, 'Regal Cinemas', 2);
+
+
+-- List all tables in the database
+SELECT * FROM sys.tables;
+
+
+-- View structure of Movies table
+EXEC sp_columns 'Movies';
+
+-- View structure of MovieTheaters table
+EXEC sp_columns 'MovieTheaters';
+
+
+
+
+
+
+

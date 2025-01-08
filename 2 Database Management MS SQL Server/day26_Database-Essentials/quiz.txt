@@ -1,0 +1,226 @@
+
+
+QUIZ  SQL Day 26 
+
+1 - ________ removes all the rows from a table without deleting the complete structure of the table from the database.
+2 Marks
+DROP
+x TRUNCATE
+REMOVE
+DELETE
+
+The correct answer is:
+
+TRUNCATE
+
+Explanation:
+TRUNCATE: Removes all rows from a table, but retains the table's structure. It is faster than DELETE because it doesn't log individual row deletions.
+DROP: Deletes the entire table, including its structure.
+REMOVE: Not a valid SQL command.
+DELETE: Removes rows one by one and logs each deletion, allowing for conditions (e.g., WHERE clause).
+So, the correct answer is TRUNCATE.
+
+
+
+
+2 - Which anomaly refers to the situation where the deletion of data results in the unintended loss of some other important data?
+2 Marks
+x Deletion Anomaly
+Updation Anomaly
+Insertion Anomaly
+None of the above
+
+
+The correct answer is:
+
+Deletion Anomaly
+
+Explanation:
+A deletion anomaly occurs when deleting a piece of data unintentionally results in the loss of other important information. This often happens in poorly designed databases where related data is stored in the same table.
+
+Example:
+Imagine a table storing both employee details and project information:
+
+EmployeeID	EmployeeName	ProjectName
+1	Alice	Project A
+2	Bob	Project B
+If we delete the row for Alice, we might unintentionally lose information about Project A if it is not stored elsewhere.
+Other Options:
+Updation Anomaly: Happens when updating data leads to inconsistencies.
+Insertion Anomaly: Happens when certain data cannot be added without including other unnecessary information.
+None of the above: Incorrect because the correct term is "Deletion Anomaly."
+So, the correct answer is Deletion Anomaly.
+
+
+3 - BCNF is considered as the advanced version of 3 NF, which is also known as ______.
+2 Marks
+3.6 NF
+3.1 NF
+x 3.5 NF
+4.0 NF
+
+The correct answer is:
+
+3.5 NF
+
+Explanation:
+BCNF (Boyce-Codd Normal Form) is considered an advanced version of 3NF (Third Normal Form).
+It is also informally referred to as 3.5 NF because it builds on 3NF by addressing certain anomalies that 3NF may not resolve, specifically those involving overlapping candidate keys.
+Thus, the correct answer is 3.5 NF.
+
+4 - Which of the following commands is missing in the following SQL statement, which is used with UPDATE to specify which columns and values should be updated in a table?
+UPDATE geographic ____ county = 'contra costa county';
+2 Marks
+FROM
+TOP
+INTO
+x SET
+
+
+The correct answer is:
+
+SET
+
+Explanation:
+The SET keyword is used in the SQL UPDATE statement to specify which columns should be updated and the new values to assign.
+
+Correct Syntax:
+UPDATE geographic SET county = 'contra costa county';
+Other Options:
+FROM: Used in SELECT queries to specify the data source or with JOINs.
+TOP: Used in SELECT queries to limit the number of rows returned.
+INTO: Used with INSERT statements to specify the target table.
+Thus, the correct answer is SET.
+
+
+5 - A table is not in Fourth Normal Form (4NF) unless it is in BCNF and has no __________.
+2 Marks
+single-valued dependency
+x multi-valued dependency
+no dependency
+All of the above
+
+
+The correct answer is:
+
+multi-valued dependency
+
+Explanation:
+A table is in Fourth Normal Form (4NF) if:
+
+It is already in BCNF (Boyce-Codd Normal Form).
+It has no multi-valued dependencies.
+Multi-valued dependency occurs when one attribute in a table determines multiple values of another attribute, independently of other attributes in the table.
+Example:
+StudentID	Hobby	Language
+1	Reading	English
+1	Reading	Spanish
+1	Painting	English
+1	Painting	Spanish
+Here, Hobby and Language are multi-valued dependencies on StudentID, and they are independent of each other.
+To eliminate this, the table is decomposed into two:
+
+Student-Hobby Table:
+
+StudentID	Hobby
+1	Reading
+1	Painting
+Student-Language Table:
+
+StudentID	Language
+1	English
+1	Spanish
+Thus, the correct answer is multi-valued dependency.
+
+
+6 - The term "SQL" stands for
+2 Marks
+Server-side query language
+Structured query language
+x Standard query language
+Sequential query language
+
+7 - The Database Management Query language is generally designed for the _____
+2 Marks
+Support end-users who use English like commands
+Specifying the structure of the database
+Support in the development of the complex applications software
+x All of the above
+
+The correct answer is:
+
+All of the above
+
+Explanation:
+The Database Management Query Language (like SQL) is versatile and serves multiple purposes:
+
+Support end-users who use English-like commands: SQL uses simple, declarative syntax that resembles natural language (e.g., SELECT, INSERT, UPDATE), making it user-friendly.
+Specifying the structure of the database: SQL includes commands for defining and modifying the database schema, such as CREATE TABLE and ALTER TABLE.
+Support in the development of complex application software: SQL integrates with programming languages to build robust database-driven applications.
+Therefore, the correct answer is All of the above.
+
+
+8 - A _________ consists of a sequence of query and/or update statements.
+2 Marks
+Rollback
+Commit
+x Transaction
+Flashback
+
+The correct answer is:
+
+Transaction
+
+Explanation:
+A transaction in a database consists of a sequence of one or more SQL statements (queries or updates) that are executed as a single logical unit of work. It ensures data consistency and integrity, following the ACID properties (Atomicity, Consistency, Isolation, Durability).
+
+Other Options:
+Rollback: Reverses the changes made by a transaction before it is committed.
+Commit: Finalizes a transaction, making its changes permanent in the database.
+Flashback: A feature (in some systems like Oracle) to view or revert to past states of the database.
+Thus, the correct answer is Transaction.
+
+
+9 - Which of the following makes the transaction permanent in the database?
+2 Marks
+View
+x Commit
+Rollback
+Flashback
+
+The correct answer is:
+
+Commit
+
+Explanation:
+COMMIT: Makes the changes made by a transaction permanent in the database. Once a transaction is committed, it cannot be undone by a ROLLBACK.
+Other Options:
+View: A virtual table based on the result of a SELECT query. It doesn’t affect transaction management.
+Rollback: Reverses the changes made by a transaction before it is committed.
+Flashback: Used in some systems (like Oracle) to revert or view previous states of the database.
+Thus, the correct answer is Commit.
+
+
+10 - How many Primary keys can have in a table?
+2 Marks
+x Only 1
+Only 2
+Depends on the no of cloumns
+Depends on Database
+
+The correct answer is:
+
+Only 1
+
+Explanation:
+A primary key is a unique identifier for each row in a table, ensuring no duplicate values in the column(s) designated as the primary key.
+A table can have only one primary key, but the primary key can consist of multiple columns (a composite key).
+Other Options:
+Only 2: Incorrect, a table cannot have more than one primary key.
+Depends on the number of columns: Incorrect, as the number of columns does not determine the number of primary keys, though multiple columns can form a composite key.
+Depends on Database: Incorrect, as the rule of having a single primary key per table is consistent across all relational database systems.
+Thus, the correct answer is Only 1.
+
+
+
+
