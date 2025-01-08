@@ -1,0 +1,225 @@
+QUIZ   
+
+Day 23 Hypothesis Test 
+
+
+1 - If the critical region is evenly distributed then the test is referred to as
+2 Marks
+x Two-tailed
+One-tailed
+Failed test
+None of the above
+
+
+The correct answer is:
+
+Two-tailed
+
+Explanation:
+A two-tailed test checks for differences in both directions (greater than or less than the hypothesized value).
+The critical region is evenly split between the two tails of the distribution.
+This contrasts with a one-tailed test, where the critical region is entirely on one side (either left or right).
+So, if the critical region is evenly distributed, the test is a two-tailed test. 
+
+
+2 - In a one-tail test for the population mean, if the null hypothesis is not rejected when the alternative hypothesis is true, then:
+2 Marks
+ a Type I error is committed
+use two tail test instead of one
+ a correct decision is made
+x A Type II Error Is Committed
+
+The correct answer is:
+
+A Type II Error Is Committed
+
+Explanation:
+A Type II error occurs when the null hypothesis (𝐻0  ) is not rejected, even though the alternative hypothesis ( 𝐻𝑎 ) is true.
+This means the test failed to detect a real effect or difference.
+Quick Overview of Errors:
+Type I Error: Rejecting 𝐻0   when it is actually true (false positive).
+Type II Error: Failing to reject 
+𝐻0   when 𝐻𝑎  is true (false negative).
+In this scenario, since 𝐻𝑎   is true but 𝐻0 is not rejected, a Type II error has occurred.
+
+3 - On testing H0:  μ =25 against H1:  μ ≠ 20 leads to:
+2 Marks
+failed test
+one-tailed
+x two-tailed test
+None of the above
+
+The correct answer is:
+
+Two-tailed test
+
+Explanation:
+The null hypothesis is 
+𝐻0:𝜇=25H .
+The alternative hypothesis is 
+𝐻1: 𝜇≠20
+
+The inequality in 𝐻1​
+  (𝜇≠20) indicates that we are testing for a difference in both directions (either greater than or less than the hypothesized value).
+This type of test is called a two-tailed test because the rejection region is distributed across both tails of the distribution.
+So, the test is a two-tailed test. 
+
+4 -  In a two-tail test for the population mean, if the null hypothesis is rejected when the alternative is true, then:
+2 Marks
+a one-tailed test should be used instead of a two-tailed test
+x a correct decision is made
+a Type I error is committed
+a Type II error is committed
+
+A correct decision is made
+
+Explanation:
+In a two-tailed test, rejecting the null hypothesis (𝐻0 ) when the alternative hypothesis (𝐻𝑎 ) is true means the test has correctly identified the effect or difference.
+This is the desired outcome of hypothesis testing: rejecting 
+𝐻0   when 𝐻𝑎   is true is a correct decision.
+Common Misinterpretations:
+Type I Error: Occurs when 
+𝐻0   is rejected, but 
+𝐻0   is actually true (not the case here since 
+𝐻𝑎   is true).
+Type II Error: Occurs when 
+𝐻0   is not rejected, but 
+𝐻𝑎 
+  is true (also not the case here).
+Thus, rejecting 
+𝐻0  when 𝐻𝑎   is true is a correct decision!
+
+5 - The power of a test is measured by its capability of:
+2 Marks
+x rejecting a null hypothesis that is false
+not rejecting a null hypothesis that is false
+rejecting a null hypothesis which is true
+not rejecting a null hypothesis which is true
+
+Rejecting a null hypothesis that is false
+
+Explanation:
+The power of a test is the probability of correctly rejecting the null hypothesis (
+𝐻0 ) when the alternative hypothesis (𝐻𝑎 ) is true.
+It measures the test's ability to detect an actual effect or difference when it exists.
+Mathematically:
+Power=1−β
+where 𝛽
+β is the probability of a Type II error (failing to reject 𝐻0   when 𝐻𝑎   is true).
+Incorrect Options:
+Not rejecting a null hypothesis that is false: This describes a Type II error, not the power.
+Rejecting a null hypothesis that is true: This describes a Type I error, unrelated to power.
+Not rejecting a null hypothesis that is true: This describes a correct decision, but it doesn't measure power.
+Thus, the power of a test reflects its capability to reject a null hypothesis that is false. 
+
+
+6 - Chi–square test is a hypothesis test used to analyze________
+2 Marks
+x categorical data
+numerical data
+Both categorical and numerical data
+None of the above
+
+categorical data
+
+Explanation:
+The Chi-square test is a statistical hypothesis test used to analyze categorical data, such as frequencies or counts in categories.
+It compares the observed frequencies in a dataset to the expected frequencies under the null hypothesis to determine if there is a significant association or difference.
+Types of Chi-Square Tests:
+Chi-Square Test for Independence:
+
+Used to determine if two categorical variables are independent.
+Example: Checking if gender and voting preference are related.
+Chi-Square Goodness-of-Fit Test:
+
+Used to determine if the observed distribution matches a specified theoretical distribution.
+Example: Checking if dice rolls follow a uniform distribution.
+Why Not Numerical Data?
+Numerical data typically requires tests like 
+𝑡
+t-tests or 
+𝑧
+z-tests.
+Chi-square tests are not designed for continuous or numerical data.
+Thus, Chi-square tests analyze categorical data.
+
+7 - What is the mean of a chi-Square distribution with 6 degrees of freedom?
+2 Marks
+4
+12
+x 6
+8
+
+
+The correct answer is:
+
+6
+
+Explanation:
+The mean of a Chi-square distribution is equal to its degrees of freedom (k).
+
+Formula:
+Mean=k
+where k is the number of degrees of freedom.
+
+Given:
+Degrees of freedom (k) = 6.
+Therefore, the mean of the Chi-square distribution is:
+Mean=6
+So, the correct answer is 6. 
+
+
+8 - The minimum number of variables required for chi-square analysis
+2 Marks
+Only 1
+x Atleast 2
+Atmost 2
+No restrictions
+
+
+The correct answer is:
+
+At least 2
+
+Explanation:
+The Chi-square test is used to analyze relationships or differences in categorical data, which usually requires at least two variables:
+Observed variable: What you measure or count.
+Expected variable: What you expect under the null hypothesis.
+Examples:
+Chi-square Test for Independence:
+
+Tests the relationship between two categorical variables (e.g., gender and voting preference).
+Chi-square Goodness-of-Fit Test:
+
+Compares observed data to a theoretical distribution (e.g., observed dice rolls vs. expected uniform distribution).
+Even in the goodness-of-fit test, you compare the observed data to at least one expected distribution, so two sets of counts are involved.
+
+Thus, at least 2 variables are required for a Chi-square analysis. 
+
+9 - Which of these is chi-square test type
+2 Marks
+Goodness of Fit
+Test of Independence
+x Both Goodness of Fit and Test of Independence
+None of the above
+
+10 - Which type of chi-square test is used to check whether the categorical data has the given frequencies according to the population
+2 Marks
+x Chi-square test for goodness of fit
+Chi-square test for independence
+Both Both Goodness of Fit and Test of Independence
+None of the above
+
+The correct answer is:
+
+Chi-square test for goodness of fit
+
+Explanation:
+The Chi-square test for goodness of fit is used to determine whether the observed frequencies in a sample match the expected frequencies based on a hypothesized distribution of the population.
+Use Case:
+It tests whether the observed data fits a specified theoretical distribution (e.g., uniform, normal, etc.).
+Example:
+Observing the frequency of colors in a bag of candies and testing if it matches the manufacturer's claim.
+Why Not Independence?
+The Chi-square test for independence checks the association between two categorical variables, not the fit to a specific frequency distribution.
+Thus, for checking whether categorical data matches the given frequencies, the correct test is the Chi-square test for goodness of fit.

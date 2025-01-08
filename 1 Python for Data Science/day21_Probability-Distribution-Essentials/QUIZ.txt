@@ -1,0 +1,144 @@
+QUIZ
+Day 22 
+
+
+1 - Student's t-Distribution is used when ____
+2 Marks
+Sample size is small
+Population standard deviation is unknown
+Population is normally distributed
+x All of the Above
+
+All of the Above
+
+Explanation:
+The Student's t-Distribution is used when:
+
+The sample size is small (usually n<30),
+The population standard deviation is unknown,
+The population is normally distributed or approximately normal. These conditions make the t-distribution suitable for estimating the mean and performing hypothesis testing when the exact population parameters are not available.
+
+2 - ________ describes the probability of occurrence of a possible outcome from a discrete random variable
+2 Marks
+Continuous random variable
+random variable
+x Discrete Probability Distribution
+Continous Probability Distribution
+
+Discrete Probability Distribution
+
+Explanation:
+A Discrete Probability Distribution describes the probability of occurrence of each possible outcome for a discrete random variable. Discrete random variables take on specific, countable values, and their probability distributions provide the likelihood of each possible outcome.
+
+3 - Degrees of ________ are the number of independent values that are free to vary as we estimate parameters from samples
+2 Marks
+x freedom
+polynomial
+maximum likelihood
+None of the above
+
+freedom
+
+Explanation:
+Degrees of freedom refer to the number of independent values that are free to vary in a statistical calculation when estimating parameters from a sample. They are an essential concept in inferential statistics, especially when working with sample data to estimate population parameters and conduct hypothesis tests.
+
+4 - 4
+________ is a subset of population
+2 Marks
+Parameter
+x Sample
+Variable
+None of the above
+
+Sample
+
+Explanation:
+A sample is a subset of a population. It is used in statistics to make inferences about the population without having to collect data from the entire population.
+
+5 - 5
+________  is a standard score similar to z-score except when we don’t know the population parameters
+2 Marks
+P-value
+x t–Score
+Standard deviation
+All of the Above
+
+t-Score
+
+Explanation:
+A t-score is a standardized score similar to a z-score but is used when the population standard deviation is unknown and the sample size is small. It is based on the Student's t-distribution and is often used in hypothesis testing and confidence intervals when dealing with smaller samples.
+
+
+
+6 - Which of these is a feature of sampling distribution
+2 Marks
+Useful in making conclusions about the population
+Provides information about how the statistic of a sample differ from other samples and population
+Sampling Distribution helps in estimating the average score of students in a university, as it closely resembles the population
+x All of the Above
+
+All of the Above
+
+Explanation: A sampling distribution has the following features:
+
+It is useful in making conclusions about the population because it allows us to infer population parameters based on sample statistics.
+It provides information about how the statistic of a sample differs from other samples and the population, which helps in understanding variability and bias in sampling.
+Since it represents the distribution of a statistic over many samples, it helps in estimating parameters (like the average score of students), as it often approximates the population distribution, especially when sample sizes are large.
+All these points are key features of sampling distributions.
+
+7 - As the sample size increases, standard error______
+2 Marks
+increases
+x decreases
+Both a and b
+None of the above 
+
+decreases
+
+Explanation:
+As the sample size increases, the standard error decreases. Standard error is the standard deviation of the sampling distribution of a statistic (like the mean). It is inversely proportional to the square root of the sample size, so as the sample size grows, the standard error becomes smaller, indicating more precise estimates of the population parameter.
+
+8 - _______is defined as the standard deviation of the sampling distribution
+2 Marks
+x Standard Error
+Standard Misprint
+Standard Inaccuracy
+All of the Above
+
+Standard Error
+
+Explanation:
+The Standard Error is defined as the standard deviation of the sampling distribution of a statistic, such as the sample mean. It measures the dispersion of sample means around the population mean, providing an indication of how much variability there is in the estimates from different samples.
+
+9 - Standard Error helps to :
+2 Marks
+Find accuracy of the statistic which represents the population
+Measure the variability among the samples
+x Both a and b
+None of the above
+
+Both a and b
+
+Explanation:
+The Standard Error helps to:
+
+Find the accuracy of the statistic (such as the sample mean) in representing the population, indicating how close the sample statistic is likely to be to the true population parameter.
+Measure the variability among samples, showing the extent to which sample estimates vary around the population parameter.
+Both of these roles make standard error an essential measure in inferential statistics.
+
+10 - Central Limit Theorem is used for t-tests where we compare means of two samples
+2 Marks
+x TRUE
+FALSE
+_
+_
+
+TRUE
+
+Explanation:
+The Central Limit Theorem (CLT) is foundational for t-tests, especially when comparing means of two samples. It states that the sampling distribution of the sample mean will be approximately normal if the sample size is large enough, regardless of the population's distribution. This normality assumption underpins the t-test, allowing for the comparison of sample means even when the population distribution is unknown, provided the samples are reasonably large (or both are assumed to be normally distributed if smaller).
+
+
+
+
+

@@ -1,0 +1,211 @@
+
+QUIZ   
+
+Day 22  
+
+
+
+1 - 1
+Which of these are forms of statistical inference?
+2 Marks
+Point Estimation
+Interval Estimation
+Hypothesis Testing
+x All of the Above
+
+All of the Above
+
+Explanation:
+Point Estimation: Estimating a single value (like the mean) for a population parameter.
+Interval Estimation: Providing a range (like confidence intervals) within which the parameter is likely to fall.
+Hypothesis Testing: Testing assumptions (hypotheses) about a population parameter using sample data.
+
+
+2 - Which of these is a type of estimation
+2 Marks
+Point Estimation
+Interval Estimation
+Both a and b
+None of the above
+
+
+Both a and b
+
+Explanation:
+Point Estimation: Provides a single value estimate for a parameter (e.g., sample mean as an estimate for population mean).
+Interval Estimation: Provides a range of values (e.g., confidence intervals) where the parameter is likely to fall.
+Both are types of estimation in statistics. 
+
+
+3 - 3
+A statistic which is used to estimate the parameter θ is called point estimator
+2 Marks
+x TRUE
+FALSE
+_
+_
+
+TRUE
+
+Explanation:
+A point estimator is a statistic (like the sample mean or sample proportion) that provides a single best guess or estimate for an unknown population parameter (
+𝜃
+θ). For example:
+
+Sample mean (
+𝑥
+ˉ
+x
+ˉ
+ ) estimates the population mean (
+𝜇
+μ).
+Sample proportion (
+𝑝
+^
+p
+^
+​
+ ) estimates the population proportion (
+𝑝
+p).
+So, the statement is true! 
+
+
+4 - In a model which has high bias and high variance the predictions are _______ and _________
+2 Marks
+x inconsistent and inaccurate
+accurate and consistent
+inconsistent and accurate
+consistent and inaccurate
+
+inconsistent and inaccurate
+
+Explanation:
+High Bias: The model oversimplifies the data, leading to inaccurate predictions (far from the true values).
+High Variance: The model is very sensitive to changes in the data, leading to inconsistent predictions (varies a lot with different samples).
+Thus, predictions are both inconsistent and inaccurate when a model has high bias and high variance. 
+
+5 - The estimator for which the MSE is the smallest should be chosen as ______
+2 Marks
+Dot Estimator
+x Point Estimator
+Both a and b
+None of the above
+
+The correct answer is:
+
+Point Estimator
+
+Explanation:
+The Mean Squared Error (MSE) is a measure of how close an estimator's predictions are to the true parameter value. A point estimator is selected to minimize MSE, as it provides a single best estimate for the parameter.
+
+So, the correct answer is Point Estimator!
+
+
+6 - Which of these is a part of confidence interval?
+2 Marks
+confidence level
+statistic
+margin of error
+x All of the Above
+
+The correct answer is:
+
+All of the Above
+
+Explanation:
+A confidence interval consists of:
+
+Confidence Level: The percentage of times the interval will contain the true parameter if repeated many times (e.g., 95%).
+Statistic: The central value, such as the sample mean or proportion.
+Margin of Error: The range added/subtracted from the statistic to create the interval.
+All these elements are essential parts of a confidence interval.
+
+7 - A Confidence Interval doesn't describe the amount of uncertainty.
+2 Marks
+TRUE
+x FALSE
+
+
+FALSE
+
+Explanation:
+A confidence interval is specifically designed to describe the amount of uncertainty in an estimate. It provides a range within which the true population parameter is likely to fall, along with a confidence level (e.g., 95%), indicating the reliability of the estimate.
+
+Thus, the statement is false.
+
+
+8 - Which of the following factors do not affect the width of the confidence interval?
+2 Marks
+Confidence level
+Sample size
+x Sample mean
+Population Variance
+
+The correct answer is:
+
+Sample mean
+
+Explanation:
+The width of a confidence interval is influenced by:
+
+Confidence level: Higher confidence levels (e.g., 99% vs. 95%) result in wider intervals.
+Sample size: Larger sample sizes lead to narrower intervals.
+Population variance: Higher variance results in wider intervals.
+However, the sample mean determines the center of the confidence interval, not its width. Thus, it does not affect the width of the interval
+
+
+9 - ________  is a range of values below and above the sample statistic in a confidence interval.
+2 Marks
+Error
+x Margin of Error
+Mean
+None of the above
+
+The correct answer is:
+
+Margin of Error
+
+Explanation:
+The margin of error is the range added to and subtracted from the sample statistic in a confidence interval. It accounts for the uncertainty in the estimate and determines the width of the interval.
+
+For example:
+
+Confidence Interval
+=
+Sample Statistic ± Margin of Error
+Confidence Interval=Sample Statistic ± Margin of Error
+So, the correct answer is Margin of Error. 
+
+
+10 - 10
+Which of the following parameters are used to calculate confidence interval in the formula
+2 Marks
+point estimate * margin of error
+point estimate + margin of error
+margin of error
+x point estimate +/- margin of error
+
+The correct answer is:
+
+point estimate +/- margin of error
+
+Explanation:
+The formula for a confidence interval is:
+
+Confidence Interval
+=
+Point Estimate
+±
+Margin of Error
+Confidence Interval=Point Estimate ± Margin of Error
+Point Estimate: The sample statistic, such as the sample mean or proportion.
+Margin of Error: The range accounting for variability and uncertainty (based on standard error and confidence level).
+Thus, the correct representation is point estimate +/- margin of error. 
+
+
+
+
+
+
