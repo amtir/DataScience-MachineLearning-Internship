@@ -1,0 +1,102 @@
+Model Selection
+
+Table of Contents
+Model Selection	1
+1. Algorithm Selection	1
+2. Hyperparameter Selection	1
+Steps for Selecting a Model	1
+When Data is Abundant	1
+When Data is Limited	2
+Resampling Measures	2
+1. Cross-Validation	2
+K-Folds Cross-Validation	2
+Leave-One-Out Cross-Validation (LOOCV)	2
+2. Bootstrapping	3
+Selecting K-Value for Cross-Validation	3
+How to Choose K:	3
+Trade-offs in K-Value:	3
+Formulas and Examples	4
+K-Folds Cross-Validation Performance	4
+LOOCV Performance	4
+
+
+
+Model Selection
+Model selection is the process of choosing the best model that meets the requirements of a specific machine learning scenario. It involves two key approaches:
+1. Algorithm Selection
+Choosing the best algorithm and its corresponding hyperparameters for the given task.
+2. Hyperparameter Selection
+Fine-tuning the hyperparameters of a selected algorithm to optimize its performance.
+
+Steps for Selecting a Model
+When Data is Abundant
+1. Split the Data:
+Use training data and validation data to:
+Train and evaluate alternate models.
+Select the model with the best performance (Model Selection).
+Use test data to:
+Calculate the generalization error by fitting the selected model (Model Evaluation).
+When Data is Limited
+1. Resampling Techniques:
+Use the same training data for both training and validating models.
+Employ methods like cross-validation or bootstrapping to simulate multiple splits for robust evaluation.
+2. Test Data:
+Use test data only for final generalization (Model Evaluation).
+
+Resampling Measures
+Resampling is crucial when data is limited or to validate models robustly. Common techniques include:
+1. Cross-Validation
+Splits the data into K folds:
+K−1 folds are used for training.
+1 fold is used for testing.
+This process is repeated K times (permutations).
+Output: The average performance metric across all K iterations.
+K-Folds Cross-Validation
+A type of cross-validation where:
+The data is split into K folds (sampling without replacement).
+The model is trained and tested K times, each time using a different fold as the test set.
+Performance Measure: The mean or standard deviation of the metrics across all K folds.
+Advantages:
+Balances bias and variance.
+Suitable for a variety of datasets.
+Leave-One-Out Cross-Validation (LOOCV)
+A special case of K-fold where K=n (number of samples).
+The model is trained on n−1 samples.
+Tested on the 1 remaining sample.
+Repeated n times, using each sample as the test set once.
+Advantages:
+Uses nearly all the data for training.
+Results in a low-bias model.
+Disadvantages:
+Computationally expensive for large datasets.
+
+2. Bootstrapping
+A method to create multiple subsets of data by sampling with replacement.
+Steps:
+Decide the number of bootstrap samples.
+Define the size of each sample.
+Generate samples by random selection with replacement.
+Example:
+Original data: [2, 4, 6, 8, 5]
+Sample 1: [2, 2, 4, 5]
+Sample 2: [6, 6, 8, 2]
+Advantages:
+Allows estimating the uncertainty and variability in model performance.
+Suitable for small datasets.
+
+Selecting K-Value for Cross-Validation
+How to Choose K:
+Empirical Recommendation:
+K=5 or K=10 often provides a balance between bias and variance.
+Experimentation:
+Try different values for K (e.g., 2 to 12).
+Select K based on:
+When accuracy becomes constant.
+The highest observed accuracy.
+Trade-offs in K-Value:
+Small K (e.g., K=2):
+Faster computation.
+Higher bias.
+Large K (e.g., K=n in LOOCV):
+More computation.
+Lower bias but higher variance.

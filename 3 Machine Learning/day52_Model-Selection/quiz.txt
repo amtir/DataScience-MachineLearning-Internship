@@ -1,0 +1,222 @@
+
+
+Quiz
+
+
+1 - 1
+Which are the examples of Hyperparameter tuning?
+1) Number of branches in the decision tree
+2) Regularization constant
+3) Number of clusters in K-means
+2 Marks
+Only 1
+1 and 3
+x 1,2, and 3
+2 and 3
+
+The correct answer is:
+
+1, 2, and 3
+
+Explanation:
+All the options listed are examples of hyperparameters, which are parameters that need to be set before training a machine learning model:
+
+Number of branches in the decision tree: Refers to the depth of the tree or number of splits, which is a hyperparameter.
+Regularization constant: Controls the strength of regularization, a hyperparameter used in models like Ridge or Lasso regression.
+Number of clusters in K-means: Defines the number of clusters to form, which is also a hyperparameter.
+Thus, all three are valid examples of hyperparameter tuning.
+
+2 - 2
+Method of refitting a model on different samples of training data to obtain additional information with each fit is called __________.
+2 Marks
+x Resampling Measures
+Statistical measures
+Confidence
+None of the above
+
+The correct answer is:
+
+Resampling Measures
+
+Explanation:
+Resampling Measures involve refitting a model on different subsets of training data to gain additional information about the model's performance, stability, or variability.
+Techniques like Cross-Validation, Bootstrapping, and LOOCV fall under this category.
+The process helps in estimating model performance and mitigating overfitting or underfitting issues.
+Other options:
+
+Statistical measures: Refers to metrics or summary statistics but doesn't involve refitting.
+Confidence: Unrelated to refitting or resampling.
+None of the above: Incorrect because resampling measures are the right choice
+
+3 - 3
+For k cross-validation, smaller k value implies less variance.
+2 Marks
+TRUE
+x FALSE
+
+The correct answer is:
+
+FALSE
+
+Explanation:
+In k-fold cross-validation, a smaller k value means:
+
+Fewer folds (e.g., k=2): Larger test sets and fewer training samples in each iteration.
+This leads to higher bias because the model trains on less data in each iteration, potentially underestimating performance.
+The variance of the model’s performance estimate is higher because fewer folds mean less averaging over performance metrics.
+In contrast, a larger k (e.g., k=10 or LOOCV) results in:
+
+Lower variance because the performance is averaged over more folds, providing a more stable estimate.
+However, it may increase computational cost.
+
+4 - 4
+A type of k-fold cross-validation using only one observation for validation is called _________.
+2 Marks
+Cross Validation
+Bootstrap
+K-fold Cross Validation
+None of the above
+
+The correct answer is:
+
+None of the above
+
+Explanation:
+The type of k-fold cross-validation using only one observation for validation is called Leave-One-Out Cross-Validation (LOOCV).
+
+LOOCV is a special case of k-fold cross-validation where the number of folds K equals the number of samples (K=n).
+Each iteration trains the model on n−1 samples and validates it on the single remaining sample.
+Since "Leave-One-Out Cross-Validation" is not listed as an option, None of the above is the correct choice.
+
+5 - 5
+As you increase the amount of training data, the test error decreases, and the training error increases. The train error is quite low, while the test error is much higher than the train error. Select the most probable option.
+2 Marks
+High model bias
+x High variance
+High estimation bias
+None of the above
+
+The correct answer is:
+
+High variance
+
+Explanation:
+The scenario described indicates a high variance problem, also known as overfitting:
+The model performs very well on the training data (low training error).
+However, it performs poorly on unseen test data (high test error).
+This happens because the model has memorized the training data rather than generalizing well to new data.
+Why not the other options?
+High model bias: Would imply underfitting, where both training and test errors are high.
+High estimation bias: Not a standard term used in this context; it doesn't apply here.
+None of the above: Incorrect because high variance explains the scenario.
+
+6 - 6
+What is the meaning of "K" in K-fold cross-validation?
+2 Marks
+defines the number of models in which to split a given dataset
+defines the number of folds in which to split a given train data
+defines the number of folds in which to split a given test data
+x K defines the number of folds in which to split a given dataset
+
+The correct answer is:
+
+K defines the number of folds in which to split a given dataset
+
+Explanation:
+In K-fold cross-validation, K refers to the number of folds into which the entire dataset is split.
+These folds are used as:
+Training data: K−1 folds.
+Testing data: 1 fold, which rotates through all the folds during K iterations.
+The process ensures that every data point is used for both training and testing exactly once.
+Why not the other options?
+Defines the number of models: Incorrect, as K doesn’t define models; it defines splits of the dataset.
+Defines the number of folds in train data: Incorrect, K applies to the entire dataset, not just training data.
+Defines the number of folds in test data: Incorrect, as test data is just 1 fold in each iteration of K-fold CV.
+
+7 - 7
+Which of the following code snippet is used to import a function to transform features by scaling each feature to a given range?
+2 Marks
+DataFrame.dummies()
+sklearn.preprocessing.MinMaxScaler()
+sklearn.MinScaler()
+None of the above
+
+The correct answer is:
+
+sklearn.preprocessing.MinMaxScaler()
+
+Explanation:
+The MinMaxScaler function from sklearn.preprocessing is used to transform features by scaling each feature to a given range, typically between 0 and 1 or any other specified range.
+It ensures that the values of features are normalized within the desired range, improving the performance of many machine learning algorithms.
+Why not the other options?
+DataFrame.dummies():
+Incorrect, as this is used to create dummy/indicator variables for categorical data, not for scaling.
+sklearn.MinScaler():
+Incorrect, there is no such function in sklearn.
+None of the above:
+Incorrect, as sklearn.preprocessing.MinMaxScaler() is the correct choice.
+
+
+8 - 8
+In K-fold Cross-validation the average and or standard deviation values of all K-fold models are taken.
+2 Marks
+x TRUE
+FALSE
+
+The correct answer is:
+
+TRUE
+
+Explanation:
+In K-fold Cross-validation, the dataset is divided into K folds, and the model is trained and tested K times.
+Each fold serves as the test set exactly once, while the remaining K−1 folds are used for training.
+After all K iterations, the average and/or standard deviation of the performance metrics (e.g., accuracy, precision, recall) across all K folds are computed to evaluate the model's overall performance.
+This ensures that the model evaluation is robust and not biased by a single train-test split.
+
+9 - 9
+Which of the following code snippet is used to import a function which evaluates a score by cross-validation?
+2 Marks
+sklearn.model_selection.cross_score()
+x sklearn.model_selection.cross_val_score()
+sklearn.Kfold()
+sklearn.model_selection.Kfold()
+
+
+The correct answer is:
+
+sklearn.model_selection.cross_val_score()
+
+Explanation:
+cross_val_score() from sklearn.model_selection is a function that evaluates a machine learning model by performing cross-validation. It returns the cross-validation scores for each fold.
+Why not the other options?
+sklearn.model_selection.cross_score(): Incorrect, as there is no such function in sklearn.
+sklearn.Kfold(): Incorrect, the KFold class is used to split data into K folds but doesn’t evaluate scores.
+sklearn.model_selection.Kfold(): Incorrect, KFold is for creating splits, not for evaluation.
+Thus, sklearn.model_selection.cross_val_score() is the correct choice.
+
+
+10 - 10
+What is the meaning of parameter "shuffle" in sklearn.model_selection.Kfold() ?
+2 Marks
+Number of folds
+Affects the ordering of the indices
+Affects the ordering of the batches
+x Whether to shuffle the data before splitting into batches, default = FALSE
+
+The correct answer is:
+
+Whether to shuffle the data before splitting into batches, default = FALSE
+
+Explanation:
+In sklearn.model_selection.KFold(), the shuffle parameter determines whether the data should be shuffled before being split into K folds.
+By default, shuffle=False, meaning the data is split in the original order.
+Shuffling can be useful to ensure randomness in the splits, especially if the data is ordered or contains patterns that might bias the results.
+Why not the other options?
+Number of folds: Incorrect, this is controlled by the n_splits parameter.
+Affects the ordering of the indices: Partially true, but it doesn’t explain the purpose clearly. Shuffling affects the order only if shuffle=True.
+Affects the ordering of the batches: Misleading, as "batches" isn’t the correct term; it refers to splitting folds, not training batches.
+Thus, the correct explanation is "Whether to shuffle the data before splitting into batches, default = FALSE."
+
+
+
+
