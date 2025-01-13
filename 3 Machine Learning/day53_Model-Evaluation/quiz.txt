@@ -1,0 +1,167 @@
+
+
+quiz
+
+1 - 1
+In model evaluation, the selected model is tested on ____ data to check its generalization ability.
+2 Marks
+Train
+x Test
+Dataset
+None of the above
+
+The correct answer is:
+
+Test
+
+Explanation:
+In model evaluation, the selected model is tested on the test data to check its generalization ability, i.e., how well the model performs on unseen data. This ensures that the model is not just memorizing the training data but is also effective on new inputs.
+
+2 - 2
+______ refers to the ability of a selected model to provide consistent performance on unseen data.
+2 Marks
+Normalization
+Regularization
+Standardization
+x Generalization
+
+The correct answer is:
+
+Generalization
+
+Explanation:
+Generalization refers to the ability of a model to perform well on unseen or new data. It indicates that the model has learned the underlying patterns in the training data rather than just memorizing it, ensuring consistent performance across various datasets.
+
+3 - 3
+Model Evaluation comes into the picture because a best-performing model may be a result of:
+2 Marks
+Undersampling
+Oversampling
+x Overfit
+Underfit
+
+The correct answer is:
+
+Overfit
+
+Explanation:
+A best-performing model during training may have overfit the training data, meaning it has memorized the training data rather than learning the general patterns. This leads to poor performance on unseen data. Model evaluation ensures that the model generalizes well and is not just fitting the training dataset perfectly.
+
+4 - 4
+A model which is unable to capture the relation between input (X) and output (Y) is called:
+2 Marks
+Good Fit Model
+x Underfit Model
+Ideal Model
+Overfit Model
+
+The correct answer is:
+
+Underfit Model
+
+Explanation:
+An underfit model fails to capture the relationship between input (X) and output (Y). This happens when the model is too simple, lacks the complexity to represent the data, or is not trained enough, resulting in poor performance on both the training and test datasets.
+
+5 - 5
+A model which understands the underlying data in a balanced way to predict future results is:
+2 Marks
+x Good Fit Model
+Underfit Model
+Best Fit model
+All of the above
+
+Good Fit Model
+
+Explanation:
+A good fit model strikes the right balance between underfitting and overfitting. It captures the underlying patterns in the data while generalizing well to unseen data. Such a model performs well on both training and test datasets, making it reliable for predicting future results.
+
+
+
+6 - 6
+Identify the metrics for the evaluation of a regression model.
+2 Marks
+RMSE
+RMSLE
+MAPE
+x All of the above
+
+The correct answer is:
+
+All of the above
+
+Explanation:
+RMSE (Root Mean Squared Error): Measures the average magnitude of the prediction error.
+RMSLE (Root Mean Squared Logarithmic Error): Penalizes large differences between actual and predicted values on a logarithmic scale.
+MAPE (Mean Absolute Percentage Error): Measures the average percentage error in predictions.
+All three metrics are widely used for evaluating regression models. Each has its own use case depending on the data and the nature of the problem.
+
+
+7 - 7
+______ refers to the error measure on system forecasts.
+2 Marks
+RMSE
+MAPE
+RMSLE
+x All of the above
+
+The correct answer is:
+
+All of the above
+
+Explanation:
+All three—RMSE, MAPE, and RMSLE—are error measures commonly used to evaluate system forecasts in regression models. They quantify the difference between actual and predicted values, with each focusing on different aspects of the error:
+
+RMSE: Emphasizes larger errors due to squaring.
+MAPE: Expresses error as a percentage, helpful for proportional understanding.
+RMSLE: Focuses on relative differences, penalizing larger discrepancies more on a logarithmic scale.
+
+8 -8
+_______ refers to the square root of the mean squared difference between actual and predicted values.
+2 Marks
+x RMSE
+RMSLE
+MAPE
+All of the above
+
+The correct answer is:
+
+RMSE
+
+Explanation:
+RMSE (Root Mean Squared Error) refers to the square root of the mean squared difference between actual and predicted values. It is a commonly used metric in regression to evaluate the magnitude of prediction errors, with a focus on penalizing larger errors more heavily due to squaring.
+
+9 - 9
+______ refers to the square root of the mean squared difference between the log of actual and predicted values.
+2 Marks
+RMSE
+x RMSLE
+MAPE
+All of the above
+
+RMSLE
+
+Explanation:
+RMSLE (Root Mean Squared Logarithmic Error) measures the square root of the mean squared difference between the logarithm of actual and predicted values. It is particularly useful when dealing with data where the scale or range of values varies significantly and when relative differences are more important than absolute differences.
+
+
+
+10 - 10
+Which of the following is true about RMSLE?
+2 Marks
+Implemented when both actual and predicted values are large.
+It is unaffected by outliers
+x Considers relative error between actual and predicted values
+x All of the above
+
+The correct answer is:
+
+Considers relative error between actual and predicted values
+
+Explanation:
+RMSLE is primarily used when relative differences between actual and predicted values are important, rather than absolute differences.
+It is not unaffected by outliers because logarithms reduce the impact of large errors but do not eliminate it entirely.
+RMSLE is not specifically implemented only for large values, as it works well across a range of scales, particularly when there are significant differences in value magnitudes.
+
+
+
+
