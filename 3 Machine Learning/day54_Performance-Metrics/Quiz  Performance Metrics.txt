@@ -1,0 +1,163 @@
+
+
+Quiz Data science and ML performance metrics 
+
+
+1 
+_____ summarizes the information of confusion matrix with changing threshold value graphically.
+2 Marks
+ROC
+AUC
+Both ROC and AUC
+None of the above
+
+The correct answer is: ROC
+
+Explanation: The Receiver Operating Characteristic (ROC) curve graphically summarizes the performance of a classification model by plotting the True Positive Rate (TPR) against the False Positive Rate (FPR) at various threshold levels. AUC (Area Under the Curve) is a metric derived from the ROC curve that quantifies the area under it but does not summarize the information graphically.
+
+
+2
+What is the full form of ROC?
+2 Marks
+Rectilinear Observer Characteristics
+Reciever Operation Characteristics
+Reciever Operating Characteristics
+None of the above
+
+The correct answer is: Receiver Operating Characteristics
+
+
+3
+In which step of plotting an ROC curve do we calculate the TPR and FPR?
+2 Marks
+Step 1
+Step 2
+Step 3
+Step 4
+
+The correct answer is: Step 3
+
+Explanation:
+The steps for plotting an ROC curve typically include:
+
+Step 1: Sort the predicted probabilities.
+Step 2: Set a series of threshold values.
+Step 3: Calculate the True Positive Rate (TPR) and False Positive Rate (FPR) at each threshold.
+Step 4: Plot the ROC curve with FPR on the x-axis and TPR on the y-axis.
+
+
+
+4
+Technique that helps to compare the ROC curves is called:
+2 Marks
+Classifier
+Confusion Matrix
+AUC
+None of the above
+
+The correct answer is: AUC
+
+Explanation:
+The Area Under the Curve (AUC) is a technique used to compare different ROC curves. It quantifies the overall performance of a classifier by calculating the area under the ROC curve. A higher AUC value indicates better classifier performance.
+
+
+5
+What is true about AUC?
+2 Marks
+It determines the model's capability
+Higher AUC is better at predicting
+Better model is able to distinguish between classes
+All of the above
+
+The correct answer is: All of the above
+
+Explanation:
+AUC determines the model's capability: AUC quantifies how well a model distinguishes between classes.
+Higher AUC is better at predicting: A higher AUC indicates that the model is better at ranking positive instances higher than negative ones.
+Better model is able to distinguish between classes: A good AUC reflects a model's ability to separate different classes effectively.
+Thus, all the statements are true about AUC.
+
+
+
+6
+Accuracy, Recall, Precision, and F1 Score are the parameters to calculate the efficiency under _____.
+2 Marks
+Data Acquisition
+Data Evaluation
+Data Testing
+Data Modelling
+
+The correct answer is: Data Evaluation
+
+Explanation:
+Accuracy, Recall, Precision, and F1 Score are performance metrics used during the evaluation phase of a model to assess its efficiency and effectiveness. These metrics help evaluate how well the model is performing in terms of correctly predicting outcomes, handling imbalances, and overall reliability.
+
+
+7
+F1 score is the _____ mean between precision and recall.
+2 Marks
+absolute
+harmonic
+squared
+None of the above
+
+The correct answer is: harmonic
+
+Explanation:
+The F1 score is the harmonic mean of precision and recall. It is calculated as:
+
+F1=2× *Precision+Recall)/(Precision×Recall)
+​
+ 
+The harmonic mean gives more weight to lower values, ensuring that the F1 score reflects a balance between precision and recall.
+
+
+
+8
+A single metric that combines both precision and recall is:
+2 Marks
+AUC
+Confusion matrix
+F1 Score
+ROC
+
+The correct answer is: F1 Score
+
+Explanation:
+The F1 Score combines both precision and recall into a single metric by calculating their harmonic mean. It is particularly useful when there is an imbalance between classes, as it balances the trade-off between precision and recall.
+
+
+9
+Precision and Recall are extensively used in:
+2 Marks
+Information Extraction
+Exploratory Analysis
+Calculating Accuracy
+None of the above
+
+The correct answer is: Information Extraction
+
+Explanation:
+Precision and Recall are extensively used in Information Extraction tasks, where the goal is to retrieve relevant information from large datasets. These metrics help evaluate the quality of the extracted information:
+
+Precision measures the proportion of correctly extracted items among all extracted items.
+Recall measures the proportion of correctly extracted items among all relevant items in the dataset.
+
+
+
+10
+_______ is a metric that quantifies the number of correct positive predictions made out of all positive predictions that could have been made.
+2 Marks
+Precision
+F1 Score
+Recall
+None of the above
+
+The correct answer is: Precision
+
+Explanation:
+Precision quantifies the number of correct positive predictions (True Positives) out of all positive predictions (True Positives + False Positives). It measures how accurate the positive predictions made by the model are.
+
+Precision=True Positives / (True Positives + False Positives)
+
+​
