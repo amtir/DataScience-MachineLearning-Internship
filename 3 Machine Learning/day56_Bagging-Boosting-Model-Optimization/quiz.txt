@@ -1,0 +1,245 @@
+
+
+Quiz
+Day56 Bagging & Boosting
+
+1 - 1
+A technique that combines outputs from multiple models to make a better prediction is called ________.
+2 Marks
+x Ensemble Learning
+Reinforcement Learning
+Machine Learning
+All of the above
+
+he correct answer is: Ensemble Learning
+
+Explanation:
+Ensemble learning involves combining the outputs of multiple models (e.g., decision trees, neural networks) to improve prediction accuracy. Examples include bagging, boosting, and stacking.
+
+
+2 - 2
+Identify the methods used to build an ensemble model.
+2 Marks
+Bagging
+Boosting
+Stacking
+x All of the above
+
+The correct answer is: All of the above
+
+Explanation:
+Ensemble models can be built using the following methods:
+
+Bagging: Combines predictions from multiple models trained independently in parallel (e.g., Random Forest).
+Boosting: Combines models sequentially, focusing on correcting errors made by previous models (e.g., AdaBoost, Gradient Boosting).
+Stacking: Combines predictions from multiple models using a meta-model to make final predictions.
+
+
+3 - 3
+____ is a method of sample selection and can be defined as random sampling with replacement.
+2 Marks
+Bagging
+xBoosting
+Bootstrapping
+Stacking
+
+The correct answer is: Bootstrapping
+
+Explanation:
+Bootstrapping is a sampling method where random samples are drawn with replacement from a dataset.
+It is a fundamental step in Bagging (Bootstrap Aggregating), allowing the creation of multiple subsets of data for training models.
+
+1. What is Bootstrapping?
+Bootstrapping is a statistical sampling technique.
+It involves randomly sampling data with replacement from the original dataset to create new subsets (called bootstrap samples).
+Each bootstrap sample is the same size as the original dataset, but it may include duplicate records due to replacement.
+Purpose: Bootstrapping is used to estimate the variability of a statistic or generate multiple training datasets in ensemble methods like Bagging.
+
+Example: Original dataset: [1,2,3,4]
+Bootstrap sample: [2,4,2,3]
+
+2. What is Bagging?
+Bagging (Bootstrap Aggregating) is a machine learning ensemble technique.
+It uses bootstrapping to create multiple training datasets and trains separate models (often the same algorithm) on each dataset in parallel.
+The predictions from all models are then combined (e.g., by averaging for regression or majority voting for classification) to produce a final output.
+Purpose: Bagging reduces model variance and improves stability and accuracy, especially for high-variance models like decision trees.
+
+Example Workflow:
+
+Generate multiple bootstrap samples using bootstrapping.
+Train a model (e.g., decision tree) on each bootstrap sample.
+Aggregate the predictions (e.g., average for regression, majority vote for classification).
+
+Relationship
+Bootstrapping is a step within Bagging. Bagging wouldn’t be possible without bootstrapping.
+Bagging extends the concept of bootstrapping by training models on the sampled datasets and combining their predictions.
+
+Real-world Example
+In a Random Forest, bagging is used:
+Bootstrapping creates multiple datasets.
+Decision trees are trained on each bootstrap dataset.
+Predictions from all trees are aggregated to make the final decision.
+
+4 - 4
+Which of the following is a widely used and effective machine learning algorithm based on the idea of bagging?
+2 Marks
+Decision tree
+Linear Regression
+Logistic Regression
+x Random Forest
+
+The correct answer is: Random Forest
+
+Explanation:
+Random Forest is a widely used and highly effective machine learning algorithm based on the idea of bagging (Bootstrap Aggregating).
+It builds multiple decision trees on different bootstrap samples of the dataset and combines their outputs (e.g., majority voting for classification or averaging for regression).
+Key Points:
+
+Random Forest reduces variance compared to a single decision tree by aggregating the results of many trees.
+It introduces additional randomness by selecting a random subset of features at each split in the tree, further improving performance.
+Other options like Decision Tree, Linear Regression, and Logistic Regression are not directly based on bagging.
+
+5 - 5
+Which of the following is a widely used and effective machine learning algorithm based on the idea of boosting?
+2 Marks
+AdaBoost
+XGBoost
+CatBoost
+x All of the above
+
+The correct answer is: All of the above
+
+Explanation:
+Boosting is an ensemble technique that builds models sequentially, where each model focuses on correcting the errors of the previous one.
+The following are widely used and effective machine learning algorithms based on boosting:
+AdaBoost:
+
+Short for Adaptive Boosting.
+Focuses on weighting misclassified data points more heavily in subsequent iterations.
+XGBoost:
+
+Stands for eXtreme Gradient Boosting.
+A highly efficient implementation of gradient boosting that includes regularization to reduce overfitting.
+CatBoost:
+
+Specifically designed for categorical data.
+Provides efficient handling of categorical features without extensive preprocessing.
+Each of these algorithms uses the boosting principle to improve performance, and they are widely used in machine learning tasks.
+
+
+6 - 6
+Which of the following is an ensemble technique that combines several base learners to generate accurate output?
+2 Marks
+x Bagging
+Swapping
+Model Selection
+Boosting
+
+The correct answer is: Bagging
+
+Explanation:
+Bagging (Bootstrap Aggregating) is an ensemble technique that combines the predictions of several base learners (e.g., decision trees) to generate more accurate and stable outputs.
+It reduces the variance of models by training them on different bootstrap samples (random sampling with replacement) and aggregating their predictions (e.g., averaging for regression or majority voting for classification).
+Other Options:
+
+Swapping: Not an ensemble technique in machine learning.
+Model Selection: Refers to choosing the best model from a set of candidates, not an ensemble technique.
+Boosting: While it is another ensemble technique, it focuses on reducing bias and works sequentially, unlike Bagging which trains models in parallel.
+
+
+7 - 7
+Which of the following are the stages of Bagging?
+2 Marks
+Bootstrapping
+Model fitting
+Combining models
+x All of the above
+
+
+The correct answer is: All of the above
+
+Explanation:
+The stages of Bagging (Bootstrap Aggregating) are:
+
+Bootstrapping:
+
+Random sampling with replacement is used to create multiple bootstrap samples from the original dataset.
+Each bootstrap sample may have duplicate entries and is used to train a separate model.
+Model Fitting:
+
+Independent models (often of the same type, such as decision trees) are trained on each bootstrap sample.
+Combining Models:
+
+The outputs of all models are combined to generate the final prediction.
+Combination methods:
+For regression: Average the predictions.
+For classification: Use majority voting.
+
+8 - 8
+Which of the following is true about bagging?
+1) Bagging can be parallel
+2) The aim of bagging is to reduce bias, not variance
+3) Bagging helps in reducing overfitting
+2 Marks
+1 and 2
+2 and 3
+x 1 and 3
+All of the above
+
+The correct answer is: 1 and 3
+
+Explanation:
+Bagging can be parallel:
+
+True: Bagging trains multiple models on bootstrap samples in parallel, as each model is independent of the others.
+The aim of bagging is to reduce bias, not variance:
+
+False: The primary aim of bagging is to reduce variance, not bias. Bagging is especially useful for high-variance models like decision trees.
+Bagging helps in reducing overfitting:
+
+True: Bagging reduces overfitting by averaging predictions, which smoothens the decision boundary and prevents the model from fitting noise in the training data.
+
+Key Takeaway:
+Bagging reduces variance and overfitting by aggregating predictions from multiple models trained on diverse bootstrap samples, and it is inherently parallel.
+
+
+9 - 9
+In Bagging the regression model, predicted outcome from models are ________
+2 Marks
+x averaged
+standard deviated
+maximized
+minimized
+
+The correct answer is: averaged
+
+Explanation:
+In Bagging for regression tasks, the predicted outcomes from all individual models are averaged to produce the final prediction.
+Averaging reduces the variance in predictions, making the final model more stable and accurate.
+This aggregation method helps smooth out the variability of individual models.
+
+
+10 - 10
+Which is the technique that generates random samples from a dataset with replacement?
+2 Marks
+Bagging
+x Bootstraping
+Boosting
+Stacking
+
+The correct answer is: Bootstrapping
+
+Explanation:
+Bootstrapping is a statistical technique that generates random samples with replacement from a dataset. Each sample can include duplicate records because of replacement.
+It is a key step in ensemble methods like Bagging, where multiple bootstrap samples are used to train individual models.
+Other Options:
+
+Bagging: Uses bootstrapping as a part of its process but is an ensemble learning technique, not just sampling.
+Boosting: Sequentially trains models, does not involve sampling with replacement.
+Stacking: Combines outputs of different models, does not use random sampling.
+
+
+
+
+
+
