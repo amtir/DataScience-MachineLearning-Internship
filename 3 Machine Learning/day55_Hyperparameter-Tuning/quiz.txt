@@ -1,0 +1,215 @@
+quiz 
+day55 Hyperparameter Tuning
+
+1 - 1
+A model can be seen as a combination of:
+2 Marks
+Training Data
+Algorithm
+Hyperparameters
+x All of the above
+
+The correct answer is: All of the above
+
+Explanation:
+A machine learning model is a combination of the following:
+
+Training Data:
+
+The data used to train the model, providing the input-output pairs for learning.
+Algorithm:
+
+The method or technique (e.g., Decision Tree, Logistic Regression) used to map the input to the output.
+Hyperparameters:
+
+The configurable settings (e.g., learning rate, tree depth) that define how the algorithm is applied to the training data.
+Together, these components form a complete model that can make predictions based on new data.
+
+2 - 2
+Model Tuning is the process of maximizing the performance of a model by changing its _________.
+2 Marks
+Test data
+Train data
+x Hyperparameters
+None of the above
+
+
+The correct answer is: Hyperparameters
+
+Explanation:
+Model Tuning involves optimizing the hyperparameters of a model to maximize its performance on a given dataset.
+Hyperparameters are settings that control the learning process (e.g., learning rate, number of trees in Random Forest, maximum depth of a tree).
+Tuning does not involve changing the training or testing data, as these are fixed inputs.
+Common Techniques for Hyperparameter Tuning:
+
+Grid Search: Exhaustive search over a specified parameter grid.
+Random Search: Randomly samples hyperparameter combinations.
+Bayesian Optimization: Uses probabilistic models to find the best hyperparameters.
+
+3 - 3
+Model tuning is:
+2 Marks
+A try-and-go process
+x A trial-and-error process
+A satisfy-and-test process
+All of the above
+
+The correct answer is: A trial-and-error process
+
+Explanation:
+Model tuning involves iteratively adjusting the hyperparameters and evaluating the model's performance to find the best configuration.
+This process is fundamentally trial-and-error, as different combinations of hyperparameters are tried, and their performance is assessed using techniques like cross-validation.
+While it can involve aspects of experimentation ("try-and-go") and validation ("satisfy-and-test"), the primary approach is trial-and-error to optimize model performance.
+
+4 - 4
+Hyperparameter values are not set initially, before training the model and are later changed for optimization.
+2 Marks
+TRUE
+x FALSE
+
+The correct answer is: FALSE
+
+Explanation:
+Hyperparameters are values that are not learned by the model during training but are instead set before training the model.
+These values are later adjusted during model tuning to optimize the model's performance.
+Examples of hyperparameters include:
+
+Learning rate
+Number of trees in a Random Forest
+Maximum depth of a decision tree
+Tuning these hyperparameters is essential for improving the model's accuracy and generalization.
+
+5 - 5
+Which of the following are the types of hyperparameter optimization?
+2 Marks
+Grid Search
+Manual Search
+Random Search
+x All of the above
+
+he correct answer is: All of the above
+
+Explanation:
+Hyperparameter optimization can be done using various methods, including:
+
+Grid Search:
+
+Systematically tries all possible combinations of hyperparameters within a specified grid.
+Example: Testing every combination of learning rate and tree depth for a model.
+Manual Search:
+
+Involves manually selecting and testing hyperparameter values based on experience or intuition.
+Example: Manually trying different values for the learning rate until acceptable performance is achieved.
+Random Search:
+
+Randomly samples combinations of hyperparameters within specified ranges.
+Often faster and more efficient than Grid Search, especially for large parameter spaces.
+Each method has its advantages, and the choice depends on the problem and resources available.
+
+6 - 6
+How are hyperparameters chosen in case of manual search?
+2 Marks
+x Manually
+Based on some conditions
+Based on some predefined rules
+None of the above
+
+The correct answer is: Manually
+
+Explanation:
+In manual search, hyperparameters are chosen by the user, often based on intuition, domain knowledge, or trial and error.
+The user experiments with different hyperparameter values, evaluates the model's performance, and selects the values that provide the best results.
+Other options:
+
+While manual search may involve some conditions or rough rules, it fundamentally relies on the user's decisions rather than predefined rules or automated processes.
+
+7 - 7
+What are the steps involved in manual search
+2 Marks
+Evaluate the model
+Select Parameters
+Train the model
+x All of the above
+
+The correct answer is: All of the above
+
+Explanation:
+The steps involved in manual search for hyperparameter tuning include:
+
+Select Parameters:
+
+Identify the hyperparameters to tune (e.g., learning rate, max depth, number of trees).
+Train the Model:
+
+Train the model using the chosen hyperparameter values on the training dataset.
+Evaluate the Model:
+
+Assess the model's performance on a validation set to determine the effectiveness of the chosen hyperparameters.
+This process is repeated iteratively until satisfactory performance is achieved.
+
+8 - 8
+Technique wherein random combinations of hyperparameters result in an optimal solution is called:
+2 Marks
+Grid Search
+Manual Search
+x Random Search
+All of the above
+
+The correct answer is: Random Search
+
+Explanation:
+Random Search is a hyperparameter tuning technique where random combinations of hyperparameters are sampled from specified ranges or distributions.
+It is often faster and more efficient than Grid Search, especially when only a subset of hyperparameters significantly affects model performance.
+Key Features:
+
+Instead of testing all possible combinations (as in Grid Search), Random Search randomly selects combinations.
+In many cases, Random Search can find a near-optimal solution with fewer iterations.
+Other Options:
+
+Grid Search exhaustively tests all combinations.
+Manual Search relies on user intuition and does not involve randomness.
+
+9 - 9
+What is true about Random Search?
+2 Marks
+Works on the principle of finding optimal maxima using probability
+Random Search is practical, efficient and very fast as compared to grid search
+x Both 1 and 2
+None of the above
+
+The correct answer is: Both 1 and 2
+
+Explanation:
+Works on the principle of finding optimal maxima using probability:
+
+Random Search leverages probability by randomly sampling hyperparameter combinations, which increases the likelihood of finding an optimal or near-optimal solution without exhaustively testing all combinations.
+Random Search is practical, efficient, and very fast as compared to Grid Search:
+
+Random Search is faster because it does not need to test every possible combination. Instead, it randomly explores the parameter space, which is often sufficient to find a good solution.
+Together, these characteristics make Random Search a practical and widely used hyperparameter tuning technique.
+
+10 - 10
+A technique used for hyperparameter tuning iteratively, evaluating each combination in a defined grid, is called:
+2 Marks
+x Grid Search
+Cross Search
+Random Search
+None of the above
+
+The correct answer is: Grid Search
+
+Explanation:
+Grid Search is a hyperparameter tuning technique that systematically evaluates all possible combinations of hyperparameter values in a predefined grid.
+It is an exhaustive search method where every combination is tested, and the one yielding the best performance is selected.
+Example: If you want to tune two hyperparameters:
+
+Learning rate: [0.01, 0.1]
+Number of estimators: [50, 100] Grid Search will evaluate all combinations:
+(0.01, 50)
+(0.01, 100)
+(0.1, 50)
+(0.1, 100)
+
+
+
+
