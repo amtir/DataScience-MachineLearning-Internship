@@ -1,0 +1,108 @@
+Quiz
+
+1 - 1
+A hyperparameter that controls how much to update a network each time weights are updated to minimize the calculated cost is called:
+2 Marks
+x Learning Rate
+Activation Function
+Weights
+None of the above
+
+2 - 2
+The objective of the backpropagation algorithm is to develop a learning algorithm for a multilayer feedforward neural network, so that network can be trained to capture the mapping implicitly.
+2 Marks
+x TRUE
+FALSE
+
+3 - 3
+What is true regarding backpropagation rule?
+2 Marks
+There is feedback in the final stage.
+x Actual output is determined by computing the outputs of units for each hidden layer.
+Hidden layer's output is not important, they are only meant for supporting input and output layers.
+None of the above
+
+The correct answer is:
+
+Actual output is determined by computing the outputs of units for each hidden layer.
+
+4 - 4
+Backpropagation is used  to update the weights from:
+2 Marks
+Input to input.
+Input only.
+Input to output.
+x Output to input.
+
+The correct answer is:
+
+Output to input.
+
+5 - 5
+Is chain rule used in backpropagation?
+2 Marks
+x YES
+NO
+
+The correct answer is:
+
+YES
+
+6 - 6
+A neural network predicts the output using:
+2 Marks
+Backward Propagation
+x Forward Propagation
+Middle propagation
+All of the above
+
+The correct answer is:
+
+Forward Propagation
+
+7 - 7
+The output of forward propagation is compared against the actual output to compute the cost of the network.
+2 Marks
+x TRUE
+FALSE
+
+The correct answer is:
+
+TRUE
+
+
+8 - 8
+If the cost function is convex, then it converges to a _____.
+2 Marks
+global maximum
+x global minimum
+local minimum
+local maximum
+
+The correct answer is:
+
+global minimum
+
+9 - 9
+Gradient Descent is a/an:
+2 Marks
+Learning Algorithm.
+x Optimization Algorithm
+Classification Algorithm.
+Regression Algorithm.
+
+The correct answer is:
+
+Optimization Algorithm
+
+10 - 10
+______ are used for moving from one point to another in gradient descent.
+2 Marks
+Weights
+Biases
+x Gradients
+None of the above
+
+The correct answer is:
+
+Gradients
