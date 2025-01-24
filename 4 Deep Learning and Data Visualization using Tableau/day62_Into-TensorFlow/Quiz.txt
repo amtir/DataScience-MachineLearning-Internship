@@ -1,0 +1,156 @@
+Quiz
+
+1 - 1
+Which of the following are the main advantages of TensorFlow?
+2 Marks
+Open source
+Portability
+Compatibility
+x All of the above
+
+The correct answer is: All of the above
+
+Explanation:
+TensorFlow has the following advantages:
+
+Open source: TensorFlow is freely available for anyone to use and contribute to.
+Portability: TensorFlow models can run across various platforms (CPU, GPU, TPU, mobile, edge devices).
+Compatibility: TensorFlow supports multiple languages (Python, C++, etc.) and frameworks, and it integrates well with other tools.
+Thus, all of the above are advantages of TensorFlow.
+
+2 - 2
+Variables in TensorFlow are also known as:
+2 Marks
+Tensor variable
+Tensor keywords
+Tensor attributes
+x Tensor objects
+
+The correct answer is: Tensor objects
+
+Explanation:
+In TensorFlow, variables are treated as tensor objects that store values. These values can be updated during training, making them crucial for storing parameters like weights and biases in machine learning models. While variables are technically tensors, they are specifically mutable tensor objects.
+
+3 - TensorFlow 2.x sets the eager execution mode by default.
+2 Marks
+x TRUE
+FALSE
+
+The correct answer is: TRUE
+
+Explanation:
+In TensorFlow 2.x, eager execution is enabled by default. This means operations are executed immediately as they are called, making it easier to debug and experiment with models. This is a shift from TensorFlow 1.x, where the default was graph execution mode.
+
+4 - Which of the following commands is used to upgrade TensorFlow?
+2 Marks
+pip install –upgrade TensorFlow.
+pip install –upgrade TF.
+x pip install –upgrade tensorflow.
+None of the above
+
+The correct answer is: pip install --upgrade tensorflow.
+
+5 - Which of the following is a high-level API that allows to build, train, evaluate, and execute all types of neural networks?
+2 Marks
+PyBrain
+x Keras
+PyTorch
+Theano
+
+The correct answer is: Keras
+
+Explanation:
+Keras is a high-level API specifically designed for building, training, evaluating, and deploying all types of neural networks. It emphasizes ease of use, modularity, and flexibility, and it works seamlessly with TensorFlow 2.x (tf.keras).
+
+PyBrain: An older library for machine learning, but not as widely used or modern as Keras.
+PyTorch: A powerful deep learning framework, but it's not specifically a high-level API like Keras.
+Theano: A foundational library for numerical computation, now deprecated.
+
+
+
+6 - 6
+In which API are layers stacked one above the other?
+2 Marks
+x Sequential API
+Functional API
+Both option 1 and 2
+None of the above
+
+The correct answer is: Sequential API
+
+Explanation:
+The Sequential API in Keras is used to stack layers one above the other in a linear manner, where each layer has exactly one input and one output. It’s the simplest way to define a neural network.
+
+Functional API: Offers more flexibility, allowing for complex architectures like multi-input or multi-output models, and layers don’t have to be stacked sequentially.
+Both is incorrect because only the Sequential API enforces a strict layer stacking approach.
+
+
+7 - 7
+Which is the first step to building a neural network in TensorFlow 2.x?
+2 Marks
+x Loading the dataset.
+Defining the model.
+Compiling the model.
+Finding the model.
+
+The correct answer is: Loading the dataset.
+
+Explanation:
+The first step in building a neural network in TensorFlow 2.x is to load the dataset, which provides the data needed for training and testing the model. After loading the data, you proceed to define the model, compile it, and train it.
+
+Steps typically follow this order:
+
+Loading the dataset.
+Defining the model.
+Compiling the model.
+Training (fitting) the model.
+Evaluating the model.
+
+
+8 - 8
+Which of the following APIs is used for complex models?
+2 Marks
+Sequential API
+x Functional API
+Both option 1 and 2
+None of the above
+
+
+9 - 9
+What is an epoch?
+2 Marks
+x Number of times the model goes through the complete training dataset.
+Number of times the model goes through the complete testing dataset.
+Number of training samples used in one forward pass.
+Number of training samples used in one backward pass.
+
+The correct answer is: Number of times the model goes through the complete training dataset.
+
+Explanation:
+An epoch refers to one full pass of the model through the entire training dataset during the training process. During each epoch, the model updates its weights based on the training data and computes errors to improve its performance.
+
+The other options refer to batch size or steps within training, but an epoch specifically involves the complete training dataset.
+
+
+10 - 10
+The training model can be evaluated with the help of which data?
+2 Marks
+Training dataset.
+Testing dataset.
+Validation dataset.
+x Either training dataset or testing dataset.
+
+
+The correct answer is: Either training dataset or testing dataset.
+
+Explanation:
+The training model can be evaluated using:
+
+The training dataset, to check how well the model has learned the training data.
+The testing dataset, to evaluate the model's performance on unseen data.
+While it's common to use the testing dataset for evaluation, both datasets can be used depending on the purpose of the evaluation.
+
+
+
+
+
