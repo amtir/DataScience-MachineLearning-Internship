@@ -1,0 +1,167 @@
+Quiz 
+
+1 - 1
+Which of the following best describes the limitation of a model with very short-term memory?
+2 Marks
+It fails to make predictions based on recent information.
+It only considers information from further back in time.
+x It doesn't utilize information from beyond the previous time step
+It connects information seamlessly, disregarding temporal constraints.
+
+The correct answer is:
+✅ "It doesn't utilize information from beyond the previous time step."
+
+Explanation:
+A model with very short-term memory, like a basic RNN, struggles to retain information beyond a few time steps. This limitation prevents it from effectively capturing long-term dependencies, leading to poor performance on tasks requiring context from earlier in the sequence.
+
+2 - 2
+What is a significant drawback of a model with very short-term memory?
+2 Marks
+It has difficulty accessing immediate past data.
+It seamlessly integrates information from various time steps.
+It effectively connects information from distant pasts.
+x It lacks the ability to consider information beyond the last time step.
+
+The correct answer is:
+✅ "It lacks the ability to consider information beyond the last time step."
+
+Explanation:
+A model with very short-term memory, like a basic RNN, struggles to retain information for long durations. It primarily relies on the most recent time step, making it ineffective for tasks that require long-term dependencies, such as language modeling and time-series forecasting.
+
+3 - 
+How does LSTM differ from traditional RNN in addressing the vanishing gradient problem?
+2 Marks
+LSTM completely eliminates the gradient problem.
+x LSTM retains information in memory to mitigate the vanishing gradient problem.
+LSTM cells replace RNN cells to exacerbate the gradient vanishing issue.
+LSTM and RNN handle the vanishing gradient problem similarly.
+
+The correct answer is:
+✅ "LSTM retains information in memory to mitigate the vanishing gradient problem."
+
+Explanation:
+Traditional RNNs suffer from the vanishing gradient problem, making it difficult to learn long-term dependencies. LSTM addresses this issue by using memory cells and gating mechanisms (Forget, Input, and Output gates) that help retain important information over longer sequences. This prevents gradients from diminishing too quickly, allowing the network to learn from long-term dependencies effectively.
+
+4 - 4
+Which statement accurately describes the role of LSTM cells in hidden units compared to RNN cells?
+2 Marks
+LSTM cells are absent in hidden units, unlike RNN cells.
+LSTM cells and RNN cells perform identical functions in hidden units
+x LSTM cells replace RNN cells to address the vanishing gradient problem.
+LSTM cells and RNN cells have no correlation with gradient problems.
+
+The correct answer is:
+✅ "LSTM cells replace RNN cells to address the vanishing gradient problem."
+
+Explanation:
+LSTM cells replace standard RNN cells in hidden units to mitigate the vanishing gradient problem. Unlike RNNs, LSTMs introduce memory cells and gating mechanisms (Forget, Input, and Output gates), which help regulate the flow of information and retain long-term dependencies. This prevents gradients from diminishing too quickly, allowing LSTMs to learn patterns over extended sequences.
+
+5 - 5
+What feature of LSTM enables it to effectively address the vanishing gradient problem?
+2 Marks
+LSTM cells are simpler in structure compared to RNN cells.
+LSTM cells have a feedback mechanism for enhanced learning.
+x LSTM cells retain information in memory over long sequences.
+LSTM cells are more prone to gradient vanishing compared to RNN cells.
+
+The correct answer is:
+✅ "LSTM cells retain information in memory over long sequences."
+
+Explanation:
+LSTM effectively addresses the vanishing gradient problem by introducing memory cells that store and regulate information over long time sequences. The Forget, Input, and Output gates control the flow of information, ensuring that relevant data is retained while unnecessary data is discarded. This mechanism allows LSTMs to maintain long-term dependencies, unlike traditional RNNs, which struggle with gradient decay.
+
+6 - 6
+In what way do LSTM cells contribute to improving the performance of recurrent neural networks?
+2 Marks
+By increasing the complexity of hidden units.
+By simplifying the architecture of hidden units.
+x By providing a solution to the vanishing gradient problem.
+By minimizing the need for memory retention in sequences.
+
+The correct answer is:
+✅ "By providing a solution to the vanishing gradient problem."
+
+Explanation:
+LSTM cells enhance the performance of recurrent neural networks (RNNs) by addressing the vanishing gradient problem. They achieve this through memory cells and gating mechanisms (Forget, Input, and Output gates) that regulate the flow of information over long sequences. This allows LSTMs to retain important information and effectively learn long-term dependencies, which standard RNNs struggle with.
+
+
+7 - 7
+Which of the following is NOT a gate in an LSTM network?
+2 Marks
+Forget gate
+Input gate
+x Update gate
+Output gate
+
+The correct answer is:
+✅ "Update gate"
+
+Explanation:
+LSTM networks consist of three main gates:
+
+Forget Gate – Decides what information to discard.
+Input Gate – Determines what new information should be stored.
+Output Gate – Controls what part of the memory should be output.
+The Update Gate is NOT a part of LSTM. Instead, it is used in Gated Recurrent Units (GRUs), which are a simplified variant of LSTMs.
+
+
+8 - 8
+What is the primary function of the forget gate in an LSTM network?
+2 Marks
+To add new information to the memory cell.
+x To decide which information to discard from the memory cell.
+To control the flow of information to the output.
+To regulate the activation of the input gate.
+
+The correct answer is:
+✅ "To decide which information to discard from the memory cell."
+
+Explanation:
+The Forget Gate in an LSTM network determines which information should be removed from the memory cell. It takes in the previous hidden state and current input, applies a sigmoid activation function, and outputs a value between 0 and 1.
+
+Value close to 0 → Information is forgotten.
+Value close to 1 → Information is retained.
+This selective forgetting mechanism helps LSTMs maintain relevant long-term dependencies while discarding unnecessary information.
+
+9  - 9
+What role does the cell state play in an LSTM network?
+2 Marks
+It is responsible for making predictions based on input data.
+It controls the flow of information through the network.
+x It serves as a memory that carries information throughout the sequence.
+It determines the activation of the output gate.
+
+The correct answer is:
+✅ "It serves as a memory that carries information throughout the sequence."
+
+Explanation:
+The cell state is the core memory component of an LSTM network. It allows information to be carried forward across multiple time steps, enabling the network to retain long-term dependencies.
+
+The Forget Gate decides what information to remove from the cell state.
+The Input Gate determines what new information should be added.
+The Output Gate controls how the updated memory influences the hidden state.
+This mechanism helps LSTMs overcome the vanishing gradient problem, making them more effective at handling sequential data.
+
+10 -  10
+How does the structure of LSTM allow for better preservation of information over long sequences compared to traditional RNNs?
+2 Marks
+x LSTM gates allow information to flow unchanged, maintaining memory integrity.
+LSTM networks have shorter chains, reducing the likelihood of information loss.
+LSTM cells have fewer interactions with the rest of the network, preventing interference.
+LSTM networks prioritize short-term memory, improving information retention.
+
+The correct answer is:
+✅ "LSTM gates allow information to flow unchanged, maintaining memory integrity."
+
+Explanation:
+LSTM networks are designed to preserve information over long sequences using a cell state and gates (Forget, Input, and Output gates). Unlike traditional RNNs, which suffer from the vanishing gradient problem, LSTMs allow information to flow unchanged through the cell state, maintaining long-term dependencies.
+
+The Forget Gate removes irrelevant information.
+The Input Gate adds new relevant information.
+The Output Gate determines what part of the memory should influence the next hidden state.
+This controlled information flow ensures that important patterns are retained over long sequences, making LSTMs more effective than standard RNNs for tasks like speech recognition, language modeling, and time-series forecasting.
+
+
+
+
+
