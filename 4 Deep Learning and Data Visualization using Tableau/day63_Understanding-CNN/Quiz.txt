@@ -1,0 +1,198 @@
+Quiz
+
+1 - 1
+Which are the examples of Hyperparameter tuning?
+1) Number of branches in the decision tree
+2) Regularization constant
+3) Number of clusters in K-means
+2 Marks
+Only 1
+1 and 3
+x 1,2, and 3
+2 and 3
+
+The correct answer is:
+✅ "1, 2, and 3"
+
+Explanation:
+Hyperparameters are tunable parameters that control the learning process of a model but are not learned from the data. The given options are all examples of hyperparameters:
+
+1️⃣ Number of branches in the decision tree – Controls the depth and complexity of the tree.
+2️⃣ Regularization constant – Helps prevent overfitting by adding a penalty to the loss function.
+3️⃣ Number of clusters in K-means – Determines how many clusters the algorithm should divide the data into.
+
+Since all three are manually set before training, they qualify as hyperparameters.
+
+2 - 2
+Method of refitting a model on different samples of training data to obtain additional information with each fit is called __________.
+2 Marks
+x Resampling Measures
+Statistical measures
+Confidence
+None of the above
+
+The correct answer is:
+✅ "Resampling Measures"
+
+Explanation:
+Resampling is a method of repeatedly fitting a model on different samples of training data to obtain additional insights about its performance. This is commonly used in techniques such as:
+
+Cross-validation – Splitting data into multiple subsets and training the model on different partitions.
+Bootstrapping – Randomly sampling data with replacement to estimate model performance.
+This approach helps in evaluating model stability, variance, and generalization capability.
+
+3 - 3
+For k cross-validation, smaller k value implies less variance.
+2 Marks
+TRUE
+x FALSE
+
+The correct answer is:
+✅ "FALSE"
+
+Explanation:
+In k-fold cross-validation, a smaller k value (e.g., k = 2 or 5) means that the training set is larger, but the validation set is smaller. This can lead to higher variance because the model's performance depends more on the specific validation subset used in each fold.
+
+On the other hand, a larger k value (e.g., k = 10 or 20) provides a more stable estimate with less variance, as the model is tested on more diverse validation sets.
+
+Thus, smaller k increases variance, making the statement FALSE.
+
+4 - 
+A type of k-fold cross-validation using only one observation for validation is called _________.
+2 Marks
+Cross Validation
+Bootstrap
+K-fold Cross Validation
+x None of the above
+
+The correct answer is:
+✅ "None of the above"
+
+Explanation:
+The method described in the question is called Leave-One-Out Cross-Validation (LOOCV).
+
+LOOCV is a special case of k-fold cross-validation where k = N (number of data points).
+Each iteration uses only one observation for validation and the rest for training.
+It provides low bias but can be computationally expensive for large datasets.
+Since LOOCV is not listed as an option, the correct answer is "None of the above."
+
+5 - 5
+As you increase the amount of training data, the test error decreases, and the training error increases. The train error is quite low, while the test error is much higher than the train error. Select the most probable option.
+2 Marks
+High model bias
+x High variance
+High estimation bias
+None of the above
+
+The correct answer is:
+✅ "High variance"
+
+Explanation:
+If test error is much higher than training error, this indicates overfitting, which is a sign of high variance.
+The model memorizes the training data but fails to generalize well to unseen test data.
+As more training data is added, the model's performance may improve, but the gap between training and test errors suggests that the model is too complex and is capturing noise rather than actual patterns.
+Thus, high variance is the most probable issue in this scenario.
+
+6 - 6
+What is the meaning of "K" in K-fold cross-validation?
+2 Marks
+defines the number of models in which to split a given dataset
+defines the number of folds in which to split a given train data
+defines the number of folds in which to split a given test data
+x K defines the number of folds in which to split a given dataset
+
+The correct answer is:
+✅ "K defines the number of folds in which to split a given dataset."
+
+Explanation:
+In K-Fold Cross-Validation, "K" represents the number of equal-sized folds into which the dataset is divided. The process follows these steps:
+
+The dataset is randomly split into K folds (subsets).
+The model is trained on K-1 folds and validated on the remaining 1 fold.
+The process repeats K times, each time using a different fold for validation.
+The final performance is averaged over all K iterations.
+Thus, K determines the number of splits (folds) for training and validation in cross-validation. 
+
+
+7 - 7
+Which of the following code snippet is used to import a function to transform features by scaling each feature to a given range?
+2 Marks
+DataFrame.dummies()
+x sklearn.preprocessing.MinMaxScaler()
+sklearn.MinScaler()
+None of the above
+
+The correct answer is:
+✅ sklearn.preprocessing.MinMaxScaler()
+
+Explanation:
+MinMaxScaler() is a function from sklearn.preprocessing that scales features to a given range (default is 0 to 1).​
+  are the minimum and maximum values of the feature.
+Example Usage in Python:
+
+from sklearn.preprocessing import MinMaxScaler
+
+scaler = MinMaxScaler(feature_range=(0, 1))  # Scaling between 0 and 1
+scaled_data = scaler.fit_transform([[10], [20], [30], [40]])
+print(scaled_data)
+Incorrect Options:
+❌ DataFrame.dummies() → Used for one-hot encoding categorical variables (not scaling).
+❌ sklearn.MinScaler() → Incorrect function name (no such function in sklearn).
+❌ None of the above → Incorrect because MinMaxScaler exists in sklearn.
+
+Thus, the correct answer is sklearn.preprocessing.MinMaxScaler().
+
+8 - 8
+In K-fold Cross-validation the average and or standard deviation values of all K-fold models are taken.
+2 Marks
+x TRUE
+FALSE
+
+The correct answer is:
+✅ "TRUE"
+
+Explanation:
+In K-Fold Cross-Validation, the dataset is split into K folds, and the model is trained and evaluated K times, each time using a different fold as the validation set.
+
+After all K iterations are completed, the final model performance is determined by averaging the evaluation metrics (e.g., accuracy, precision, recall) across all K folds.
+Standard deviation can also be calculated to measure the variance in model performance across the folds.
+Example Calculation:
+If we use 5-Fold Cross-Validation, and the model gives the following accuracies:
+[88%, 90%, 87%, 89%, 91%],
+
+The average accuracy = (88+90+87+89+91)/5 = 89%
+The standard deviation provides insight into the stability of the model.
+Thus, K-fold cross-validation takes the average and/or standard deviation of all K models, making the statement TRUE. 
+
+9 - 9
+Which of the following code snippet is used to import a function which evaluates a score by cross-validation?
+2 Marks
+sklearn.model_selection.cross_score()
+x sklearn.model_selection.cross_val_score()
+sklearn.Kfold()
+sklearn.model_selection.Kfold()
+
+The correct answer is:
+✅ sklearn.model_selection.cross_val_score()
+
+Explanation:
+The function cross_val_score() from sklearn.model_selection is used to evaluate a model using cross-validation by calculating a score (e.g., accuracy, precision, recall) for each fold.
+
+10 - 10
+What is the meaning of parameter "shuffle" in sklearn.model_selection.Kfold() ?
+2 Marks
+Number of folds
+Affects the ordering of the indices
+Affects the ordering of the batches
+x Whether to shuffle the data before splitting into batches, default = FALSE
+
+The correct answer is:
+✅ "Whether to shuffle the data before splitting into batches, default = FALSE"
+
+Explanation:
+In sklearn.model_selection.KFold(), the shuffle parameter controls whether the dataset indices are randomly shuffled before splitting into K folds.
+
+Default value: False (data is not shuffled before splitting).
+If shuffle=True, data is shuffled before creating the folds, which helps in achieving better randomization and more generalized results, especially when data is ordered or imbalanced.
+
+
