@@ -1,0 +1,229 @@
+Quiz
+
+1 - 1
+Identify the issues with feed forward network.
+2 Marks
+Inability to handle sequential data.
+Only the current input is considered.
+Previous inputs are not memorized.
+x All of the above
+
+The correct answer is:
+✅ "All of the above"
+
+Explanation:
+Feedforward Neural Networks (FNNs) have several limitations, particularly when dealing with sequential data such as time-series, speech, or text. The main issues include:
+
+1️⃣ Inability to handle sequential data → FNNs process each input independently and do not retain context between different inputs.
+
+2️⃣ Only the current input is considered → Unlike Recurrent Neural Networks (RNNs) and Long Short-Term Memory (LSTM) networks, FNNs do not take into account previous inputs when making predictions.
+
+3️⃣ Previous inputs are not memorized → FNNs lack memory mechanisms, meaning they cannot remember past inputs, making them ineffective for tasks requiring temporal dependencies.
+
+Thus, the correct answer is "All of the above." 
+
+2 - 2
+What is google's autocomplete feature based on?
+2 Marks
+CNN
+x RNN
+DNN
+All of the above
+
+The correct answer is:
+✅ "RNN"
+
+Explanation:
+Google’s Autocomplete feature is primarily based on Recurrent Neural Networks (RNNs) and their advanced variations like LSTMs and Transformers. Since text prediction relies on sequential data, RNNs are well-suited because they remember previous inputs and understand context.
+
+Why RNNs?
+RNNs process sequential data, making them ideal for text-based applications like autocomplete and next-word prediction.
+LSTMs/GRUs (improved RNNs) help retain long-term dependencies, reducing the vanishing gradient problem.
+Transformers (used in modern NLP models like GPT & BERT) have replaced traditional RNNs in many applications, but RNNs were a key foundation.
+Incorrect Options:
+❌ CNN (Convolutional Neural Network) → Primarily used for image processing, not sequential text prediction.
+❌ DNN (Deep Neural Network) → Standard deep networks lack sequential memory, making them unsuitable for autocomplete.
+❌ All of the above → Incorrect since CNNs and DNNs are not typically used for autocomplete.
+
+Thus, the correct answer is "RNN"
+
+3 - 3
+RNNs solve the problem of:
+2 Marks
+Recurrence.
+Inhertiance.
+x Persistence.
+None of the above.
+
+he correct answer is:
+✅ "Persistence."
+
+Explanation:
+RNNs (Recurrent Neural Networks) solve the problem of persistence by retaining information from previous time steps, making them suitable for sequential data processing.
+
+Why Persistence?
+Traditional feedforward networks do not remember past inputs, making them unsuitable for tasks like speech recognition, language modeling, and time-series forecasting.
+RNNs introduce loops (recurrence), allowing information to persist across time steps.
+This helps RNNs retain context and make better predictions in tasks requiring memory.
+Incorrect Options:
+❌ "Recurrence." → RNNs use recurrence but do not solve it as a problem.
+❌ "Inheritance." → Not relevant in the context of RNNs.
+❌ "None of the above." → Incorrect, because RNNs solve the persistence problem.
+
+Thus, the correct answer is "Persistence." 
+
+4 - 4
+Recurrent Neural Networks maintains ______ information which is important  to predict the next word.
+2 Marks
+x Sequential
+Important
+Raw
+None of the above
+
+The correct answer is:
+✅ "Sequential"
+
+Explanation:
+Recurrent Neural Networks (RNNs) maintain sequential information, which is crucial for predicting the next word in tasks like language modeling, text generation, and speech recognition.
+
+Why Sequential?
+RNNs process data in a sequence, maintaining memory of previous inputs.
+This allows them to retain context over time, unlike traditional feedforward networks.
+This property is essential for natural language processing (NLP) applications where word order and context matter.
+
+5  - 5
+RNN stands for:
+2 Marks
+Recursive Neural Network
+x Recurrent Neural Network
+Recurring Neural Network
+Removable Neural Network
+
+The correct answer is:
+✅ "Recurrent Neural Network"
+
+Explanation:
+RNN stands for Recurrent Neural Network. It is a type of neural network designed for sequential data processing, where the output of a previous step is used as an input for the next step.
+
+Why "Recurrent"?
+RNNs maintain a memory of past inputs through hidden states, making them useful for tasks like speech recognition, text generation, and time-series prediction.
+Unlike feedforward networks, RNNs loop over sequences, allowing information to persist across multiple time steps.
+Incorrect Options:
+❌ "Recursive Neural Network" → A different type of network used in hierarchical structures (e.g., parse trees in NLP).
+❌ "Recurring Neural Network" → Not a standard term in deep learning.
+❌ "Removable Neural Network" → No such term exists in machine learning.
+
+Thus, the correct answer is "Recurrent Neural Network." 
+
+6 - 6
+Identify the types of RNN architectures:
+2 Marks
+One-to-One
+One-to-Many
+Many-to-One
+x All of the above
+
+
+The correct answer is:
+✅ "All of the above"
+
+Explanation:
+RNNs have different architectures based on input-output relationships. The key types are:
+
+1️⃣ One-to-One → Standard neural network (like Feedforward NN).
+
+Example: Image Classification (Single input → Single output).
+2️⃣ One-to-Many → A single input produces a sequence of outputs.
+
+Example: Music Generation (One note → Sequence of notes).
+3️⃣ Many-to-One → A sequence of inputs produces a single output.
+
+Example: Sentiment Analysis (Text sequence → Positive/Negative sentiment).
+4️⃣ Many-to-Many → A sequence of inputs produces a sequence of outputs.
+
+Example: Machine Translation (English sentence → French sentence).
+Since all the listed types are valid RNN architectures, the correct answer is "All of the above."
+
+7 - 7
+Identify the applications of one to one RNN architecture:
+2 Marks
+Text Generation
+x Word Prediction
+Stock Market Predictions
+All of the above
+
+The correct answer is:
+✅ "Word Prediction"
+
+Explanation:
+The One-to-One RNN architecture is similar to a feedforward neural network, where a single input maps to a single output. This type of RNN is not used for sequential tasks but can be applied to simple tasks like word prediction when considering only one previous word.
+
+Applications:
+✅ Word Prediction → Given a single input (previous word), predict the next word.
+Incorrect Options:
+❌ Text Generation → Requires a One-to-Many or Many-to-Many RNN (generating sequences).
+❌ Stock Market Predictions → Requires Many-to-One RNN (analyzing multiple past values to predict future price).
+❌ All of the above → Incorrect, since only Word Prediction is a valid One-to-One RNN application.
+
+Thus, the correct answer is "Word Prediction."
+
+8 - 8
+Identify the applications of one to many RNN architecture:
+2 Marks
+x Auto Image Captioning
+Text generation
+Word Prediction
+None of the above
+
+he correct answer is:
+✅ "Auto Image Captioning" and "Text Generation"
+
+Explanation:
+The One-to-Many RNN architecture takes a single input and produces a sequence of outputs. This is useful for applications where a single input generates a series of outputs over time.
+
+Applications of One-to-Many RNNs:
+1️⃣ ✅ Auto Image Captioning → Given a single image, generate a sequence of words as a caption.
+2️⃣ ✅ Text Generation → Given a starting word or phrase, generate a sequence of text (e.g., poetry generation).
+
+Incorrect Option:
+❌ Word Prediction → This is typically a Many-to-One task, where multiple words are considered for predicting the next word.
+❌ None of the above → Incorrect, as Auto Image Captioning and Text Generation are valid One-to-Many applications.
+
+Thus, the correct answer is "Auto Image Captioning" and "Text Generation.
+
+9 - 9
+In RNN each unit has an internal state which is called the _____.
+2 Marks
+Visible state of unit
+x Hidden state of unit
+Visible function
+Hidden function
+
+In Recurrent Neural Networks (RNNs), each unit maintains an internal state called the hidden state, which helps store information from previous time steps. This enables RNNs to remember past inputs and process sequential data effectively.
+
+Key Points about the Hidden State:
+It is updated at each time step based on the previous hidden state and current input.
+Helps in maintaining long-term dependencies in a sequence.
+Used in applications like speech recognition, language modeling, and machine translation.
+
+10 - 10
+The most important feature of RNN is:
+2 Marks
+Visible state
+x Hidden state
+Present state
+None of the above
+
+The correct answer is:
+✅ "Hidden state"
+
+Explanation:
+The hidden state is the most important feature of RNNs because it allows the network to retain memory of previous inputs, making it effective for sequential data processing.
+
+Key Features of the Hidden State:
+Stores past information and carries it forward across time steps.
+Helps in capturing temporal dependencies in sequential tasks like speech recognition, machine translation, and text generation.
+Gets updated at each time step based on the previous hidden state and current input.
+
+
+
