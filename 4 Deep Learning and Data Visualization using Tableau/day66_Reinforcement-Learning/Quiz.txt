@@ -1,0 +1,196 @@
+
+Quiz
+
+1 - 1
+Identify the RL agent taxonomy types:
+2 Marks
+value-based
+policy-based
+model-based
+x All of the Above
+
+✅ Correct Answer: All of the Above
+
+Explanation:
+In Reinforcement Learning (RL), there are three main types of agent taxonomies:
+
+Value-based: Focuses on learning the value function (e.g., Q-learning).
+Policy-based: Directly learns the policy function (e.g., Policy Gradient Methods).
+Model-based: Uses a model of the environment to plan actions (e.g., Dyna-Q).
+Since all three approaches exist in RL, the correct answer is:
+➡️ "All of the Above" 🎯✔️
+
+
+2 - 2
+The main agenda of value function is:
+2 Marks
+Normalization
+Regularization
+x Optimization
+None of the Above
+
+✅ Correct Answer: Optimization
+
+Explanation:
+In Reinforcement Learning (RL), the value function is used to estimate how good a particular state (or state-action pair) is in terms of expected rewards. The main agenda of the value function is to guide the agent toward making optimal decisions by predicting long-term rewards.
+
+Normalization and Regularization are techniques used in machine learning but are not the primary goal of value functions in RL.
+Optimization is the correct choice since the value function helps optimize the agent's behavior by improving policy selection over time.
+➡️ Correct Answer: Optimization 🎯✔️
+
+
+3 - 3
+In policy-based RL, ______ provides distribution of probabilty over different actions
+2 Marks
+Deterministic policy
+Non-deterministic policy
+x Stochastic Policy
+None of the above
+
+✅ Correct Answer: Stochastic Policy
+
+Explanation:
+In policy-based Reinforcement Learning (RL), a stochastic policy provides a probability distribution over different possible actions. This means the agent selects actions based on probabilities rather than always picking the same action for a given state.
+
+Deterministic Policy: Always selects the same action for a given state (no randomness). ❌
+Non-deterministic Policy: Not a standard RL term (confusing term). ❌
+Stochastic Policy: Assigns probabilities to each action, making it suitable for exploration. ✅
+➡️ Correct Answer: Stochastic Policy 🎯✔️
+
+4 - 4
+Identify the example of episodic tasks in RL:
+2 Marks
+Racing video game
+Chess game
+Personal Assistance Robot
+x 1 and 2
+
+✅ Correct Answer: 1 and 2 (Racing video game & Chess game)
+
+Explanation:
+In Reinforcement Learning (RL), episodic tasks are tasks that have a clear beginning and ending (i.e., they terminate after a finite number of steps).
+
+Racing Video Game 🏎️ → Ends when the race is finished. ✅
+Chess Game ♟️ → Ends when checkmate or draw occurs. ✅
+Personal Assistance Robot 🤖 → This is a continuous task since it operates indefinitely without a defined end. ❌
+Since both Racing and Chess are episodic tasks, the correct answer is:
+➡️ "1 and 2" 🎯✔️
+
+5 - 5
+Identify the example of continuous tasks in RL:
+2 Marks
+x Self driving cars
+Racing video game
+Chess game
+1 and 2
+
+✅ Correct Answer: Self-driving cars
+
+Explanation:
+In Reinforcement Learning (RL), continuous tasks do not have a defined endpoint and continue indefinitely.
+
+Self-driving cars 🚗 → Operate continuously without a fixed termination point. ✅
+Racing video game 🏎️ → Episodic, since it has a start and finish. ❌
+Chess game ♟️ → Episodic, since it ends with checkmate or draw. ❌
+Since only Self-driving cars represent a continuous task, the correct answer is:
+➡️ "Self-driving cars" 🎯✔️
+
+6 - 6
+Which of the following is a toolkit for developing and comparing different RL algorithms?
+2 Marks
+x OpenAI Gym
+Tableau
+Colab
+None of the Above
+
+✅ Correct Answer: OpenAI Gym
+
+Explanation:
+OpenAI Gym is a toolkit specifically designed for developing and comparing Reinforcement Learning (RL) algorithms. It provides a variety of environments (e.g., Atari games, robotics simulations) that help in testing and benchmarking RL models.
+
+OpenAI Gym → Correct answer ✅
+Tableau → Used for data visualization, not RL ❌
+Colab → A cloud-based notebook environment (helps run RL code but isn't an RL toolkit) ❌
+➡️ Correct Answer: OpenAI Gym 🎯✔️
+
+7 - 7
+Identify the members present in the Environment Class:
+2 Marks
+action space
+observation space
+reset()
+x All of the Above
+
+✅ Correct Answer: All of the Above
+
+Explanation:
+In Reinforcement Learning (RL), the Environment Class is responsible for defining how the agent interacts with the environment. It includes:
+
+Action Space → Defines the possible actions the agent can take. ✅
+Observation Space → Represents the set of possible states the agent can observe. ✅
+reset() → Resets the environment to its initial state at the beginning of an episode. ✅
+Since all these elements are part of the Environment Class, the correct answer is:
+➡️ "All of the Above" 🎯✔️
+
+
+
+8 - 8
+_____ is an environment in OpenAI gym.
+2 Marks
+PyGame
+Atari 2600
+PyCharm
+x 1 and 2
+
+✅ Correct Answer: 1 and 2 (PyGame & Atari 2600)
+
+Explanation:
+In OpenAI Gym, an environment is where the agent interacts and learns through reinforcement learning. Some popular environments include:
+
+PyGame → PyGame-based environments can be integrated into OpenAI Gym. ✅
+Atari 2600 → OpenAI Gym includes Atari 2600 games as RL environments. ✅
+PyCharm → PyCharm is an IDE (Integrated Development Environment), not an RL environment ❌
+Since both PyGame and Atari 2600 are valid RL environments, the correct answer is:
+➡️ "1 and 2" 🎯✔️
+
+9 - Each time the agent chooses an action, the environment returns -
+2 Marks
+Observation
+Reward
+Agent State
+x 1 And 2
+
+✅ Correct Answer: 1 and 2 (Observation & Reward)
+
+Explanation:
+In Reinforcement Learning (RL), each time the agent takes an action, the environment returns:
+
+Observation (New State) → The updated state of the environment after the action. ✅
+Reward → A numerical value indicating the quality of the action taken. ✅
+Agent State → This is not explicitly returned by the environment; rather, the agent infers it from the observation. ❌
+Since the environment returns both Observation & Reward, the correct answer is:
+➡️ "1 and 2" 🎯✔️
+
+10 - 10
+Which function resets the environment to its initial state?
+2 Marks
+step()
+x reset()
+reward()
+None of the Above
+
+✅ Correct Answer: reset()
+
+Explanation:
+In Reinforcement Learning (RL), the function that resets the environment to its initial state is:
+
+reset() → Initializes the environment to its starting conditions and returns the initial observation. ✅
+step() → Moves the agent by taking an action, but does not reset the environment. ❌
+reward() → This function does not exist in OpenAI Gym; rewards are returned from step(). ❌
+Since reset() is the correct function, the final answer is:
+➡️ "reset()" 🎯✔️
+
+
+
+
+
