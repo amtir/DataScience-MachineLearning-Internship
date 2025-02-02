@@ -1,0 +1,170 @@
+
+
+Quiz
+
+1 - 1
+Which subfield of artificial intelligence involves the manipulation of text and speech by machines?
+2 Marks
+Robotics
+Computer Vision
+x Natural Language Processing
+Neural Networks
+
+The correct answer is:
+Natural Language Processing (NLP) ✅
+
+Explanation:
+NLP is a subfield of artificial intelligence that focuses on the interaction between computers and human language. It involves the manipulation, understanding, and generation of text and speech by machines. Examples include chatbots, speech recognition systems, and language translation models.
+
+2 - 2
+Which of the following best describes NLP?
+2 Marks
+A programming language for natural speech
+x A technology for processing and understanding human language by machines
+A system for translating between multiple languages
+A method for encoding emotions into text
+
+The correct answer is:
+A technology for processing and understanding human language by machines ✅
+
+Explanation:
+Natural Language Processing (NLP) is a field of AI that enables machines to understand, interpret, and generate human language. It is used in various applications such as sentiment analysis, machine translation, chatbots, and speech recognition.
+
+3 -  3
+In what fields is NLP commonly used?
+2 Marks
+x Medicine and healthcare
+Agriculture and farming
+Construction and engineering
+Astrophysics and space exploration
+
+The correct answer is:
+✅ Medicine and healthcare
+
+Explanation:
+NLP is widely used in medicine and healthcare for tasks such as analyzing medical records, extracting relevant patient information, assisting in medical diagnosis, and improving clinical decision-making. It is also used in chatbots for patient interaction, medical transcription, and drug discovery.
+
+While NLP has applications in various industries, it is not commonly associated with agriculture, construction, or astrophysics as its primary focus is on text and speech processing.
+
+
+
+4 - 4
+Why is processing textual data essential in today's digital landscape?
+2 Marks
+To increase battery life in electronic devices
+To reduce the cost of data storage
+x To extract valuable information from vast amounts of written content
+To improve the efficiency of transportation systems
+
+The correct answer is:
+✅ To extract valuable information from vast amounts of written content
+
+Explanation:
+In today's digital world, an enormous amount of text data is generated daily from social media, emails, news articles, reviews, research papers, and customer interactions. NLP helps process and analyze this data to extract meaningful insights, automate tasks, and enhance decision-making in areas like business, healthcare, finance, and customer service.
+
+5 - 5
+According to Gartner's prediction, what percentage of customer-enterprise relationships was expected to occur without much human interaction by the year 2020?
+2 Marks
+Over 75%
+x Over 85%
+Over 50%
+Over 90%
+
+
+The correct answer is:
+✅ Over 85%
+
+Explanation:
+Gartner predicted that by 2020, over 85% of customer-enterprise relationships would occur without much human interaction, primarily due to the rise of AI-driven chatbots, virtual assistants, and automated customer support systems. Businesses increasingly adopted NLP-powered solutions to handle customer queries, process transactions, and provide support, reducing the need for direct human involvement.
+
+6 - 6
+How does IBM utilize sentiment analysis?
+2 Marks
+To predict employee promotions
+To forecast stock market fluctuations
+To classify customer complaints
+x To predict which employees will leave a job
+
+
+
+7 - 7
+What challenging task does sentiment analysis aim to address?
+2 Marks
+Classifying user demographics
+Identifying trending topics
+x Classifying the sentiment of user comments
+Predicting future market trends
+
+The correct answer is:
+✅ Classifying the sentiment of user comments
+
+Explanation:
+Sentiment analysis is a Natural Language Processing (NLP) task that aims to determine whether a piece of text expresses a positive, negative, or neutral sentiment. It is widely used in customer feedback analysis, social media monitoring, brand reputation management, and market research. The challenge lies in understanding context, sarcasm, slang, and nuanced emotions in human language.
+
+8 - 8
+Which programming language is commonly used with NLTK for natural language processing tasks?
+2 Marks
+Java
+x Python
+C++
+JavaScript
+
+The correct answer is:
+✅ Python
+
+Explanation:
+Natural Language Toolkit (NLTK) is a widely used library for Natural Language Processing (NLP) tasks, and it is written in Python. Python is the preferred language for NLP due to its simplicity, vast ecosystem of libraries (NLTK, spaCy, TextBlob, transformers), and strong community support.
+
+
+9 - 9
+How can NLTK packages be downloaded interactively within a Python environment?
+2 Marks
+x By using the nltk.download() function
+By executing the nltk.install() command
+By running the nltk.get_package() method
+By using the download_package() function
+
+
+The correct answer is:
+✅ By using the nltk.download() function
+
+Explanation:
+
+In Python, NLTK packages can be downloaded interactively using the following command:
+import nltk
+nltk.download()
+
+This opens an NLTK Downloader GUI where you can select specific datasets and models to download. Alternatively, to download a specific package (e.g., stopwords), you can use:
+nltk.download('stopwords')
+
+This ensures that necessary resources like tokenizers, corpora, and models are available for NLP tasks.
+
+10 - 10
+Which NLTK method is used to stem words to their root form?
+2 Marks
+x stem()
+lemmatize()
+root()
+baseform()
+
+
+
+The correct answer is:
+✅ stem()
+
+Explanation:
+In NLTK, the stem() method is used to reduce words to their root or base form by removing suffixes. This process is called stemming and helps in text normalization.
+
+Example using PorterStemmer:
+
+from nltk.stem import PorterStemmer
+
+stemmer = PorterStemmer()
+print(stemmer.stem("running"))  # Output: run
+print(stemmer.stem("flies"))    # Output: fli
+
+Note:
+stem() may not always return a valid word (e.g., "flies" → "fli").
+
+If you need context-aware word reduction, use lemmatization (lemmatize()), which returns proper words using a dictionary.
+
