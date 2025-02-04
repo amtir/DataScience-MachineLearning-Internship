@@ -1,0 +1,194 @@
+
+Quiz
+
+
+1 - 1
+Tokenization is the process of breaking up text into _______  pieces called tokens
+2 Marks
+Larger
+x Smaller
+Medium
+None of the above
+
+✅ Answer: Smaller
+
+Explanation:
+Tokenization is the process of breaking up text into smaller pieces called tokens, which can be words, subwords, or sentences. 
+
+2 - 2
+What is tokenization?
+2 Marks
+x Breaking sentences into words
+Creating a set of vocabularies
+Removing stopwords
+All of the above
+
+✅ Answer: Breaking sentences into words
+
+Explanation:
+Tokenization is the process of splitting text into smaller units such as words or sentences. It does not involve creating vocabularies or removing stopwords.
+
+3 - 3
+Tokens of two consecutive written words are known as ______
+2 Marks
+x Bigrams
+Trigrams
+Ngrams
+None of the above
+
+✅ Answer: Bigrams
+
+Explanation:
+A bigram is a sequence of two consecutive words in a text.
+
+Unigram → Single word (e.g., "Machine")
+Bigram → Two-word sequence (e.g., "Machine Learning")
+Trigram → Three-word sequence (e.g., "Deep Learning Model")
+N-grams → General term for sequences of N words. 
+
+4 - 4
+From the following sentence "Ai Online Course", how many bigrams can be created? 2 Marks
+3
+x 2
+4
+5
+
+
+✅ Answer: 2
+
+Explanation:
+A bigram is a sequence of two consecutive words.
+
+Given sentence: "Ai Online Course"
+
+Bigrams that can be created:
+1️⃣ "Ai Online"
+2️⃣ "Online Course"
+
+Total Bigrams = 2 ✅ 
+
+5 - 5
+How many steps are there in Text Pre- Processing?
+2 Marks
+10
+8
+x 6
+7
+
+✅ Answer: There is no fixed number, but typically 6 to 8 steps are common.
+
+If we follow the standard text preprocessing pipeline, the main steps are:
+
+1️⃣ Tokenization
+2️⃣ Part of Speech (POS) Tagging
+3️⃣ Stop Words Removal
+4️⃣ Stemming or Lemmatization
+5️⃣ Named Entity Recognition (NER)
+6️⃣ Word Sense Disambiguation (WSD)
+7️⃣ Lowercasing & Special Character Removal (sometimes included)
+8️⃣ Text Normalization (optional, e.g., expanding contractions)
+
+So, the best choice is 8, but some consider 6 or 7 based on task needs.
+
+6 - 6
+POS Tagging is the process of labelling tokens with their respective parts of speech
+2 Marks
+x TRUE
+FALSE
+
+✅ Answer: TRUE
+
+Explanation:
+POS Tagging (Part-of-Speech Tagging) is the process of assigning grammatical labels (such as noun, verb, adjective, etc.) to each token in a sentence.
+
+🔹 Example:
+
+Sentence: "The cat sits on the mat."
+POS Tags: [("The", DT), ("cat", NN), ("sits", VBZ), ("on", IN), ("the", DT), ("mat", NN)]
+It helps in syntactic analysis, Named Entity Recognition (NER), and Word Sense Disambiguation (WSD). 
+
+
+
+7 - 7
+POS Stands for :
+2 Marks
+Point of sale
+x Parts of Speech
+Portable Operating System
+None of the above
+
+✅ Answer: Parts of Speech
+
+Explanation:
+In Natural Language Processing (NLP), POS stands for Parts of Speech, which refers to assigning grammatical categories (like noun, verb, adjective, etc.) to words in a sentence.
+
+🔹 Example:
+
+Sentence: "She runs fast."
+POS Tags: [("She", PRP), ("runs", VBZ), ("fast", RB)]
+It is used in text analysis, syntactic parsing, and AI-driven language models. 
+
+
+8 - 8
+Which is used to map sentence plan Into sentence structure?
+2 Marks
+x Text Planning
+Sentence Planning
+Text Realization
+Cosine Similarity
+
+✅ Answer: Sentence Planning
+
+Explanation:
+Sentence Planning is the step in Natural Language Generation (NLG) that maps a sentence plan into a structured sentence by organizing words, selecting appropriate grammar, and structuring clauses correctly.
+
+🔹 Key Tasks in Sentence Planning:
+
+Lexical Selection → Choosing the right words.
+Aggregation → Combining multiple pieces of information.
+Referring Expression Generation → Selecting pronouns or referring terms.
+It is an important step before Text Realization, which converts structured data into final readable text. 
+
+9 - 9
+Which one is not a POS tagging approach?
+2 Marks
+Stochastic POS tagging
+Transformation based tagging
+x Fuzzy logic based tagging
+Rule based POS tagging
+
+✅ Answer: Fuzzy logic based tagging
+
+Explanation:
+There are three main POS tagging approaches, but fuzzy logic-based tagging is not one of them.
+
+🔹 Common POS Tagging Approaches:
+1️⃣ Rule-based POS Tagging → Uses linguistic rules to assign tags.
+2️⃣ Stochastic (Probabilistic) POS Tagging → Uses statistical models (e.g., Hidden Markov Model).
+3️⃣ Transformation-based Tagging (TBL / Brill Tagger) → Uses machine learning with rule-based refinement.
+
+🔹 Fuzzy Logic is not commonly used in POS tagging but is used in sentiment analysis and AI reasoning.
+
+
+10 - 10
+In NLP, computer has to understand natural language in which format type:
+2 Marks
+Text and/or speech
+x Structured format
+Unstructured format
+None of the above
+
+
+✅ Answer: Structured format
+
+Explanation:
+In Natural Language Processing (NLP), computers process human language by converting unstructured text or speech into a structured format that algorithms can understand.
+
+🔹 How NLP Works?
+
+Input: Unstructured text or speech (e.g., raw sentences).
+Processing: Converts into structured representations using Tokenization, POS tagging, Parsing, etc.
+Output: Machine-readable format (structured data for ML models).
+🚀 Final Thought: Computers don’t understand raw text directly; they need structured formats (e.g., vectors, embeddings, parse trees) for processing!
+
+
