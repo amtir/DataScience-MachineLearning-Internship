@@ -1,0 +1,209 @@
+
+
+Quiz 
+
+1 - 1
+Sentiment Analysis deals with
+2 Marks
+Listing the topics that a document deals with
+x Assessing the emotional content which is identified in a document
+compressing a document as much as possible without losing the meaning
+All of the above
+
+"Assessing the emotional content which is identified in a document"
+
+Explanation:
+Sentiment Analysis is an NLP technique that determines the emotional tone of a document, identifying whether the sentiment is positive, negative, or neutral.
+
+✔ What Sentiment Analysis Does?
+
+Analyzes customer reviews, social media posts, news, and feedback.
+Helps businesses understand public opinion about products, services, or trends.
+Used in brand monitoring, political analysis, and market research.
+Sentiment Analysis focuses on emotions, not topic identification or text compression!
+
+
+2 - 2
+Which of the following is not a step to perform a Sentiment Analysis?
+2 Marks
+Text data cleaning
+Text preprocessing
+Feature extraction
+x Maximum Likelihood
+
+"Maximum Likelihood"
+
+Explanation:
+Maximum Likelihood is not a step in Sentiment Analysis; it is a statistical method used in probability estimation and machine learning.
+
+✔ Correct Steps in Sentiment Analysis:
+1️⃣ Text Data Cleaning → Removing special characters, punctuation, and unnecessary words.
+2️⃣ Text Preprocessing → Tokenization, stopword removal, lemmatization, etc.
+3️⃣ Feature Extraction → Converting text into numerical representations using TF-IDF, BoW, or Word Embeddings.
+4️⃣ Model Training & Evaluation → Using ML models like Naïve Bayes, SVM, LSTMs, etc.
+
+Maximum Likelihood is used in probability models, not directly in sentiment analysis!
+
+
+3 - 3
+___________ tools allow businesses to identify customer sentiment toward products, brands or services in online feedback.
+2 Marks
+Lexical analysis
+Syntactical Analyis
+Hybrid Analysis
+x Sentiment Analysis
+
+
+4 - 4
+In TextBlob, polarity ranges from
+2 Marks
+0 to 1
+x -1 to 1
+-1 to 0
+None of the above
+
+"-1 to 1"
+
+Explanation:
+In TextBlob, the polarity score ranges from -1 to 1, where:
+
+-1 → Strongly Negative sentiment 😡
+0 → Neutral sentiment 😐
++1 → Strongly Positive sentiment 😊
+✔ Example in Python:
+
+from textblob import TextBlob
+
+text = "I love this product!"
+blob = TextBlob(text)
+print(blob.sentiment.polarity)  # Output: 0.625 (Positive)
+TextBlob makes sentiment analysis simple and effective for NLP applications!
+
+5 - 5
+In TextBlob, subjectivity ranges from
+2 Marks
+x 0 to 1
+-1 to 1
+-1 to 0
+None of the above
+
+"0 to 1"
+
+Explanation:
+In TextBlob, the subjectivity score ranges from 0 to 1, where:
+
+0 → Completely Objective (Fact-based statement) 📊
+1 → Completely Subjective (Opinion-based statement) 💭
+✔ Example in Python:
+
+from textblob import TextBlob
+
+text = "I think this is the best product ever!"
+blob = TextBlob(text)
+print(blob.sentiment.subjectivity)  # Output: 0.9 (Highly subjective)
+Higher subjectivity means more opinionated text, while lower subjectivity means factual content!
+
+6 - 6
+Which of the following code snippet is used to import regular expression package in pyhton
+2 Marks
+x import re
+import regex
+import reg
+from nltk import re
+
+
+7 - 7
+Breaking out long-form text into sentences and words called?
+2 Marks
+Stem
+Cluster
+Bag
+x Tokens
+
+"Tokens"
+
+Explanation:
+Tokenization is the process of breaking text into smaller units called tokens. These tokens can be words, subwords, or sentences in NLP.
+
+✔ Types of Tokenization:
+
+Word Tokenization → Splitting text into words.
+Sentence Tokenization → Splitting text into sentences.
+✔ Example in Python using NLTK:
+
+from nltk.tokenize import word_tokenize, sent_tokenize
+
+text = "Natural Language Processing is amazing! Let's learn NLP."
+print(word_tokenize(text))  # Output: ['Natural', 'Language', 'Processing', 'is', 'amazing', '!', 'Let', "'s", 'learn', 'NLP', '.']
+print(sent_tokenize(text))  # Output: ['Natural Language Processing is amazing!', "Let's learn NLP."]
+Tokens are essential for NLP tasks like POS tagging, parsing, and sentiment analysis!
+
+8 - 8
+Which among the following is used as Naive Bayes classifier for multinomial models?
+2 Marks
+sklearn.naive_bayes.Multinomial()
+x scikit.naive_bayes.MultinomialNB
+sklearn.naive_bayes.MultinomialNB()
+bayes.MultinomialNB()
+
+"sklearn.naive_bayes.MultinomialNB()"
+
+Explanation:
+📌 In scikit-learn, the MultinomialNB classifier is used for text classification and bag-of-words models. It is commonly applied in spam detection, sentiment analysis, and document classification.
+
+✔ Correct way to import & use Multinomial Naïve Bayes:
+
+from sklearn.naive_bayes import MultinomialNB
+
+# Initialize classifier
+model = MultinomialNB()
+
+# Train model on text feature vectors (e.g., TF-IDF, BoW)
+# model.fit(X_train, y_train)
+MultinomialNB is ideal for text-based NLP tasks like spam filtering & sentiment analysis!
+
+
+9 - 9
+A dataset of different flowers containing their petal lengths and color. Your model has to predict the type of flower for given petal lengths and color. This is a_______
+2 Marks
+Regression task
+x Classification task
+Clustering task
+None
+
+"Classification task"
+
+Explanation:
+📌 In this scenario, the goal is to predict the type (category) of a flower based on features like petal length and color. Since we are assigning data points to discrete labels (flower types), this is a classification problem.
+
+✔ Why not Regression?
+
+Regression predicts continuous values (e.g., predicting flower petal length based on sunlight).
+✔ Why not Clustering?
+
+Clustering is unsupervised learning, where we group similar data points without predefined labels.
+This is a Supervised Learning Classification Task (e.g., using Decision Trees, SVM, Naïve Bayes, or Neural Networks)! 
+
+10 - 10
+From the following metric which is not used for evaluating classification models?
+2 Marks
+AUC ROC Score
+Accuracy
+x Mean absolute error
+Precision
+
+"Mean absolute error"
+
+Explanation:
+Mean Absolute Error (MAE) is a metric used for Regression Models, not classification. It measures the average absolute difference between actual and predicted values in a regression task.
+
+✔ Classification Model Evaluation Metrics:
+1️⃣ Accuracy → Measures the percentage of correctly classified instances.
+2️⃣ Precision → Measures the proportion of true positives among predicted positives.
+3️⃣ AUC-ROC Score → Evaluates how well the model distinguishes between classes.
+
+Use MAE for regression tasks and Accuracy, Precision, and AUC-ROC for classification! 
+
+
+
+
