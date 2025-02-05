@@ -1,0 +1,205 @@
+
+
+Quiz
+
+
+1 - 1
+Feature Extraction is the process of mapping
+2 Marks
+textual data to real-valued bags
+complexity
+real-valued vectors to texts
+x textual data to real-valued vectors
+
+The correct answer is:
+✅ "textual data to real-valued vectors"
+
+Explanation: Feature extraction in NLP involves converting text data into numerical representations (real-valued vectors) that machine learning models can process. Examples include Bag of Words (BoW), TF-IDF, and Word Embeddings (Word2Vec, BERT). 
+
+2 - 2
+Bag of Words in text preprocessing is used for:
+2 Marks
+POS Tagging
+x Extracting features from sentences
+Stemming
+none of the above
+
+The correct answer is:
+✅ "Extracting features from sentences"
+
+Explanation:
+Bag of Words (BoW) is a feature extraction technique used in text preprocessing. It converts text into numerical features by representing each sentence/document as a vector of word occurrences. It does not perform POS tagging or stemming but helps in text classification, sentiment analysis, and NLP tasks. 
+
+
+3 - 3
+Bag of Words approach ignores the order of words and uses word counts as their basis.
+2 Marks
+x TRUE
+FALSE
+
+TRUE
+
+Explanation:
+The Bag of Words (BoW) approach ignores the order of words and represents text only based on word occurrences (counts or presence/absence of words). This means that BoW does not capture sentence structure, meaning, or context—just the frequency of words in a document.
+
+✔ Example:
+
+"The movie was great"
+"Great was the movie"
+Both sentences will have the same BoW representation despite having different word orders. 
+
+
+4 - 4
+Converting tokens to featured columns with counts is called
+2 Marks
+x Text Vectorization
+Text processing
+Tokenization
+All of the above
+
+"Text Vectorization"
+
+Explanation:
+Text Vectorization is the process of converting text tokens (words) into numerical feature representations. This is essential for machine learning models to process textual data.
+
+✔ Example:
+
+Bag of Words (BoW) → Converts text into a matrix of word counts.
+TF-IDF (Term Frequency-Inverse Document Frequency) → Assigns weights to words based on importance.
+Word Embeddings (Word2Vec, GloVe, BERT) → Represents words as dense numerical vectors.
+Text Vectorization = Feature Engineering for NLP! 
+
+5 - 5
+What are the drawbacks of bag of words model?
+2 Marks
+Bag of words always gives correct answer
+x Bag of words model often results in a large set of features, many of which are useless
+Complicated coding
+None of the above
+
+ "Bag of words model often results in a large set of features, many of which are useless"
+
+Explanation:
+The Bag of Words (BoW) model has several drawbacks:
+🔹 Ignores word order & context → It only considers word frequency, losing semantic meaning.
+🔹 High dimensionality → It creates large feature vectors, making computations expensive.
+🔹 Sparse matrix → Most values in the feature matrix are zeros, leading to inefficiency.
+🔹 Sensitive to irrelevant words → Common but unimportant words (like "the", "is") can dominate unless handled properly.
+
+Solution? Use TF-IDF to weigh words by importance or use word embeddings (Word2Vec, BERT) to capture meaning!
+
+
+6 - 6
+Which of the following functions converts a collection of raw documents to a matrix of TF-IDF features?
+2 Marks
+build_analyzer()
+get_feature_names()
+x TfidfVectorizer()
+All of the above
+
+
+"TfidfVectorizer()"
+
+Explanation:
+TfidfVectorizer() is a function from sklearn.feature_extraction.text that converts raw text documents into a matrix of TF-IDF features. It helps in transforming text into numerical values based on word importance in the document.
+
+✔ Example:
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+documents = ["This is an example sentence", "This is another example"]
+vectorizer = TfidfVectorizer()
+tfidf_matrix = vectorizer.fit_transform(documents)
+
+print(tfidf_matrix.toarray())  # Matrix of TF-IDF scores
+TF-IDF helps filter out less important words while keeping meaningful terms!
+
+
+7 - Which of the following is not a pre-processing technique?
+2 Marks
+Converting to Lowercase
+Removing Punctuations
+Removal of Stop Words
+x Sentiment Analysis
+
+ "Sentiment Analysis"
+
+Explanation:
+Sentiment Analysis is not a pre-processing technique; it is an NLP task that analyzes text to determine whether it is positive, negative, or neutral.
+
+Pre-processing techniques include:
+✔ Converting to Lowercase → Ensures consistency in text processing.
+✔ Removing Punctuations → Helps clean text for analysis.
+✔ Removal of Stop Words → Removes common words (e.g., "the", "is", "and") that don't contribute to meaning.
+
+Pre-processing cleans text, while Sentiment Analysis extracts emotions from text!
+
+8 - Which module/package is used to extract features in a format supported by machine learning algorithms?
+2 Marks
+feature_extraction()
+x sklearn.feature_extraction
+sklearn.feature_extraction_hybrid()
+sklearn.feature()
+
+ "sklearn.feature_extraction"
+
+Explanation:
+The sklearn.feature_extraction module in scikit-learn provides methods to convert raw text into numerical features that machine learning models can process.
+
+Common Feature Extraction Methods in sklearn.feature_extraction:
+✔ CountVectorizer() → Converts text into a Bag of Words (BoW) model.
+✔ TfidfVectorizer() → Converts text into TF-IDF features.
+✔ DictVectorizer() → Converts dictionaries into feature vectors.
+
+sklearn.feature_extraction is widely used for NLP, text classification, and machine learning pipelines!
+
+
+9 - 9
+TF-IDF is one of the most important techniques used for _________ to represent how important a specific word or phrase is to a given document.
+2 Marks
+tokenization
+information retrieval
+deleting texts
+None of the above
+
+"information retrieval"
+
+Explanation:
+TF-IDF (Term Frequency-Inverse Document Frequency) is widely used in information retrieval to determine the importance of words in a document relative to a collection (corpus).
+
+✔ Why?
+
+It reduces the weight of common words (e.g., "the", "is") across all documents.
+It increases the importance of unique words relevant to a specific document.
+Used in search engines (Google, Elasticsearch) to rank relevant documents.
+TF-IDF enhances search accuracy, text classification, and NLP tasks!
+
+
+
+10  - 10
+TF is a function of the frequency of terms appearing in the document.
+2 Marks
+x TRUE
+FALSE
+
+TRUE
+
+Explanation:
+📌 Term Frequency (TF) measures how often a word appears in a document relative to the total number of words.
+
+✔ Formula:
+
+TF(t,d) =  Total words in document d  / Number of times term t appears in document d
+​
+ 
+✔ Example:
+
+Document: "The movie was amazing, amazing story!"
+Word "amazing" appears 2 times in a document with 6 words.
+TF("amazing") = 2 / 6 = 0.33
+TF is used in TF-IDF and other NLP models to weigh word importance in text!
+
+
+
+
+
