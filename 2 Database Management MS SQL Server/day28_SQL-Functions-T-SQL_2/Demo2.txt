@@ -1,0 +1,118 @@
+Demo2
+
+
+Use Employees;
+
+ CREATE TABLE employee(name varchar(45) NOT NULL,       
+occupation varchar(35) NOT NULL,       
+working_date date,     
+working_hours varchar(10),   
+salary INT  );
+
+INSERT INTO employee VALUES
+('Jolly Evans', 'HR', '2020-10-04', 9, 25000),
+('Brayden Simmons', 'Engineer', '2020-10-04', 12, 65000),
+('Rose Huges', 'Writer', '2020-10-04', 13, 35000),
+('Laura Paul', 'Manager', '2020-10-04', 10, 45000),
+('Diego Simmons', 'Teacher', '2020-10-04', 12, 30000),
+('Antonio Bennet', 'Writer', '2020-10-04', 13, 35000);
+
+
+(6 rows affected)
+
+Completion time: 2025-03-01T22:44:35.0968920+01:00
+
+Select * FROM employee; 
+
+Jolly Evans	HR	2020-10-04	9	25000
+Brayden Simmons	Engineer	2020-10-04	12	65000
+Rose Huges	Writer	2020-10-04	13	35000
+Laura Paul	Manager	2020-10-04	10	45000
+Diego Simmons	Teacher	2020-10-04	12	30000
+Antonio Bennet	Writer	2020-10-04	13	35000
+
+
+
+SELECT COUNT(*) AS TotalEmployee FROM employee;
+6
+
+
+
+SELECT COUNT(name) AS "Total Employee"    
+FROM employee WHERE salary<50000 AND working_hours>9;
+4
+
+SELECT MIN(salary) AS "Lowest Salary" FROM employee; 
+25000
+
+SELECT MAX (salary) AS "Highest Salary" FROM employee; 
+65000
+
+
+
+
+CREATE TABLE emp_address( name varchar(45),       
+cellphone varchar(25),       
+address varchar(90),   
+city varchar(35)  ); 
+
+
+INSERT INTO emp_address(name, cellphone, address, city) 
+VALUES    
+('Jolly Evans', '334369253659', '777 Brockton Avenue, 
+Abington MA 2351', 'California'),     
+('Brayden Simmons', '359436598356', '3849 Route 31, Clay 
+NY 12041', 'New York'),     
+('Rose Huges', '768055634859', '345 East Meighan Blvd, 
+Gadsden AL 359', 'Alaska'),     
+('Laura Paul', '948563945327', '301 RT 9W, Glenmont NY 
+12077', 'New York'),     
+('Diego Simmons', '465676423435', '501 Memorial Dr, 
+Chicopee MA 1030', 'California'),     
+('Antonio Bennet', '506705670323', '317 Russell St, 
+Hadley MA 1415', 'California');  
+
+Commands completed successfully.
+
+Completion time: 2025-03-01T22:50:59.5300766+01:00
+(6 rows affected)
+
+Completion time: 2025-03-01T22:53:16.5618956+01:00
+
+
+Select * FROM emp_address; 
+
+Jolly Evans	334369253659	777 Brockton Avenue, Abington MA 2351	California
+Brayden Simmons	359436598356	3849 Route 31, Clay NY 12041	New York
+Rose Huges	768055634859	345 East Meighan Blvd, Gadsden AL 359	Alaska
+Laura Paul	948563945327	301 RT 9W, Glenmont NY 12077	New York
+Diego Simmons	465676423435	501 Memorial Dr, Chicopee MA 1030	California
+Antonio Bennet	506705670323	317 Russell St, Hadley MA 1415	California
+
+
+SELECT COUNT(*) AS Names,    
+COUNT(*) AS addresses FROM employee   
+INNER JOIN emp_address ON employee.name = 
+emp_address.name; 
+
+6	6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

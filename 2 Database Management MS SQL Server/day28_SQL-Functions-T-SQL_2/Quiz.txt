@@ -1,0 +1,326 @@
+
+Quiz
+
+1
+What differentiates scalar from aggregate functions in SQL?
+2 Marks
+Scalar functions target multiple tables; aggregate functions target a single row.
+Scalar functions return tables; aggregate functions modify tables.
+Scalar functions act on individual values; aggregate functions summarize multiple rows.
+Scalar functions manage databases; aggregate functions analyze data.
+
+
+✅ Correct Answer:
+Scalar functions act on individual values; aggregate functions summarize multiple rows.
+
+Explanation:
+🔹 Scalar Functions:
+
+Operate on a single value and return a single value.
+Examples: UPPER(), LOWER(), LEN(), ROUND(), GETDATE().
+🔹 Aggregate Functions:
+
+Operate on a set of rows and return a single aggregated result.
+Examples: SUM(), AVG(), MAX(), MIN(), COUNT().
+Why Not the Other Options?
+❌ Scalar functions target multiple tables; aggregate functions target a single row.
+
+❌ Incorrect: Scalar functions operate on single values (not multiple tables), and aggregate functions summarize groups of rows (not single rows).
+❌ Scalar functions return tables; aggregate functions modify tables.
+
+❌ Incorrect: Scalar functions return a single value, and aggregate functions do not modify tables; they compute summaries.
+❌ Scalar functions manage databases; aggregate functions analyze data.
+
+❌ Incorrect: Database management is handled by administrative functions (e.g., CREATE DATABASE, ALTER TABLE), not scalar or aggregate functions.
+Final Answer:
+✅ Scalar functions act on individual values; aggregate functions summarize multiple rows.
+
+2 - 2
+How do aggregate functions operate in SQL?
+2 Marks
+They process and return a result from each input value.
+They modify rows based on values in other rows.
+They compute a summary result from multiple values.
+They return varied results based on conditional logic.
+
+✅ Correct Answer:
+They compute a summary result from multiple values.
+
+Explanation:
+🔹 Aggregate functions operate on multiple rows and return a single summary value.
+🔹 They are commonly used with GROUP BY to summarize data.
+🔹 Examples:
+
+SUM(Salary) → Returns the total salary.
+AVG(Age) → Returns the average age.
+COUNT(*) → Returns the number of rows.
+MAX(Score) → Returns the highest score.
+MIN(Price) → Returns the lowest price.
+
+
+3 - 3
+How do bitwise operators process their operands in SQL?
+2 Marks
+By directly manipulating the operands as whole integers without conversion.
+By converting the integer operands to binary bits, performing the operation, and then converting back to an integer.
+By performing arithmetic operations on the operands and rounding the result.
+By concatenating the binary representation of the operands.
+
+
+✅ Correct Answer:
+By converting the integer operands to binary bits, performing the operation, and then converting back to an integer.
+
+Explanation:
+🔹 Bitwise operators work by:
+1️⃣ Converting integer operands to binary representation (bit-level).
+2️⃣ Performing the bitwise operation (AND, OR, XOR, NOT, SHIFT).
+3️⃣ Converting the result back to an integer.
+
+🔹 Common Bitwise Operators in SQL Server:
+
+Operator	Description	Example (5 & 3)
+& (AND)	Performs bitwise AND	5 & 3 → 1
+`	` (OR)	Performs bitwise OR
+^ (XOR)	Performs bitwise XOR	5 ^ 3 → 6
+~ (NOT)	Flips bits (one's complement)	~5 → -6
+<< (Left Shift)	Shifts bits left	5 << 1 → 10
+>> (Right Shift)	Shifts bits right	5 >> 1 → 2
+💡 Example Query:
+
+SELECT 5 & 3 AS BitwiseAnd, 5 | 3 AS BitwiseOr, 5 ^ 3 AS BitwiseXor;
+✔ Output:
+
+BitwiseAnd	BitwiseOr	BitwiseXor
+1	7	6
+Why Not the Other Options?
+❌ By directly manipulating the operands as whole integers without conversion.
+
+❌ Incorrect: SQL converts numbers to binary before applying bitwise operations.
+❌ By performing arithmetic operations on the operands and rounding the result.
+
+❌ Incorrect: Bitwise operations are NOT arithmetic (addition, subtraction, etc.).
+❌ By concatenating the binary representation of the operands.
+
+❌ Incorrect: Bitwise operators do NOT concatenate binary values; they compare and modify individual bits.
+Final Answer:
+✅ By converting the integer operands to binary bits, performing the operation, and then converting back to an integer.
+
+4 - 4
+What is the primary purpose of bitwise operators in SQL?
+2 Marks
+To compare string values of two expressions.
+To manipulate date and time values in expressions.
+To perform bit-level operations on integer data types.
+To execute logical operations on boolean data types.
+
+✅ Correct Answer:
+To perform bit-level operations on integer data types.
+
+Explanation:
+🔹 Bitwise operators operate at the binary level of integer values, modifying individual bits.
+🔹 They are mainly used for efficient storage, encryption, flag manipulation, and performance tuning.
+
+🔹 Common SQL Server Bitwise Operators:
+
+Operator	Description	Example (5 & 3)
+& (AND)	Performs bitwise AND	5 & 3 → 1
+`	` (OR)	Performs bitwise OR
+^ (XOR)	Performs bitwise XOR	5 ^ 3 → 6
+~ (NOT)	Inverts bits (one’s complement)	~5 → -6
+<< (Left Shift)	Shifts bits left	5 << 1 → 10
+>> (Right Shift)	Shifts bits right	5 >> 1 → 2
+💡 Example Query:
+
+
+SELECT 5 & 3 AS BitwiseAnd, 5 | 3 AS BitwiseOr, 5 ^ 3 AS BitwiseXor;
+✔ Output:
+
+BitwiseAnd	BitwiseOr	BitwiseXor
+1	7	6
+
+
+
+5 - 5
+In which context are relational operators used within SQL?
+2 Marks
+As constraints in table definitions.
+As functions for string manipulation.
+As a table source in a DML statement.
+As methods for indexing table data.
+
+
+✅ Correct Answer:
+As constraints in table definitions.
+
+Explanation:
+🔹 Relational operators in SQL compare values between columns, expressions, or tables.
+🔹 They are commonly used in constraints, WHERE clauses, JOIN conditions, and filtering queries.
+
+Common SQL Relational Operators:
+Operator	Description	Example
+=	Equal to	Salary = 50000
+<> or !=	Not equal to	Age <> 30
+>	Greater than	Price > 100
+<	Less than	Marks < 50
+>=	Greater than or equal to	Experience >= 5
+<=	Less than or equal to	JoiningDate <= '2022-01-01'
+💡 Example Query (Using Relational Operators as Constraints):
+
+
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    Name VARCHAR(100) NOT NULL,
+    Age INT CHECK (Age >= 18),  -- Constraint using relational operator
+    Salary DECIMAL(10,2) CHECK (Salary > 30000)  -- Constraint using relational operator
+);
+✔ This ensures that Age is at least 18 and Salary is greater than 30,000.
+
+
+
+6 - 6
+What is the primary function of relational operators in SQL?
+2 Marks
+To perform calculations on numeric data types.
+To modify data within a table.
+To return a result set based on one or more input parameters.
+To enforce referential integrity constraints between tables.
+
+✅ Correct Answer:
+To return a result set based on one or more input parameters.
+
+Explanation:
+🔹 Relational operators in SQL compare values between columns, expressions, or tables and return a result set based on the conditions specified.
+🔹 They are commonly used in:
+
+WHERE clauses for filtering data.
+JOIN conditions for linking tables.
+HAVING clauses for group-based filtering.
+CHECK constraints to enforce column rules.
+
+
+7 - 7
+What is the purpose of arithmetic operators in SQL?
+2 Marks
+To compare two expressions of one or more data types.
+To perform mathematical operations on two expressions of numeric data types.
+To join tables based on the matching values of two expressions.
+To filter rows based on the logical evaluation of two expressions.
+
+✅ Correct Answer:
+To perform mathematical operations on two expressions of numeric data types.
+
+Explanation:
+🔹 Arithmetic operators in SQL are used to perform mathematical calculations on numeric values.
+🔹 These operators work on numeric data types such as INT, DECIMAL, FLOAT, MONEY, etc.
+
+Common SQL Arithmetic Operators:
+Operator	Description	Example (a = 10, b = 5)	Result
++	Addition	SELECT 10 + 5;	15
+-	Subtraction	SELECT 10 - 5;	5
+*	Multiplication	SELECT 10 * 5;	50
+/	Division	SELECT 10 / 5;	2
+%	Modulus (Remainder)	SELECT 10 % 3;	1
+💡 Example Query (Using Arithmetic Operators):
+
+
+SELECT Name, Salary, Salary * 1.10 AS NewSalary
+FROM Employees;
+✔ This calculates a 10% salary increase for each employee.
+
+8 - 8
+Which data type category do arithmetic operators primarily operate on in SQL?
+2 Marks
+String data types
+Boolean data types
+Numeric data types
+Date and time data types
+
+✅ Correct Answer:
+Numeric data types
+
+Explanation:
+🔹 Arithmetic operators in SQL primarily operate on numeric data types such as:
+
+INT (Integer)
+DECIMAL (Fixed precision)
+FLOAT (Floating-point numbers)
+NUMERIC (Fixed precision)
+MONEY and SMALLMONEY
+
+9 - 9
+Which of the Logical operators used in SQL Server are
+2 Marks
+AND, OR, NOT
+&&,||, !
+$, |, !
+None of the above
+
+
+✅ Correct Answer:
+AND, OR, NOT
+
+Explanation:
+🔹 Logical operators in SQL Server are used to filter records based on conditions in WHERE, HAVING, and JOIN clauses.
+
+🔹 SQL Server Logical Operators:
+
+Operator	Description	Example
+AND	Returns TRUE if both conditions are met	WHERE Age > 25 AND Salary > 50000
+OR	Returns TRUE if at least one condition is met	WHERE Age < 25 OR Salary < 30000
+NOT	Negates a condition	WHERE NOT (Department = 'HR')
+💡 Example Query:
+
+SELECT * FROM Employees
+WHERE Age > 30 AND Salary > 50000;
+✔ This returns employees where both conditions are TRUE.
+
+
+
+10 - 10
+Which of these are the types of operators?
+2 Marks
+Arithmetic
+Comparsion
+Set
+All of the above
+
+✅ Correct Answer:
+All of the above
+
+Explanation:
+SQL Server supports multiple types of operators that perform different functions in queries. The main categories include:
+
+1️⃣ Arithmetic Operators
+Used to perform mathematical operations on numeric data.
+✔ Operators: +, -, *, /, %
+💡 Example:
+
+SELECT Salary * 1.1 AS IncreasedSalary FROM Employees;
+✔ This calculates a 10% salary increase.
+
+2️⃣ Comparison Operators
+Used to compare values between columns or expressions.
+✔ Operators: =, <>, !=, >, <, >=, <=
+💡 Example:
+
+SELECT * FROM Employees WHERE Salary > 50000;
+✔ Returns employees earning more than 50,000.
+
+3️⃣ Set Operators
+Used to combine the results of multiple SELECT queries.
+✔ Operators: UNION, UNION ALL, INTERSECT, EXCEPT
+💡 Example:
+
+SELECT Name FROM PermanentEmployees
+UNION
+SELECT Name FROM ContractEmployees;
+✔ This merges both tables’ employee names without duplicates.
+
+Why "All of the above" is Correct?
+✅ Arithmetic Operators → Perform calculations.
+✅ Comparison Operators → Compare values.
+✅ Set Operators → Combine query results.
+
+Final Answer:
+✅ All of the above (Arithmetic, Comparison, and Set operators).
+

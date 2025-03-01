@@ -1,0 +1,84 @@
+
+Demo1 
+
+USE EmployeeDetails;
+
+create table EmployeeDetails(empid int, 
+empname varchar(50),designation varchar(50),salary int,
+ Location varchar(50)) ;
+
+Commands completed successfully.
+
+Completion time: 2025-03-01T22:25:40.0284228+01:00
+
+insert into EmployeeDetails 
+values(1,'suresh','software engineer',25000,'chennai'), 
+(2,'rohini','AEO',15000,'chennai'), 
+(3,'madhavsai','business analyst',50000,'nagpur'), 
+(4,'mahendra','CA',75000,'guntur'), 
+(5,'sateesh','Doctor',65000,'guntur') ;
+
+select * from EmployeeDetails ;
+
+1	suresh	software engineer	25000	chennai
+2	rohini	AEO	15000	chennai
+3	madhavsai	business analyst	50000	nagpur
+4	mahendra	CA	75000	guntur
+5	sateesh	Doctor	65000	Guntur
+
+
+(5 rows affected)
+
+(5 rows affected)
+
+Completion time: 2025-03-01T22:26:12.9575714+01:00
+
+
+
+SELECT * FROM EmployeeDetails WHERE Location='guntur' AND
+ Salary > 40000;
+
+4	mahendra	CA	75000	guntur
+5	sateesh	Doctor	65000	Guntur
+
+
+SELECT * FROM EmployeeDetails WHERE Location 
+= 'chennai' AND designation = 'AEO' ;
+
+2	rohini	AEO	15000	Chennai
+
+
+SELECT * FROM EmployeeDetails WHERE Location='guntur' OR 
+Salary > 40000;
+
+3	madhavsai	business analyst	50000	nagpur
+4	mahendra	CA	75000	guntur
+5	sateesh	Doctor	65000	Guntur
+
+
+
+SELECT * FROM EmployeeDetails WHERE Designation='CA' OR Salary > 20000;
+
+1	suresh	software engineer	25000	chennai
+3	madhavsai	business analyst	50000	nagpur
+4	mahendra	CA	75000	guntur
+5	sateesh	Doctor	65000	Guntur
+
+
+SELECT * FROM EmployeeDetails WHERE Location LIKE 'c%' 
+
+1	suresh	software engineer	25000	chennai
+2	rohini	AEO	15000	Chennai
+
+SELECT * FROM EmployeeDetails WHERE Location NOT LIKE '%en%';
+
+3	madhavsai	business analyst	50000	nagpur
+4	mahendra	CA	75000	guntur
+5	sateesh	Doctor	65000	Guntur
+
+
+SELECT * FROM EmployeeDetails WHERE Location NOT IN ('chennai','guntur','bangalore');
+
+3	madhavsai	business analyst	50000	Nagpur
+
+
