@@ -1,0 +1,132 @@
+
+Assignment 
+
+
+Here is the SQL script to create the EmployeeDB database, define the required tables, populate them with sample data, and execute the necessary queries based on the given problem statement.
+
+
+CREATE DATABASE EmployeeDB;
+GO
+
+USE EmployeeDB;
+GO
+
+
+
+
+CREATE TABLE PermanentEmployee (
+    EmployeeID INT PRIMARY KEY,
+    Name VARCHAR(100) NOT NULL,
+    Department VARCHAR(50),
+    Gender VARCHAR(10),
+    Age INT NOT NULL,
+    Salary DECIMAL(10,2)
+);
+
+
+
+CREATE TABLE ContractEmployee (
+    EmployeeID INT PRIMARY KEY,
+    Name VARCHAR(100) NOT NULL,
+    Department VARCHAR(50),
+    Gender VARCHAR(10),
+    Age INT NOT NULL,
+    ContractEndDate DATE
+);
+
+
+CREATE TABLE HiringEmployee (
+    EmployeeID INT PRIMARY KEY,
+    Name VARCHAR(100) NOT NULL,
+    Department VARCHAR(50),
+    Gender VARCHAR(10),
+    Age INT NOT NULL,
+    InterviewDate DATE
+);
+
+
+-- Insert data into PermanentEmployee table
+INSERT INTO PermanentEmployee (EmployeeID, Name, Department, Gender, Age, Salary) VALUES
+(1, 'Alice Johnson', 'IT', 'Female', 35, 80000),
+(2, 'Bob Smith', 'HR', 'Male', 40, 75000),
+(3, 'Charlie Brown', 'Finance', 'Male', 45, 90000),
+(4, 'David Miller', 'Marketing', 'Male', 30, 65000),
+(5, 'Emma Davis', 'Operations', 'Female', 28, 70000);
+
+-- Insert data into ContractEmployee table
+INSERT INTO ContractEmployee (EmployeeID, Name, Department, Gender, Age, ContractEndDate) VALUES
+(6, 'Frank Harris', 'IT', 'Male', 29, '2025-12-31'),
+(7, 'Grace Thomas', 'HR', 'Female', 35, '2024-06-30'),
+(8, 'Henry Wilson', 'Finance', 'Male', 38, '2024-09-30');
+
+-- Insert data into HiringEmployee table
+INSERT INTO HiringEmployee (EmployeeID, Name, Department, Gender, Age, InterviewDate) VALUES
+(9, 'Ivy Moore', 'IT', 'Female', 27, '2025-03-15'),
+(10, 'Jack Lewis', 'HR', 'Male', 31, '2025-02-10'),
+(11, 'Karen White', 'Finance', 'Female', 26, '2025-04-22');
+
+
+
+
+CREATE TABLE EmployeeContactDetails (
+    EmployeeID INT PRIMARY KEY REFERENCES PermanentEmployee(EmployeeID),
+    Email VARCHAR(255) NOT NULL,
+    Mobile VARCHAR(15) NOT NULL
+);
+
+
+
+-- Insert data into EmployeeContactDetails table
+INSERT INTO EmployeeContactDetails (EmployeeID, Email, Mobile) VALUES
+(1, 'alice.johnson@example.com', '123-456-7890'),
+(2, 'bob.smith@example.com', '234-567-8901'),
+(3, 'charlie.brown@example.com', '345-678-9012'),
+(4, 'david.miller@example.com', '456-789-0123');
+
+
+
+SELECT * FROM PermanentEmployee
+WHERE Age > (SELECT MAX(Age) FROM ContractEmployee);
+
+
+
+SELECT * FROM PermanentEmployee
+WHERE Age > ANY (SELECT Age FROM ContractEmployee);
+
+
+
+
+SELECT EmployeeID, Name, Department, Gender, Age FROM PermanentEmployee
+UNION
+SELECT EmployeeID, Name, Department, Gender, Age FROM ContractEmployee
+UNION
+SELECT EmployeeID, Name, Department, Gender, Age FROM HiringEmployee
+ORDER BY Name;
+
+
+
+
+SELECT EmployeeID, Name, Department, Gender, Age FROM PermanentEmployee
+WHERE EmployeeID IN (SELECT EmployeeID FROM ContractEmployee)
+
+UNION
+
+SELECT EmployeeID, Name, Department, Gender, Age FROM ContractEmployee
+WHERE EmployeeID IN (SELECT EmployeeID FROM HiringEmployee)
+
+ORDER BY Name;
+
+
+
+
+SELECT p.EmployeeID, p.Name, p.Department, p.Gender, p.Age, e.Email, e.Mobile
+FROM PermanentEmployee p
+LEFT JOIN EmployeeContactDetails e ON p.EmployeeID = e.EmployeeID
+ORDER BY p.Name;
+
+
+
+
+
+
+
