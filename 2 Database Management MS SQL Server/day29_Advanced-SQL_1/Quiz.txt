@@ -1,0 +1,165 @@
+
+Quiz
+
+1 - 1
+What is the primary purpose of the SELECT statement in SQL?
+2 Marks
+To insert new records into a database table.
+To update existing records in a database table.
+To delete records from a database table.
+To retrieve information from one or more database tables.
+
+✅ Correct Answer:
+To retrieve information from one or more database tables.
+
+Explanation:
+The SELECT statement in SQL is used to fetch data from one or more tables in a database. It is one of the most commonly used SQL commands for querying data.
+
+2 - 2
+What does the result of a SELECT statement represent in SQL?
+2 Marks
+A new database table that is automatically saved within the database.
+An error log detailing any issues encountered during the query process.
+Another table, also known as a result set, based on the query criteria.
+A permanent change to the structure of the existing database table.
+
+✅ Correct Answer:
+Another table, also known as a result set, based on the query criteria.
+
+Explanation:
+The SELECT statement in SQL retrieves data from one or more tables and returns a result set.
+The result set is a temporary virtual table that exists only during the execution of the query.
+It does not modify or store any new data in the database unless explicitly saved.
+
+
+3 - 3
+Which Boolean operator is used in a SQL WHERE clause to retrieve rows where both specified conditions are true?
+2 Marks
+OR
+AND
+NOT
+XOR
+
+✅ Correct Answer:
+AND
+
+Explanation:
+The AND operator in a WHERE clause is used to retrieve rows where both conditions are true.
+It filters records based on multiple conditions, ensuring all conditions must be met for a row to be included in the result.
+
+
+4 - 4
+The ______ clause allows us to select only those rows in the result relation of the ____ clause that satisfy a specified predicate.
+2 Marks
+Select, from
+From, where
+Where, from
+From, select
+
+✅ Correct Answer:
+Where, from
+
+Explanation:
+The WHERE clause filters rows in the result set of a FROM clause based on a specified condition (predicate).
+The FROM clause determines the table(s) from which data is retrieved.
+
+5 - 5
+__________ provides details on any database object.
+2 Marks
+sp_owner
+sp_changeowner
+sp_change
+None of the above
+
+
+✅ Correct Answer:
+None of the above
+
+Explanation:
+None of the listed options are correct because the correct system stored procedure to get details on any database object is:
+
+✔ sp_help → Provides detailed information about any database object (tables, views, procedures, indexes, etc.).
+
+6 - 6
+What does the OR operator do in a SQL WHERE clause?
+2 Marks
+Retrieves rows where neither of the conditions is true.
+Retrieves rows where both conditions are true.
+Retrieves rows where at least one of the specified conditions is true.
+Negates the specified condition.
+
+
+✅ Correct Answer:
+Retrieves rows where at least one of the specified conditions is true.
+
+Explanation:
+The OR operator in a WHERE clause is used to return rows where at least one of the conditions is true. If either condition evaluates to TRUE, the row is included in the result set.
+
+7 - In a SQL query, if you want to exclude rows where a certain condition is true, which Boolean operator should you use?
+2 Marks
+AND
+OR
+NOT
+XOR
+
+
+
+
+✅ Correct Answer:
+NOT
+
+Explanation:
+The NOT operator is used in SQL to exclude rows where a certain condition is true by negating the condition.
+
+8 - 8
+When combining multiple conditions in a SQL WHERE clause, which of the following statements is true regarding the use of AND and OR operators?
+2 Marks
+The AND operator retrieves rows where at least one of the conditions is true.
+The OR operator retrieves rows only if all conditions are true.
+The AND operator retrieves rows only if both conditions are true, while the OR operator retrieves rows if at least one condition is true.
+The AND operator retrieves rows only if both conditions are true, while the OR operator retrieves rows if at least one condition is true.
+
+
+✅ Correct Answer:
+The AND operator retrieves rows only if both conditions are true, while the OR operator retrieves rows if at least one condition is true.
+
+Explanation:
+The AND operator requires both conditions to be TRUE for a row to be included in the result set.
+The OR operator includes rows where at least one of the conditions is TRUE.
+
+9 - 9
+What is the purpose of the ORDER BY clause in a SQL query?
+2 Marks
+To group the rows based on one or more columns.
+To filter rows based on specified conditions.
+To define the order of rows resulting from a query.
+To specify the columns to be returned by the query.
+
+✅ Correct Answer:
+To define the order of rows resulting from a query.
+
+Explanation:
+The ORDER BY clause in SQL is used to sort the result set based on one or more columns, either in ascending (ASC) or descending (DESC) order.
+
+
+
+10 - 10
+Which of the following correctly describes how to use the ORDER BY clause to sort the results of a query by a specific column in descending order?
+2 Marks
+ORDER BY col_name ASC
+ORDER BY col_name DESC
+ORDER BY DESC col_name
+SORT BY col_name DESC
+
+✅ Correct Answer:
+ORDER BY col_name DESC
+
+Explanation:
+The ORDER BY clause in SQL sorts query results based on a specific column.
+
+ASC (Ascending Order - Default) → Smallest to largest (A-Z, 0-9).
+DESC (Descending Order) → Largest to smallest (Z-A, 9-0).
+
+
+
+

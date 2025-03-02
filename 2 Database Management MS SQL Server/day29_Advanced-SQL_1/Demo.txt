@@ -1,0 +1,84 @@
+
+Assignment 
+
+Task1
+
+Task 1: Perform Left Join on CourseOfferings and CourseEnrollments to find the
+TermCode = ‘SP2016’ which will display the following Output
+
+Use Students; 
+
+SELECT 
+    ce.CourseEnrollmentId,
+    ce.CourseOfferingId,
+    ce.StudentId,
+    ce.Grade,
+    co.DepartmentCode,
+    co.CourseNumber,
+    co.TermCode,
+    co.Section,
+    co.Capacity
+FROM [Students].[dbo].[CourseEnrollments] ce
+LEFT JOIN [Students].[dbo].[CourseOfferings] co
+    ON ce.CourseOfferingId = co.CourseOfferingId
+WHERE co.TermCode = 'SP2016';
+
+
+
+SET STATISTICS IO ON
+SET STATISTICS TIME ON
+
+
+SQL Server parse and compile time: 
+   CPU time = 0 ms, elapsed time = 3 ms.
+
+(159325 rows affected)
+Table 'CourseOfferings'. Scan count 13, logical reads 862, physical reads 0, page server reads 0, read-ahead reads 0, page server read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob page server reads 0, lob read-ahead reads 0, lob page server read-ahead reads 0.
+Table 'CourseEnrollments'. Scan count 13, logical reads 12197, physical reads 0, page server reads 0, read-ahead reads 0, page server read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob page server reads 0, lob read-ahead reads 0, lob page server read-ahead reads 0.
+Table 'Workfile'. Scan count 0, logical reads 0, physical reads 0, page server reads 0, read-ahead reads 0, page server read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob page server reads 0, lob read-ahead reads 0, lob page server read-ahead reads 0.
+Table 'Worktable'. Scan count 0, logical reads 0, physical reads 0, page server reads 0, read-ahead reads 0, page server read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob page server reads 0, lob read-ahead reads 0, lob page server read-ahead reads 0.
+
+ SQL Server Execution Times:
+   CPU time = 296 ms,  elapsed time = 1059 ms.
+
+Completion time: 2025-03-02T13:53:33.1275670+01:00
+
+
+
+CREATE NONCLUSTERED INDEX IX_CourseOfferingId
+ON [Students].[dbo].[CourseEnrollments] (CourseOfferingId)
+INCLUDE (StudentId, Grade);
+
+
+
+
+SELECT 
+    ce.CourseEnrollmentId,
+    ce.CourseOfferingId,
+    ce.StudentId,
+    ce.Grade,
+    co.DepartmentCode,
+    co.CourseNumber,
+    co.TermCode,
+    co.Section,
+    co.Capacity
+FROM [Students].[dbo].[CourseEnrollments] ce
+WITH (INDEX(IX_CourseOfferingId))  -- Forces the optimizer to use the index
+LEFT JOIN [Students].[dbo].[CourseOfferings] co
+    ON ce.CourseOfferingId = co.CourseOfferingId
+WHERE co.TermCode = 'SP2016';
+
+
+SQL Server parse and compile time: 
+   CPU time = 0 ms, elapsed time = 3 ms.
+
+(159325 rows affected)
+Table 'CourseEnrollments'. Scan count 2669, logical reads 497115, physical reads 0, page server reads 0, read-ahead reads 8, page server read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob page server reads 0, lob read-ahead reads 0, lob page server read-ahead reads 0.
+Table 'CourseOfferings'. Scan count 13, logical reads 862, physical reads 0, page server reads 0, read-ahead reads 0, page server read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob page server reads 0, lob read-ahead reads 0, lob page server read-ahead reads 0.
+Table 'Worktable'. Scan count 0, logical reads 0, physical reads 0, page server reads 0, read-ahead reads 0, page server read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob page server reads 0, lob read-ahead reads 0, lob page server read-ahead reads 0.
+
+ SQL Server Execution Times:
+   CPU time = 48 ms,  elapsed time = 1072 ms.
+
+Completion time: 2025-03-02T14:10:51.7757873+01:00
+
