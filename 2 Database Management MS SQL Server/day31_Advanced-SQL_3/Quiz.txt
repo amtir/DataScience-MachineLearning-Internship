@@ -1,0 +1,177 @@
+
+
+Quiz
+
+1 - 1
+What is the primary purpose of stored procedures in a database?
+2 Marks
+To increase network traffic by executing complex operations on the client side.
+To enhance efficiency and consistency of repetitive database processes.
+To store user data in a more structured format.
+To replace the need for a database management system.
+
+The correct answer is:
+
+✅ To enhance efficiency and consistency of repetitive database processes.
+
+Explanation:
+Stored procedures are used in databases to encapsulate complex logic, reduce redundant code, and improve performance by executing operations directly on the database server. This minimizes network traffic and ensures that repetitive tasks are performed consistently.
+
+2 - 2
+Stored procedures are created using which of the following?
+2 Marks
+Data Manipulation Language (DML)
+Data Definition Language (DDL)
+Hypertext Markup Language (HTML)
+Cascading Style Sheets (CSS)
+
+The correct answer is:
+
+✅ Data Definition Language (DDL)
+
+Explanation:
+Stored procedures are created using SQL commands, specifically with the Data Definition Language (DDL), which includes CREATE PROCEDURE and ALTER PROCEDURE statements.
+
+DML (Data Manipulation Language) is used for modifying data (e.g., INSERT, UPDATE, DELETE).
+
+3 - Which of the following stored procedure is already defined in Sql Server?
+2 Marks
+User Defined Stored Procedure
+Extended Procedure
+CLR Stored Procedure
+System defined Procedure
+
+The correct answer is:
+
+✅ System defined Procedure
+
+Explanation:
+In SQL Server, System Defined Procedures are pre-defined stored procedures provided by Microsoft. These procedures help manage and interact with the database system. They usually start with "sp_" and are stored in the master database.
+
+4 - 4
+The ______ clause allows us to select only those rows in the result relation of the ____ clause that satisfy a specified predicate.
+2 Marks
+Select, from
+From, where
+Where, from
+From, select
+
+The correct answer is:
+
+✅ Where, from
+
+Explanation:
+The WHERE clause is used to filter records and select only those rows that meet a specific condition. It works in combination with the FROM clause, which specifies the table from which data is retrieved.
+
+5 - 5
+__________ provides details on any database object.
+2 Marks
+sp_owner
+sp_changeowner
+sp_change
+None of the above
+
+The correct answer is:
+
+✅ None of the above
+
+Explanation:
+None of the listed options directly provide details about a database object. The correct system stored procedure for retrieving information about database objects in SQL Server is sp_help.
+
+For example, to get details of a table:
+
+EXEC sp_help 'table_name';
+
+6 - 6
+Why in some cases the stored procedure is not recommended?
+2 Marks
+Stored procedures are difficult to unit test.
+Stored procedures requires larger memory.
+Stored procedures are not user-friendly.
+None of the above
+
+he correct answer is:
+
+✅ Stored procedures are difficult to unit test.
+
+Explanation:
+Stored procedures run within the database and are often dependent on database states, making unit testing challenging. Unlike application code, where unit tests can be written using testing frameworks, stored procedures often require database connections and test data setup, which complicates automated testing.
+
+7 - 7
+The Syntax for creating views is __________
+2 Marks
+CREATE VIEW AS SELECT
+CREATE VIEW AS UPDATE
+DROP VIEW AS SELECT
+None of the above
+
+The correct answer is:
+
+✅ CREATE VIEW AS SELECT
+
+Explanation:
+In SQL, a view is a virtual table based on the result of a SELECT statement. The correct syntax for creating a view is:
+
+CREATE VIEW view_name AS  
+SELECT column1, column2  
+FROM table_name  
+WHERE condition;
+
+8 - 8
+You can delete a view with ___________ command.
+2 Marks
+DELETE VIEW
+REMOVE VIEW
+DROP VIEW
+TRUNCATE VIEW
+
+The correct answer is:
+
+✅ DROP VIEW
+
+Explanation:
+In SQL, the DROP VIEW command is used to delete a view from the database. The syntax is:
+
+DROP VIEW view_name;
+
+9 - 9
+In a RANK() Function the ________ clause divides the output produced by the FROM clause into the partition. Then the function is applied to each partition and re-initialized when the division border crosses partitions. If the clause is not defined, the function will treat all rows as a single partition.
+2 Marks
+OVER
+ORDER BY
+PARTITION BY
+None of the above
+
+The correct answer is:
+
+✅ PARTITION BY
+
+Explanation:
+In SQL, the PARTITION BY clause is used within the RANK() function to divide the result set into partitions. The ranking function is then applied separately to each partition, and it resets when moving to the next partition.
+
+Example:
+
+SELECT employee_name, department, salary,
+       RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS rank
+FROM employees;
+PARTITION BY department → Divides employees into groups based on their department.
+ORDER BY salary DESC → Assigns ranks within each department based on salary.
+
+10 - 10
+During simultaneous execution, each operation should be performed interleaved with the others, ensuring that there is no interference with the other operations. This maintains a database ___.
+2 Marks
+Consistency
+Redundancy
+Concurrency
+None of the above
+
+The correct answer is:
+
+✅ Concurrency
+
+Explanation:
+In database management, concurrency refers to the ability of multiple transactions to execute simultaneously without interfering with each other. This is crucial in multi-user environments to maintain data integrity and consistency while preventing issues like deadlocks, race conditions, and data anomalies.
+
+
+
+
