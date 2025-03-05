@@ -1,0 +1,205 @@
+
+
+Demo I 
+
+Use Company_DB;
+
+Create table employee (emp_no int, ename varchar (255), designation varchar (255), salary int, dept_no int, Band varchar (255)); 
+
+Insert into employee (emp_no, ename, designation, salary, dept_no, Band)  
+Values (101, 'Albert', 'Manager', 60000, 10,'B');
+ 
+Insert into employee (emp_no, ename, designation, salary, dept_no, Band)  
+Values (102, 'Benedict', 'SalesHead', 70000, 12,'B');
+
+
+INSERT INTO employee (emp_no, ename, designation, salary, dept_no, Band)  
+VALUES 
+(115, 'Richard', 'Relationship Manager', 40000, 15, 'C'),
+(197, 'Thomas', 'Research Analyst', 25000, 10, 'C'),
+(113, 'Elon', 'Senior Research Analyst', 45000, 10, 'B'),
+(142, 'Arnold', 'Salesman', 30000, 12, 'C'),
+(110, 'Angela', 'HR associate', 50000, 15, 'B'),
+(179, 'Ritesh', 'Marketing Head', 80000, 17, 'B'),
+(194, 'Smith', 'IT support', 35000, 13, 'C'),
+(162, 'Joseline', 'Quality Analyst', 55000, 10, 'B');
+
+
+Select * from employee;
+
+
+(1 row affected)
+
+(1 row affected)
+
+(8 rows affected)
+
+(10 rows affected)
+
+Completion time: 2025-03-05T18:35:45.6594590+01:00
+
+
+101	Albert	Manager	60000	10	B
+102	Benedict	SalesHead	70000	12	B
+115	Richard	Relationship Manager	40000	15	C
+197	Thomas	Research Analyst	25000	10	C
+113	Elon	Senior Research Analyst	45000	10	B
+142	Arnold	Salesman	30000	12	C
+110	Angela	HR associate	50000	15	B
+179	Ritesh	Marketing Head	80000	17	B
+194	Smith	IT support	35000	13	C
+162	Joseline	Quality Analyst	55000	10	B
+
+
+
+
+-- Creating the department table
+CREATE TABLE department (
+    dept_no INT, 
+    dname VARCHAR(255), 
+    Location VARCHAR(255)
+);
+
+-- Inserting records into the department table
+INSERT INTO department (dept_no, dname, Location) VALUES (10, 'Content', 'Bengaluru');
+INSERT INTO department (dept_no, dname, Location) VALUES (12, 'Sales', 'Delhi');
+INSERT INTO department (dept_no, dname, Location) VALUES (15, 'HR', 'Bengaluru');
+INSERT INTO department (dept_no, dname, Location) VALUES (13, 'Marketing', 'Mumbai');
+INSERT INTO department (dept_no, dname, Location) VALUES (17, 'Tech Support', 'Bengaluru');
+
+-- Selecting all records to verify insertion
+SELECT * FROM department;
+
+
+
+10	Content	Bengaluru
+12	Sales	Delhi
+15	HR	Bengaluru
+13	Marketing	Mumbai
+17	Tech Support	Bengaluru
+
+
+
+Create table payscale_data (Band varchar(255), Tax int);
+
+-- Inserting data into payscale_data table
+INSERT INTO payscale_data (Band, Tax) VALUES ('A', 15000);
+INSERT INTO payscale_data (Band, Tax) VALUES ('B', 10000);
+INSERT INTO payscale_data (Band, Tax) VALUES ('C', 5000);
+
+-- Selecting all records to verify insertion
+SELECT * FROM payscale_data;
+
+
+A	15000
+B	10000
+C	5000
+
+
+
+
+
+1 - 
+
+select max(salary) from employee 
+where designation = 'Manager';
+
+select emp_no, ename, designation , salary
+from employee 
+where designation = 'Manager' 
+and salary = (select max(salary) from employee 
+where designation = 'Manager'); 
+
+2 - 
+select designation, salary from employee  
+where designation= 'SalesHead' and salary=70000;
+
+3 - 
+
+
+select max(salary) from employee 
+where salary<( 
+select max(salary) from employee);
+
+4  - 
+
+select emp_no, ename from employee 
+where salary = 
+(select max(salary) from employee 
+where salary<( 
+select max(salary) from employee));
+
+5 - 
+Query 5: How many employees work in department number 12? 
+select count(*) 
+from employee where dept_no=12;
+
+6 - 
+select count(*) 
+from employee where dept_no= (select dept_no from department where Location= 'Delhi');
+
+7 - 
+Select dname from department 
+where dept_no= (select dept_no from employee where ename='Smith'); 
+
+Marketing
+
+8 - 
+ 
+select AVG(salary) from employee 
+where dept_no=(select dept_no from department where dname= 'Sales'); 
+
+50000
+
+9 - 
+select count(*) from employee  
+where salary>25000 and dept_no=  
+(select dept_no from department where dname= 'Sales'); 
+
+2
+
+10 - 
+select designation, count(*) from employee 
+where dept_no in ( select dept_no from department where Location='Delhi' ) 
+group by designation;
+
+SalesHead	1
+Salesman	1
+
+
+11 - 
+
+select count(*) 
+from employee 
+where salary > (select salary from employee where emp_no=142); 
+
+8
+
+
+12 - 
+select Band from payscale_data where Tax='10000';
+B
+
+select emp_no, ename from employee  
+where Band = (select Band from payscale_data where Tax='10000'); 
+
+101	Albert
+102	Benedict
+113	Elon
+110	Angela
+179	Ritesh
+162	Joseline
+
+
+
+
+
+
+
+
+
+
+
+
+
+

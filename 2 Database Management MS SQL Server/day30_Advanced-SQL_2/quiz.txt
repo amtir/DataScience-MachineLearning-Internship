@@ -1,0 +1,198 @@
+
+Quiz 
+
+1
+How many types of views are mainly in SQL Server?
+2 Marks
+Five
+Three
+Two
+Four
+
+
+✅ Correct Answer:
+Two
+
+Explanation:
+In SQL Server, there are mainly two types of views:
+
+1️⃣ System Views – Predefined by SQL Server for metadata information.
+2️⃣ User-Defined Views – Created by users to simplify query execution.
+
+Breakdown of View Types in SQL Server
+Type of View	Description
+System Views	Built-in views that provide information about the database, such as schema, performance, and security (sys.tables, sys.columns, sys.databases).
+User-Defined Views	Custom views created by users to simplify queries and improve data abstraction (CREATE VIEW MyView AS SELECT * FROM Employees).
+
+
+2 - 
+2
+Select __________ from faculty where dept name= IT;
+Which of the following options should be used to find the mean of the salary?
+2 Marks
+Sum(salary)
+Count(salary)
+Mean(salary)
+Avg(salary)
+
+Avg 
+
+
+
+3 - 3
+What is the primary purpose of the ALTER VIEW statement in SQL?
+2 Marks
+To delete the view from the database.
+To modify the definition of the view query without affecting its privileges.
+To add new columns to the existing view.
+To grant new privileges to the view.
+
+✅ Correct Answer:
+To modify the definition of the view query without affecting its privileges.
+
+Explanation:
+The ALTER VIEW statement in SQL is used to modify an existing view's definition without changing its privileges.
+It allows updating the view without having to drop and recreate it.
+
+
+4 - 4
+When should you use the ALTER VIEW statement instead of creating a new view or dropping and recreating a view?
+2 Marks
+When you want to remove the view from the database.
+When you need to update the view's definition without reassigning current privileges.
+When you are adding new users to the database.
+When you want to permanently delete all data referenced by the view.
+
+✅ Correct Answer:
+When you need to update the view's definition without reassigning current privileges.
+
+Explanation:
+The ALTER VIEW statement is used to update an existing view's definition while preserving its permissions and dependencies.
+This is useful when modifying the view’s logic without affecting users who have access to it.
+
+5 - 5
+What happens to a view when the underlying table is removed from the database?
+2 Marks
+The view is automatically updated to remove references to the deleted table.
+The view is also automatically dropped from the database.
+The view remains in the database but must be manually removed using the DROP VIEW statement.
+The view automatically creates a new table to replace the deleted one.
+
+✅ Correct Answer:
+The view remains in the database but must be manually removed using the DROP VIEW statement.
+
+Explanation:
+When a table referenced by a view is deleted, the view does not automatically disappear.
+However, the view becomes invalid (broken) because it refers to a table that no longer exists.
+If you try to query the view after deleting the table, you will get an error.
+The view must be manually dropped using DROP VIEW if it is no longer needed.
+
+
+6 - 6
+How should you remove a view that is based on a table that has been deleted from the database?
+2 Marks
+Use the ALTER VIEW statement to repoint the view to a different table.
+Use the CREATE VIEW statement to redefine the view without the deleted table.
+Use the DROP VIEW statement to manually remove the view from the database.
+Do nothing; the view will automatically be removed after a certain period.
+
+✅ Correct Answer:
+Use the DROP VIEW statement to manually remove the view from the database.
+
+Explanation:
+When a table referenced in a view is deleted, the view remains in the database but becomes invalid.
+SQL Server does not automatically remove the view.
+To remove the invalid view, you must use the DROP VIEW statement manually.
+
+
+7 - 7
+The Syntax for creating views is __________
+2 Marks
+CREATE VIEW AS SELECT
+CREATE VIEW AS UPDATE
+DROP VIEW AS SELECT
+None of the above
+
+✅ Correct Answer:
+CREATE VIEW AS SELECT
+
+Explanation:
+The CREATE VIEW statement in SQL is used to define a virtual table that represents the result of a SELECT query.
+Views allow you to simplify complex queries and provide an abstraction layer over underlying tables.
+Correct Syntax for Creating a View
+
+CREATE VIEW EmployeeView AS
+SELECT emp_no, ename, salary
+FROM employee
+WHERE salary > 50000;
+✔ This creates a view named EmployeeView that filters employees earning more than 50,000.
+
+8 - 8
+You can delete a view with ___________ command.
+2 Marks
+DELETE VIEW
+REMOVE VIEW
+DROP VIEW
+TRUNCATE VIEW
+
+✅ Correct Answer:
+DROP VIEW
+
+Explanation:
+The DROP VIEW command is used to remove a view from the database permanently.
+Once a view is dropped, it no longer exists, and any queries referencing it will result in an error.
+Correct Syntax to Delete a View
+
+DROP VIEW EmployeeView;
+✔ This will remove the EmployeeView view from the database.
+
+
+
+9 - 9
+What can be used to check for views that have been invalidated by DROP or ALTER operations?
+2 Marks
+CREATE TABLE
+VERIFY TABLE
+DETAILS TABLE
+CHECK TABLE
+
+✅ Correct Answer:
+None of the given options are correct.
+
+However, in SQL Server, you can check for invalid views using sys.sql_modules, sys.views, or OBJECTPROPERTY() functions.
+
+Correct Ways to Check for Invalid Views
+1️⃣ Using sys.sql_modules to Find Invalid Views
+sql
+Copier
+Modifier
+SELECT v.name AS ViewName, v.object_id
+FROM sys.views v
+LEFT JOIN sys.sql_modules m ON v.object_id = m.object_id
+WHERE m.object_id IS NULL;
+✔ This query finds views that are missing their underlying objects (invalid views).
+
+
+
+
+10 - During simultaneous execution, each operation should be performed interleaved with the others, ensuring that there is no interference with the other operations. This maintains a database ___.
+2 Marks
+Consistency
+Redundancy
+Concurrency
+None of the above
+
+✅ Correct Answer:
+Concurrency
+
+Explanation:
+Concurrency in a database ensures that multiple transactions can execute simultaneously without interfering with each other.
+This is achieved using transaction management techniques like locking, isolation levels, and concurrency control mechanisms.
+Example of Concurrency Control Using Transactions
+
+BEGIN TRANSACTION;
+UPDATE Employees SET Salary = Salary + 5000 WHERE emp_no = 101;
+COMMIT;
+✔ Ensures that if multiple users update the Salary field at the same time, the database remains consistent and no data loss occurs.
+
+
