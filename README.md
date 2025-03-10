@@ -58,7 +58,7 @@ This internship program is designed to build a comprehensive understanding of Da
 ---
 
 ## Progress
-- **Modules Completed:** 1 (Python for Data Science), 2 (Database Management)
-- **Ongoing Module:** 3 (Machine Learning)
+- **Modules Completed:** 1(Python for Data Science), 2(Database Management), 3(Machine Learning), 4(Data Visualization Using Tableau) 
+- **Ongoing Module:** 4(Deep Learning)
 
 This program has provided a strong foundation in Data Science, Machine Learning, and related tools, enabling the creation of industry-standard projects and analytical solutions.
